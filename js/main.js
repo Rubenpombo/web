@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // 3. Create an Email Template -> Get Template ID
     // 4. Go to Account > API Keys -> Get Public Key
     
-    const PUBLIC_KEY = "YOUR_PUBLIC_KEY"; // e.g., "user_123456"
-    const SERVICE_ID = "YOUR_SERVICE_ID"; // e.g., "service_xyz"
-    const TEMPLATE_ID = "YOUR_TEMPLATE_ID"; // e.g., "template_abc"
+    const PUBLIC_KEY = "ogvuqPjn80l6o57Gf"; // e.g., "user_123456"
+    const SERVICE_ID = "service_bvz5x9e"; // e.g., "service_xyz"
+    const TEMPLATE_ID = "template_0fykrd4"; // e.g., "template_abc"
 
     try {
         emailjs.init(PUBLIC_KEY);
@@ -34,15 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 message: document.getElementById('message').value,
                 to_name: "Ruben" // Optional, if your template uses it
             };
-
-            if (PUBLIC_KEY === "YOUR_PUBLIC_KEY") {
-                 setTimeout(() => {
-                    alert("EmailJS is not configured yet! Please open js/main.js and add your Public Key, Service ID, and Template ID.");
-                    button.disabled = false;
-                    button.innerText = originalText;
-                }, 1000);
-                return;
-            }
 
             emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams)
                 .then(function() {
