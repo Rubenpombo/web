@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruben Pombo - Data Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <div id="particles-js"></div>
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-gray-900/50 backdrop-blur-sm transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-white hover:text-indigo-400 transition-colors">Ruben Pombo</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="text-lg hover:text-indigo-400 transition-colors">About</a>
+                <a href="#experience" class="text-lg hover:text-indigo-400 transition-colors">Experience</a>
+                <a href="#projects" class="text-lg hover:text-indigo-400 transition-colors">Projects</a>
+                <a href="#contact" class="text-lg bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-xl transition-all">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900/80 backdrop-blur-md">
+            <a href="#about" class="block text-center py-3 px-6 text-lg hover:bg-gray-800 transition-colors">About</a>
+            <a href="#experience" class="block text-center py-3 px-6 text-lg hover:bg-gray-800 transition-colors">Experience</a>
+            <a href="#projects" class="block text-center py-3 px-6 text-lg hover:bg-gray-800 transition-colors">Projects</a>
+            <a href="#contact" class="block text-center py-3 px-6 text-lg hover:bg-gray-800 transition-colors">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 pt-24">
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center -mt-24">
+            <div class="z-10">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-black text-white uppercase tracking-wider mb-4">
+                    Data Engineer
+                </h1>
+                <p class="text-lg md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
+                    With hands-on experience in AI, data pipelines, and cloud technologies.
+                </p>
+                <a href="#projects" class="bg-indigo-500 text-white font-bold text-lg py-4 px-8 rounded-xl hover:bg-indigo-600 transition-all duration-300 shadow-lg shadow-indigo-500/30 hover:shadow-xl hover:shadow-indigo-500/50 transform hover:-translate-y-1">
+                    View Projects
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-24 scroll-target">
+            <h2 class="text-4xl font-bold text-center mb-12">About Me</h2>
+            <div class="max-w-4xl mx-auto text-center text-lg text-gray-300 leading-relaxed">
+                 <!-- START CUSTOM CONTENT: ABOUT -->
+                <p>
+                    I'm Ruben Pombo, a Data Engineer with a passion for building robust data pipelines and leveraging AI to solve complex problems. My experience spans from academic research in AI to practical internships where I've engineered data solutions in industrial and corporate settings. I thrive on turning data into actionable insights and am always eager to learn and apply new technologies.
+                </p>
+                 <!-- END CUSTOM CONTENT: ABOUT -->
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-24 scroll-target">
+            <h2 class="text-4xl font-bold text-center mb-20">Professional Experience</h2>
+            <div class="relative max-w-5xl mx-auto">
+                <!-- Vertical Line -->
+                <div class="absolute left-1/2 -translate-x-1/2 w-1 h-full bg-gray-700 rounded-full"></div>
+                
+                <!-- START CUSTOM CONTENT: EXPERIENCE -->
+                <div class="relative mb-16 flex items-center w-full">
+                    <div class="hidden md:block w-1/2 pr-8 text-right">
+                         <div class="company-logo-container">
+                            <img src="imgs/arcelor.png" alt="ArcelorMittal Logo" class="h-24 w-72 object-contain mx-auto md:mx-0 md:ml-auto mb-2">
+                            <div class="company-tooltip">A world-leading steel and mining company, supplying quality steel products to various sectors including automotive, construction, and packaging.</div>
+                        </div>
+                        <h3 class="font-bold text-xl text-indigo-400">Junior R&D Engineer</h3>
+                        <p class="text-gray-400">ArcelorMittal Global R&D</p>
+                        <p class="text-gray-400">Aug 2025 – Present</p>
+                    </div>
+                    <div class="absolute left-1/2 -translate-x-1/2 w-8 h-8 bg-gray-900 border-4 border-indigo-500 rounded-full z-10"></div>
+                    <div class="w-full md:w-1/2 md:pl-8">
+                        <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-indigo-500/20 transition-shadow duration-300">
+                             <div class="md:hidden company-logo-container">
+                                <img src="imgs/arcelor.png" alt="ArcelorMittal Logo" class="h-24 w-72 object-contain mb-2">
+                                <div class="company-tooltip">A world-leading steel and mining company, supplying quality steel products to various sectors including automotive, construction, and packaging.</div>
+                            </div>
+                             <h3 class="md:hidden font-bold text-xl text-indigo-400">Junior R&D Engineer</h3>
+                             <p class="md:hidden text-gray-400">ArcelorMittal Global R&D</p>
+                             <p class="md:hidden text-gray-400 mb-2">Aug 2025 – Present</p>
+                            <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                <li>Mechatronics team member.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="relative mb-16 flex items-center w-full flex-row-reverse">
+                    <div class="hidden md:block w-1/2 pl-8 text-left">
+                        <div class="company-logo-container">
+                            <img src="imgs/nttdata.png" alt="NTT DATA Logo" class="h-12 w-36 object-contain mb-2">
+                            <div class="company-tooltip">A global IT services provider and consulting firm, offering a wide range of solutions from advisory services to cloud and cybersecurity.</div>
+                        </div>
+                        <h3 class="font-bold text-xl text-fuchsia-500">Artificial Intelligence Intern</h3>
+                        <p class="text-gray-400">NTT DATA Europe & Latam</p>
+                        <p class="text-gray-400">Sep 2024 – May 2025</p>
+                    </div>
+                    <div class="absolute left-1/2 -translate-x-1/2 w-8 h-8 bg-gray-900 border-4 border-fuchsia-500 rounded-full z-10"></div>
+                    <div class="w-full md:w-1/2 md:pr-8">
+                        <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-fuchsia-500/20 transition-shadow duration-300">
+                                                         <div class="md:hidden company-logo-container">
+                                                            <img src="imgs/nttdata.png" alt="NTT DATA Logo" class="h-12 w-36 object-contain mb-2">
+                                                            <div class="company-tooltip">A global IT services provider and consulting firm, offering a wide range of solutions from advisory services to cloud and cybersecurity.</div>
+                                                        </div>                             <h3 class="md:hidden font-bold text-xl text-fuchsia-500">Artificial Intelligence Intern</h3>
+                             <p class="md:hidden text-gray-400">NTT DATA Europe & Latam</p>
+                             <p class="md:hidden text-gray-400 mb-2">Sep 2024 – May 2025</p>
+                            <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                <li>Co-authored a paper on the first Iberian Bird dataset for object detection (<a href="https://www.sciencedirect.com/science/article/pii/S2352340925003427?via%3Dihub" target="_blank" class="text-indigo-400 hover:underline">Link to Paper</a>).</li>
+                                <li>Led LLM fine-tuning, backend integration, and prompt engineering with LangChain and Azure.</li>
+                                <li>Benchmarked multimodal LLMs (GPT-4o, Gemini 2.5) for worker safety monitoring.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative mb-16 flex items-center w-full">
+                    <div class="hidden md:block w-1/2 pr-8 text-right">
+                        <div class="company-logo-container">
+                            <img src="imgs/gonvarri.png" alt="Gonvarri Industries Logo" class="h-24 w-72 object-contain mx-auto md:mx-0 md:ml-auto mb-2">
+                            <div class="company-tooltip">A leader in the transformation of flat steel and aluminum, providing metal solutions for the automotive, road safety, and solar energy sectors.</div>
+                        </div>
+                        <h3 class="font-bold text-xl text-indigo-400">Data Engineering Intern</h3>
+                        <p class="text-gray-400">Gonvarri Industries</p>
+                        <p class="text-gray-400">Jul 2023 – Aug 2023</p>
+                    </div>
+                    <div class="absolute left-1/2 -translate-x-1/2 w-8 h-8 bg-gray-900 border-4 border-indigo-500 rounded-full z-10"></div>
+                    <div class="w-full md:w-1/2 md:pl-8">
+                        <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-indigo-500/20 transition-shadow duration-300">
+                             <div class="md:hidden company-logo-container">
+                                <img src="imgs/gonvarri.png" alt="Gonvarri Industries Logo" class="h-24 w-72 object-contain mb-2">
+                                <div class="company-tooltip">A leader in the transformation of flat steel and aluminum, providing metal solutions for the automotive, road safety, and solar energy sectors.</div>
+                            </div>
+                            <h3 class="md:hidden font-bold text-xl text-indigo-400">Data Engineering Intern</h3>
+                            <p class="md:hidden text-gray-400">Gonvarri Industries</p>
+                            <p class="md:hidden text-gray-400 mb-2">Jul 2023 – Aug 2023</p>
+                            <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                <li>Collaborated with R&D teams to understand industrial processes and initiatives.</li>
+                                <li>Performed time series analysis and data visualization in R to identify operational anomalies.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- END CUSTOM CONTENT: EXPERIENCE -->
+            </div>
+        </section>
+
+        <!-- Education & Achievements Section -->
+        <section id="education" class="py-24 scroll-target">
+            <h2 class="text-4xl font-bold text-center mb-20">Education & Achievements</h2>
+            <div class="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
+                <!-- Education -->
+                <div>
+                    <h3 class="text-3xl font-bold text-center mb-8 text-fuchsia-500">Education</h3>
+                     <!-- START CUSTOM CONTENT: EDUCATION -->
+                    <div class="space-y-8">
+                        <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+                            <h4 class="font-bold text-xl">Bachelor of Science in Data Science and Engineering</h4>
+                            <p class="text-gray-400 mb-2">University of Oviedo, Gijón, Spain - June 2025</p>
+                            <p class="text-gray-300 text-sm"><strong>Grade:</strong> 7.2/10.0 (2:1 equivalent)</p>
+                            <div class="text-gray-300 text-sm mt-2">
+                                <p><strong>General competencies:</strong> Artificial Intelligence · Object-Oriented Programming · Algorithmics · Statistics · Data Analysis · Databases · Machine Learning · Deep Learning · Data Engineering · Distributed Systems · Cryptography · IoT · Project Management · NLP · Cybersecurity</p>
+                                <p class="mt-2">• Completed semester abroad at Faculty of Sciences, University of Porto (Portugal), taking Master’s level courses delivered in English</p>
+                            </div>
+                            <p class="text-gray-300 text-sm mt-2"><strong>Final Thesis:</strong> Classification of endangered flying birds through fine-tuned YOLO object detection model, achieving F1 score of 0.80.</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+                            <h4 class="font-bold text-xl">Technological High School</h4>
+                            <p class="text-gray-400">Colegio San Fernando, Avilés, Spain - June 2021</p>
+                        </div>
+                    </div>
+                     <!-- END CUSTOM CONTENT: EDUCATION -->
+                </div>
+                <!-- Achievements -->
+                <div>
+                     <h3 class="text-3xl font-bold text-center mb-8 text-indigo-400">Achievements & Certifications</h3>
+                     <!-- START CUSTOM CONTENT: ACHIEVEMENTS -->
+                     <div class="space-y-8">
+                        <div class="bg-gray-800 p-6 rounded-xl shadow-lg flex items-center space-x-4">
+                            <i data-lucide="award" class="w-10 h-10 text-indigo-400"></i>
+                            <div>
+                                <h4 class="font-bold text-xl">Project Winner</h4>
+                                <p class="text-gray-400">"Application of Generative AI in Industrial Environments" for Delta (Iturcermi Group).</p>
+                                <a href="https://www.linkedin.com/posts/ruben-pp_ganadores-del-proyecto-acad%C3%A9mico-aplicaci%C3%B3n-activity-7335225244451770368-pQ3a" target="_blank" class="text-indigo-400 hover:underline text-sm mt-1 block">View LinkedIn Post</a>
+                            </div>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+                            <h4 class="font-bold text-xl mb-3">Certifications</h4>
+                            <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                <li><a href="https://credentials.databricks.com/17118849-18d4-4d2c-a27f-9470ea8ff98c#acc.q0hlufGI" target="_blank" class="text-indigo-400 hover:underline">Generative AI Fundamentals (Databricks)</a></li>
+                                <li><a href="https://www.scrumstudy.com/certification/verify?type=SFC&number=1012974" target="_blank" class="text-indigo-400 hover:underline">Scrum Fundamentals Certified (SFC)</a></li>
+                                <li><a href="https://www.linkedin.com/learning/certificates/5ca15660d79a306b8a1acf634a71f4fe664577561d50548d8c1919ce6142df16?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BcfkX0hKFTmKywKGTReXXLA%3D%3D" target="_blank" class="text-indigo-400 hover:underline">Getting Started with Power BI (LinkedIn Learning)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                      <!-- END CUSTOM CONTENT: ACHIEVEMENTS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="py-24 scroll-target">
+            <h2 class="text-4xl font-bold text-center mb-20">Technical Skills</h2>
+            <div class="max-w-6xl mx-auto">
+                <!-- Programming Languages -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-bold text-center mb-8 text-fuchsia-500">Programming Languages</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8">
+                        <div class="skill-icon-container"><i class="devicon-python-plain colored text-6xl"></i><span class="skill-tooltip">Python</span></div>
+                        <div class="skill-icon-container"><i class="devicon-r-original colored text-6xl"></i><span class="skill-tooltip">R</span></div>
+                    </div>
+                </div>
+
+                <!-- Technologies -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-bold text-center mb-8 text-indigo-400">Technologies</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8">
+                        <div class="skill-icon-container"><i class="devicon-azuresql-plain colored text-6xl"></i><span class="skill-tooltip">SQL</span></div>
+                        <div class="skill-icon-container"><i class="devicon-apachespark-original colored text-6xl"></i><span class="skill-tooltip">Apache Spark</span></div>
+                        <div class="skill-icon-container"><i class="devicon-apachekafka-original colored text-6xl"></i><span class="skill-tooltip">Apache Kafka</span></div>
+                        <div class="skill-icon-container"><i class="devicon-airflow-original colored text-6xl"></i><span class="skill-tooltip">Airflow</span></div>
+                        <div class="skill-icon-container"><i class="devicon-docker-plain colored text-6xl"></i><span class="skill-tooltip">Docker</span></div>
+                        <div class="skill-icon-container"><i class="devicon-git-plain colored text-6xl"></i><span class="skill-tooltip">Git</span></div>
+                        <div class="skill-icon-container"><i class="devicon-azure-plain colored text-6xl"></i><span class="skill-tooltip">Azure</span></div>
+                        <div class="skill-icon-container"><i class="devicon-powerbi-plain colored text-6xl"></i><span class="skill-tooltip">Power BI</span></div>
+                        <div class="skill-icon-container"><i class="devicon-streamlit-plain colored text-6xl"></i><span class="skill-tooltip">Streamlit</span></div>
+                        <div class="skill-icon-container"><i class="devicon-linux-plain colored text-6xl"></i><span class="skill-tooltip">Linux</span></div>
+                        <div class="skill-icon-container"><i class="devicon-bash-plain text-6xl" style="color: white;"></i><span class="skill-tooltip">Shell Scripting</span></div>
+                        <div class="skill-icon-container"><i class="devicon-gitlab-plain colored text-6xl"></i><span class="skill-tooltip">GitLab</span></div>
+                    </div>
+                </div>
+
+                <!-- Libraries & Frameworks -->
+                <div>
+                    <h3 class="text-2xl font-bold text-center mb-8 text-fuchsia-500">Libraries & Frameworks</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8">
+                        <div class="skill-icon-container"><i class="devicon-pandas-original colored text-6xl"></i><span class="skill-tooltip">Pandas</span></div>
+                        <div class="skill-icon-container"><i class="devicon-numpy-original colored text-6xl"></i><span class="skill-tooltip">NumPy</span></div>
+                        <div class="skill-icon-container"><i class="devicon-scikitlearn-original colored text-6xl"></i><span class="skill-tooltip">Scikit-Learn</span></div>
+                        <div class="skill-icon-container"><i class="devicon-pytorch-original colored text-6xl"></i><span class="skill-tooltip">PyTorch</span></div>
+                        <div class="skill-icon-container"><i class="devicon-spacy-original colored text-6xl"></i><span class="skill-tooltip">spaCy</span></div>
+                        <div class="skill-icon-container"><i class="devicon-huggingface-original colored text-6xl"></i><span class="skill-tooltip">Transformers</span></div>
+                        <div class="skill-icon-container"><i class="devicon-tensorflow-original colored text-6xl"></i><span class="skill-tooltip">TensorFlow</span></div>
+                        <div class="skill-icon-container"><i class="devicon-keras-original colored text-6xl"></i><span class="skill-tooltip">Keras</span></div>
+                        <div class="skill-icon-container"><i class="devicon-langchain-original colored text-6xl"></i><span class="skill-tooltip">LangChain</span></div>
+                        <div class="skill-icon-container"><i class="devicon-pyspark-original colored text-6xl"></i><span class="skill-tooltip">PySpark</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Side Projects Section -->
+        <section id="projects" class="py-24 scroll-target">
+            <h2 class="text-4xl font-bold text-center mb-20">Side Projects</h2>
+            <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <!-- START CUSTOM CONTENT: PROJECTS -->
+                <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group">
+                    <div class="p-8 flex flex-col h-full">
+                        <h3 class="text-2xl font-bold mb-2 text-fuchsia-400">Real Time User Data Pipeline</h3>
+                        <p class="text-gray-400 mb-4 flex-grow">Built a real-time data pipeline for user sign-up data from an external API, covering ingestion, processing, storage, and automated visualization. Designed an interactive dashboard to present key insights from processed user data.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-700 text-sm font-semibold px-3 py-1 rounded-full">Python</span>
+                            <span class="bg-gray-700 text-sm font-semibold px-3 py-1 rounded-full">Docker</span>
+                            <span class="bg-gray-700 text-sm font-semibold px-3 py-1 rounded-full">Kafka</span>
+                            <span class="bg-gray-700 text-sm font-semibold px-3 py-1 rounded-full">Airflow</span>
+                            <span class="bg-gray-700 text-sm font-semibold px-3 py-1 rounded-full">Spark</span>
+                        </div>
+                        <div class="flex space-x-4 mt-auto">
+                            <a href="https://github.com/Rubenpombo/end-to-end-data-pipeline" target="_blank" class="flex items-center text-white font-bold py-2 px-4 rounded-lg bg-gray-700 hover:bg-gray-600 transition-colors"><i data-lucide="github" class="w-5 h-5 mr-2"></i>GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group">
+                    <div class="p-8 flex flex-col h-full">
+                        <h3 class="text-2xl font-bold mb-2 text-fuchsia-400">Quantum Algorithms Predict Bankruptcy</h3>
+                        <p class="text-gray-400 mb-4 flex-grow">Solved a binary classification problem using quantum algorithms (QSVC, QNNs), earning a 10/10 grade. Explored embedding and dimensionality reduction methods, evaluating with Pennylane and IBM's quantum computers.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-700 text-sm font-semibold px-3 py-1 rounded-full">Pennylane</span>
+                            <span class="bg-gray-700 text-sm font-semibold px-3 py-1 rounded-full">Qiskit</span>
+                            <span class="bg-gray-700 text-sm font-semibold px-3 py-1 rounded-full">IBM Quantum</span>
+                        </div>
+                        <div class="flex space-x-4 mt-auto">
+                             <a href="https://github.com/Rubenpombo/QuantumBankruptcy" target="_blank" class="flex items-center text-white font-bold py-2 px-4 rounded-lg bg-gray-700 hover:bg-gray-600 transition-colors"><i data-lucide="github" class="w-5 h-5 mr-2"></i>GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END CUSTOM CONTENT: PROJECTS -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact/Footer -->
+    <footer id="contact" class="py-16 bg-gray-900/70 border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center">
+             <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+             <p class="text-gray-400 max-w-xl mx-auto mb-8">
+                I'm actively seeking new opportunities and would love to connect. Feel free to reach out!
+             </p>
+            <!-- START CUSTOM CONTENT: CONTACT -->
+             <a href="mailto:ruben.pombo@email.com" class="inline-block bg-fuchsia-500 text-white font-bold text-lg py-3 px-8 rounded-xl hover:bg-fuchsia-600 transition-all duration-300 shadow-lg shadow-fuchsia-500/30 mb-12">
+                ruben.pombo@email.com
+             </a>
+             <div class="flex justify-center space-x-6">
+                 <a href="https://github.com/Rubenpombo" target="_blank" class="text-gray-400 hover:text-indigo-400 transition-colors">
+                     <i data-lucide="github" class="w-8 h-8"></i>
+                 </a>
+                 <a href="https://www.linkedin.com/in/ruben-pp" class="text-gray-400 hover:text-indigo-400 transition-colors">
+                     <i data-lucide="linkedin" class="w-8 h-8"></i>
+                 </a>
+             </div>
+             <!-- END CUSTOM CONTENT: CONTACT -->
+             <p class="text-gray-600 mt-12 text-sm">&copy; 2025 Ruben Pombo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/particles.min.js"></script>
+    <script src="js/particles-config.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script type="module">
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a, nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                if(!mobileMenu.classList.contains('hidden')) {
+                   mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // --- INTERSECTION OBSERVER FOR SCROLL ANIMATIONS ---
+        const scrollTargets = document.querySelectorAll('.scroll-target');
+        
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        scrollTargets.forEach(target => {
+            observer.observe(target);
+        });
+    </script>
+</body>
+</html>

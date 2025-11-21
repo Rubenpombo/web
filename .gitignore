@@ -1,0 +1,3 @@
+# Ignore temporary directory
+/tmp/
+.DS_Store
