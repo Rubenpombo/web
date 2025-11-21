@@ -316,9 +316,23 @@
                 I'm actively seeking new opportunities and would love to connect. Feel free to reach out!
              </p>
             <!-- START CUSTOM CONTENT: CONTACT -->
-             <a href="mailto:ruben.pombo@email.com" class="inline-block bg-fuchsia-500 text-white font-bold text-lg py-3 px-8 rounded-xl hover:bg-fuchsia-600 transition-all duration-300 shadow-lg shadow-fuchsia-500/30 mb-12">
-                ruben.pombo@email.com
-             </a>
+             <form id="contact-form" class="max-w-lg mx-auto text-left mb-12 space-y-4">
+                <div>
+                    <label for="email" class="block text-gray-300 mb-2 font-medium">Your Email</label>
+                    <input type="email" id="email" name="email" required class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-fuchsia-500 focus:ring-1 focus:ring-fuchsia-500 transition-colors placeholder-gray-500" placeholder="you@example.com">
+                </div>
+                <div>
+                    <label for="subject" class="block text-gray-300 mb-2 font-medium">Subject</label>
+                    <input type="text" id="subject" name="subject" required class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-fuchsia-500 focus:ring-1 focus:ring-fuchsia-500 transition-colors" placeholder="Project Inquiry">
+                </div>
+                <div>
+                    <label for="message" class="block text-gray-300 mb-2 font-medium">Message</label>
+                    <textarea id="message" name="message" rows="5" required class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-fuchsia-500 focus:ring-1 focus:ring-fuchsia-500 transition-colors resize-none" placeholder="How can I help you?"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-fuchsia-500 text-white font-bold text-lg py-3 px-8 rounded-xl hover:bg-fuchsia-600 transition-all duration-300 shadow-lg shadow-fuchsia-500/30 hover:shadow-xl hover:shadow-fuchsia-500/50 transform hover:-translate-y-1">
+                    Send Message
+                </button>
+             </form>
              <div class="flex justify-center space-x-6">
                  <a href="https://github.com/Rubenpombo" target="_blank" class="text-gray-400 hover:text-indigo-400 transition-colors">
                      <i data-lucide="github" class="w-8 h-8"></i>
