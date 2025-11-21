@@ -1,6 +1,6 @@
 body {
     font-family: 'Inter', sans-serif;
-    background-color: navy;
+    background-color: #0a192f;
 }
 #particles-js {
     position: fixed;
@@ -8,8 +8,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
-    background-color: navy;
+    z-index: 1;
 }
 .scroll-target {
     opacity: 1;
