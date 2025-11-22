@@ -216,8 +216,8 @@
                         <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
                             <h4 class="font-bold text-xl mb-3">Hackathons Attendance</h4>
                             <ul class="list-disc list-inside text-gray-300 space-y-2">
-                                <li><a href="imgs/hackathon_porto.jpeg" target="_blank" class="text-indigo-400 hover:underline">HackACity Porto 2023</a></li>
-                                <li><a href="imgs/hackathon_merkle.jpeg" target="_blank" class="text-indigo-400 hover:underline">Merkle Datathon 2023</a></li>
+                                <li><a href="imgs/hackathon_porto.jpeg" class="image-modal-trigger text-indigo-400 hover:underline">HackACity Porto 2023</a></li>
+                                <li><a href="imgs/hackathon_merkle.jpeg" class="image-modal-trigger text-indigo-400 hover:underline">Merkle Datathon 2023</a></li>
                             </ul>
                         </div>
                     </div>
@@ -395,5 +395,15 @@
             observer.observe(target);
         });
     </script>
+    <!-- Image Modal -->
+    <div id="image-modal" class="fixed inset-0 z-[100] hidden bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+        <div class="relative max-w-4xl w-full max-h-[90vh] flex flex-col items-center">
+            <button id="modal-close" class="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors focus:outline-none">
+                <i data-lucide="x" class="w-8 h-8"></i>
+            </button>
+            <img id="modal-image" src="" alt="Preview" class="max-w-full max-h-[80vh] rounded-lg shadow-2xl object-contain">
+            <p id="modal-caption" class="text-gray-300 mt-4 text-lg font-medium text-center"></p>
+        </div>
+    </div>
 </body>
 </html>
