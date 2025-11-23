@@ -137,6 +137,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- INTERSECTION OBSERVER FOR SCROLL ANIMATIONS ---
+    const scrollTargets = document.querySelectorAll('.scroll-target');
+    
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0 }); // Changed from 0.1 to 0
+
+    scrollTargets.forEach(target => {
+        observer.observe(target);
+    });
+
     // --- TECH MARQUEE LOGIC ---
     const marqueeContent = document.getElementById('tech-marquee-content');
     if (marqueeContent) {
