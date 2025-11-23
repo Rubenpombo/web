@@ -59,15 +59,29 @@
 
         <!-- About Section -->
         <section id="about" class="py-24">
-            <h2 class="text-4xl font-bold text-center mb-12">About Me</h2>
-            <div class="max-w-4xl mx-auto text-center text-lg text-gray-300 leading-relaxed">
-                 <!-- START CUSTOM CONTENT: ABOUT -->
-                <p class="scroll-target text-xl">
-                    I'm Ruben Parte Pombo, a Data Engineer who combines the rigour of R&D with a builder's mindset. <br><br>
-                    My technical foundation spans Machine Learning, Cryptography, and Statistics, and I am actively expanding into DevOps to bridge the gap between code and operations. <br><br>
-                    I believe that agency and rapid exploration are key to growth - the sooner I dive into new topics, the faster I find my true passion.
-                </p>
-                 <!-- END CUSTOM CONTENT: ABOUT -->
+            <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
+                <!-- Text Side (Left) -->
+                <div class="w-full md:w-1/2 text-left z-10">
+                    <h2 class="text-4xl font-bold mb-8 text-indigo-400">About Me</h2>
+                    <div class="text-xl text-gray-300 leading-relaxed">
+                         <!-- START CUSTOM CONTENT: ABOUT -->
+                        <p class="scroll-target">
+                            I'm Ruben Pombo, a Data Engineer who combines the rigour of R&D with a builder's mindset. <br><br>
+                            My technical foundation spans Machine Learning, Cryptography, and Statistics, and I am actively expanding into DevOps to bridge the gap between code and operations. <br><br>
+                            I believe that agency and rapid exploration are key to growth - the sooner I dive into new topics, the faster I find my true passion.
+                        </p>
+                         <!-- END CUSTOM CONTENT: ABOUT -->
+                    </div>
+                </div>
+
+                <!-- Image Side (Right) -->
+                <div class="w-full md:w-1/2 flex justify-center relative">
+                    <!-- Ambient Glow -->
+                    <div class="absolute inset-0 bg-indigo-500 blur-[100px] opacity-30 rounded-full transform scale-75"></div>
+                    
+                    <!-- Profile Image -->
+                    <img src="imgs/me.jpg" alt="Ruben Pombo" class="relative w-80 h-80 md:w-96 md:h-96 object-cover rounded-full profile-mask shadow-2xl border-4 border-gray-800/50">
+                </div>
             </div>
         </section>
 

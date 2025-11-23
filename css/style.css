@@ -184,3 +184,9 @@ body {
     position: relative;
     z-index: 2;
 }
+
+/* Profile Image Mask */
+.profile-mask {
+    -webkit-mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
+    mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
+}
