@@ -136,4 +136,12 @@ document.addEventListener('DOMContentLoaded', () => {
             heroTitle.appendChild(mask);
         });
     }
+
+    // --- TECH MARQUEE LOGIC ---
+    const marqueeContent = document.getElementById('tech-marquee-content');
+    if (marqueeContent) {
+        // Duplicate the content to ensure seamless scrolling
+        const content = marqueeContent.innerHTML;
+        marqueeContent.innerHTML = content + content;
+    }
 });
