@@ -156,9 +156,32 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- TECH MARQUEE LOGIC ---
     const marqueeContents = document.querySelectorAll('.marquee-content');
     marqueeContents.forEach(content => {
-        // Duplicate the content to ensure seamless scrolling
-        const innerHTML = content.innerHTML;
-        content.innerHTML = innerHTML + innerHTML;
+        // 1. Get original content
+        const originalContent = content.innerHTML;
+        
+        // 2. Duplicate content multiple times (e.g., 10x) to ensure no gaps on 4k+ screens
+        //    and to allow for a long, smooth animation loop.
+        //    We use 10 copies. Since the animation moves 50% of the width, 
+        //    we need 2 sets of "fill the screen". 
+        //    10 copies is extremely safe for any resolution.
+        content.innerHTML = originalContent.repeat(10);
+
+        // 3. Calculate duration for constant speed
+        //    Standard speed: ~50px/s
+        //    Total width (scrollWidth) includes all copies.
+        //    Distance to move = 50% of total width.
+        //    Time = Distance / Speed
+        
+        // We need a small delay or requestAnimationFrame to ensure DOM has updated 
+        // and scrollWidth is accurate (images have fixed width classes, so layout should be known).
+        requestAnimationFrame(() => {
+            const totalWidth = content.scrollWidth;
+            const distance = totalWidth / 2; // We move -50%
+            const speed = 50; // pixels per second
+            const duration = distance / speed;
+            
+            content.style.animationDuration = `${duration}s`;
+        });
     });
 
     // --- SPOTLIGHT CARD LOGIC ---

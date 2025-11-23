@@ -132,7 +132,7 @@ body {
 }
 
 .marquee-content {
-    animation: scroll 20s linear infinite;
+    animation: scroll linear infinite; /* Duration set by JS */
 }
 
 /* Pause on hover */
