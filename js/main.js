@@ -102,4 +102,38 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // --- HERO TEXT ANIMATION ---
+    const heroTitle = document.querySelector('#hero h1');
+    if (heroTitle) {
+        // Get the text content (trimming excess whitespace but keeping internal spaces)
+        const text = heroTitle.textContent.trim();
+        // Clear current content
+        heroTitle.innerHTML = '';
+        
+        // Split text and wrap in spans
+        const chars = text.split('');
+        
+        chars.forEach((char, index) => {
+            // If it's a space, just append a text node or a simple span to preserve layout
+            if (char === ' ') {
+                const space = document.createTextNode(' ');
+                heroTitle.appendChild(space);
+                return;
+            }
+
+            // Create mask (wrapper)
+            const mask = document.createElement('span');
+            mask.className = 'hero-char-mask';
+            
+            // Create content (character)
+            const span = document.createElement('span');
+            span.textContent = char;
+            span.className = 'hero-char';
+            span.style.animationDelay = `${index * 0.04}s`; // Stagger delay
+            
+            mask.appendChild(span);
+            heroTitle.appendChild(mask);
+        });
+    }
 });
