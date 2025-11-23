@@ -132,12 +132,18 @@ body {
 }
 
 .marquee-content {
-    animation: scroll linear infinite; /* Duration set by JS */
+    width: max-content;
+    animation: scroll 30s linear infinite;
 }
 
 /* Pause on hover */
 .marquee-container:hover .marquee-content {
     animation-play-state: paused;
+}
+
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
 }
 
 /* Ensure tooltips are visible above mask/container boundaries when hovered */
