@@ -145,16 +145,36 @@ body {
     z-index: 1; /* Base z-index */
 }
 
-.skill-icon-container:hover {
-    z-index: 50; /* Bring to front on hover */
+/* Spotlight Card Effect */
+.spotlight-card {
+    position: relative;
+    overflow: hidden;
+    /* Ensure background color is set explicitly if not already by Tailwind, 
+       but .bg-gray-800 handles it. */
 }
 
-@keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        /* Move by 50% because we will duplicate the content to be 2x width */
-        transform: translateX(-50%);
-    }
+.spotlight-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    z-index: 1;
+    background: radial-gradient(
+        600px circle at var(--mouse-x) var(--mouse-y),
+        rgba(255, 255, 255, 0.06),
+        transparent 40%
+    );
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none; /* Allows clicks to pass through to links */
+}
+
+.spotlight-card:hover::after {
+    opacity: 1;
+}
+
+/* Ensure content sits above the spotlight */
+.spotlight-card > * {
+    position: relative;
+    z-index: 2;
 }

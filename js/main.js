@@ -160,4 +160,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const innerHTML = content.innerHTML;
         content.innerHTML = innerHTML + innerHTML;
     });
+
+    // --- SPOTLIGHT CARD LOGIC ---
+    document.querySelectorAll('.spotlight-card').forEach(card => {
+        card.addEventListener('mousemove', e => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            card.style.setProperty('--mouse-x', `${x}px`);
+            card.style.setProperty('--mouse-y', `${y}px`);
+        });
+    });
 });
