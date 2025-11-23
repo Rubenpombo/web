@@ -11,13 +11,28 @@ body {
     z-index: 1;
 }
 .scroll-target {
-    opacity: 1;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    /* Initial state: Hidden via clip-path and blurred */
+    filter: blur(10px);
+    transform: translateY(20px);
+    clip-path: inset(0 0 100% 0);
+    /* Ensure the element is effectively hidden but takes up space */
 }
+
 .scroll-target.visible {
-    opacity: 1;
-    transform: translateY(0);
+    animation: blurSlideIn 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes blurSlideIn {
+    0% {
+        filter: blur(10px);
+        transform: translateY(20px);
+        clip-path: inset(0 0 100% 0);
+    }
+    100% {
+        filter: blur(0);
+        transform: translateY(0);
+        clip-path: inset(0 0 0 0);
+    }
 }
 .skill-icon-container {
     position: relative;
