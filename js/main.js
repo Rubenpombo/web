@@ -154,10 +154,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- TECH MARQUEE LOGIC ---
-    const marqueeContent = document.getElementById('tech-marquee-content');
-    if (marqueeContent) {
+    const marqueeContents = document.querySelectorAll('.marquee-content');
+    marqueeContents.forEach(content => {
         // Duplicate the content to ensure seamless scrolling
-        const content = marqueeContent.innerHTML;
-        marqueeContent.innerHTML = content + content;
-    }
+        const innerHTML = content.innerHTML;
+        content.innerHTML = innerHTML + innerHTML;
+    });
 });

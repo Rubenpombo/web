@@ -125,19 +125,28 @@ body {
 }
 
 /* Tech Marquee Animation */
-#tech-marquee {
+.marquee-container {
     /* Alpha mask for gradient fade on edges */
     -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
     mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
-#tech-marquee-content {
+.marquee-content {
     animation: scroll 20s linear infinite;
 }
 
 /* Pause on hover */
-#tech-marquee:hover #tech-marquee-content {
+.marquee-container:hover .marquee-content {
     animation-play-state: paused;
+}
+
+/* Ensure tooltips are visible above mask/container boundaries when hovered */
+.skill-icon-container {
+    z-index: 1; /* Base z-index */
+}
+
+.skill-icon-container:hover {
+    z-index: 50; /* Bring to front on hover */
 }
 
 @keyframes scroll {
