@@ -23,10 +23,29 @@
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#hero" class="text-2xl font-bold text-white hover:text-indigo-400 transition-colors">Ruben Parte Pombo</a>
             <div class="hidden md:flex items-center space-x-8">
-                <a href="#about" class="text-lg hover:text-indigo-400 transition-colors">About</a>
-                <a href="#experience" class="text-lg hover:text-indigo-400 transition-colors">Experience</a>
-                <a href="#projects" class="text-lg hover:text-indigo-400 transition-colors">Projects</a>
-                <a href="#contact" class="text-lg bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-xl transition-all">Contact</a>
+                <a href="#about" class="text-lg hover:text-indigo-400 transition-colors" data-i18n="nav.about">About</a>
+                <a href="#experience" class="text-lg hover:text-indigo-400 transition-colors" data-i18n="nav.experience">Experience</a>
+                <a href="#projects" class="text-lg hover:text-indigo-400 transition-colors" data-i18n="nav.projects">Projects</a>
+                <a href="#contact" class="text-lg bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-xl transition-all" data-i18n="nav.contact">Contact</a>
+                
+                <!-- Language Selector (Desktop) -->
+                <div class="relative">
+                    <button id="lang-toggle" class="flex items-center space-x-1 text-white hover:text-indigo-400 transition-colors focus:outline-none">
+                        <span class="text-xl">🇬🇧</span>
+                        <span class="font-medium">EN</span>
+                        <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    </button>
+                    <div id="lang-dropdown" class="hidden absolute right-0 mt-2 w-32 bg-gray-800 rounded-xl shadow-xl border border-gray-700 overflow-hidden">
+                        <button class="lang-option w-full text-left px-4 py-3 hover:bg-gray-700 text-white transition-colors flex items-center space-x-3" data-lang="en">
+                            <span>🇬🇧</span>
+                            <span>English</span>
+                        </button>
+                        <button class="lang-option w-full text-left px-4 py-3 hover:bg-gray-700 text-white transition-colors flex items-center space-x-3" data-lang="es">
+                            <span>🇪🇸</span>
+                            <span>Español</span>
+                        </button>
+                    </div>
+                </div>
             </div>
             <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
                 <i data-lucide="menu" class="w-6 h-6"></i>
@@ -34,10 +53,20 @@
         </nav>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-gray-900/80 backdrop-blur-md">
-            <a href="#about" class="block text-center py-3 px-6 text-lg hover:bg-gray-800 transition-colors">About</a>
-            <a href="#experience" class="block text-center py-3 px-6 text-lg hover:bg-gray-800 transition-colors">Experience</a>
-            <a href="#projects" class="block text-center py-3 px-6 text-lg hover:bg-gray-800 transition-colors">Projects</a>
-            <a href="#contact" class="block text-center py-3 px-6 text-lg hover:bg-gray-800 transition-colors">Contact</a>
+            <a href="#about" class="block text-center py-3 px-6 text-lg hover:bg-gray-800 transition-colors" data-i18n="nav.about">About</a>
+            <a href="#experience" class="block text-center py-3 px-6 text-lg hover:bg-gray-800 transition-colors" data-i18n="nav.experience">Experience</a>
+            <a href="#projects" class="block text-center py-3 px-6 text-lg hover:bg-gray-800 transition-colors" data-i18n="nav.projects">Projects</a>
+            <a href="#contact" class="block text-center py-3 px-6 text-lg hover:bg-gray-800 transition-colors" data-i18n="nav.contact">Contact</a>
+            
+            <!-- Language Selector (Mobile) -->
+            <div class="flex justify-center py-4 border-t border-gray-800 space-x-4">
+                <button class="lang-option-mobile px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-600 hover:border-indigo-500 transition-all flex items-center space-x-2" data-lang="en">
+                    <span>🇬🇧</span> <span>EN</span>
+                </button>
+                <button class="lang-option-mobile px-4 py-2 rounded-lg bg-gray-800 text-gray-400 border border-transparent hover:text-white hover:border-gray-600 transition-all flex items-center space-x-2" data-lang="es">
+                    <span>🇪🇸</span> <span>ES</span>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -45,13 +74,13 @@
         <!-- Hero Section -->
         <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center -mt-24">
             <div class="z-10">
-                <h1 class="text-3xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-wider mb-4">
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-wider mb-4" data-i18n="hero.title">
                     Engineering Data into Intelligence
                 </h1>
-                <p class="text-lg md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8 scroll-target">
+                <p class="text-lg md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8 scroll-target" data-i18n="hero.subtitle">
                     Turning Curiosity into Code and Data into Intelligence.
                 </p>
-                <a href="#projects" class="bg-indigo-500 text-white font-bold text-lg py-4 px-8 rounded-xl hover:bg-indigo-600 transition-all duration-300 shadow-lg shadow-indigo-500/30 hover:shadow-xl hover:shadow-indigo-500/50 transform hover:-translate-y-1">
+                <a href="#projects" class="bg-indigo-500 text-white font-bold text-lg py-4 px-8 rounded-xl hover:bg-indigo-600 transition-all duration-300 shadow-lg shadow-indigo-500/30 hover:shadow-xl hover:shadow-indigo-500/50 transform hover:-translate-y-1" data-i18n="hero.cta">
                     View Projects
                 </a>
             </div>
@@ -62,10 +91,10 @@
             <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-[70px]">
                 <!-- Text Side (Left) -->
                 <div class="w-full md:w-1/2 text-left z-10">
-                    <h2 class="text-4xl font-bold mb-8 text-indigo-400">About Me</h2>
+                    <h2 class="text-4xl font-bold mb-8 text-indigo-400" data-i18n="about.title">About Me</h2>
                     <div class="text-xl text-gray-300 leading-relaxed">
                          <!-- START CUSTOM CONTENT: ABOUT -->
-                        <p class="scroll-target">
+                        <p class="scroll-target" data-i18n="about.text">
                             I'm Ruben Pombo, a Data Engineer who combines the rigour of R&D with a builder's mindset. <br><br>
                             My technical foundation spans Machine Learning, Cryptography, and Statistics, and I am actively expanding into DevOps to bridge the gap between code and operations. <br><br>
                             I believe that agency and rapid exploration are key to growth - the sooner I dive into new topics, the faster I find my true passion.
@@ -87,7 +116,7 @@
 
         <!-- Experience Section -->
         <section id="experience" class="py-24">
-            <h2 class="text-4xl font-bold text-center mb-20">Professional Experience</h2>
+            <h2 class="text-4xl font-bold text-center mb-20" data-i18n="experience.title">Professional Experience</h2>
             <div class="relative max-w-[90rem] mx-auto">
                 <!-- Vertical Line -->
                 <div class="absolute left-1/2 -translate-x-1/2 w-1 h-full bg-gray-700 rounded-full"></div>
@@ -99,7 +128,7 @@
                             <img src="imgs/arcelor.png" alt="ArcelorMittal Logo" class="h-22 w-72 object-contain mx-auto md:mx-0 md:ml-auto mb-2">
                             <div class="company-tooltip">A world-leading steel and mining company, supplying quality steel products to various sectors including automotive, construction, and packaging.</div>
                         </div>
-                        <h3 class="font-bold text-xl text-indigo-400">Junior R&D Engineer</h3>
+                        <h3 class="font-bold text-xl text-indigo-400" data-i18n="experience.arcelor.role">Junior R&D Engineer</h3>
                         <p class="text-gray-400">ArcelorMittal Global R&D</p>
                         <p class="text-gray-400">Aug 2025 – Present</p>
                     </div>
@@ -110,11 +139,11 @@
                                 <img src="imgs/arcelor.png" alt="ArcelorMittal Logo" class="h-22 w-72 object-contain mb-2">
                                 <div class="company-tooltip">A world-leading steel and mining company, supplying quality steel products to various sectors including automotive, construction, and packaging.</div>
                             </div>
-                             <h3 class="md:hidden font-bold text-xl text-indigo-400">Junior R&D Engineer</h3>
+                             <h3 class="md:hidden font-bold text-xl text-indigo-400" data-i18n="experience.arcelor.role">Junior R&D Engineer</h3>
                              <p class="md:hidden text-gray-400">ArcelorMittal Global R&D</p>
                              <p class="md:hidden text-gray-400 mb-2">Aug 2025 – Present</p>
                             <ul class="list-disc list-inside text-lg text-gray-300 space-y-2">
-                                <li>Mechatronics team member.</li>
+                                <li data-i18n="experience.arcelor.desc">Mechatronics team member.</li>
                             </ul>
                         </div>
                     </div>
@@ -126,7 +155,7 @@
                             <img src="imgs/nttdata.png" alt="NTT DATA Logo" class="h-14 w-40 object-contain mb-2">
                             <div class="company-tooltip">A global IT services provider and consulting firm, offering a wide range of solutions from advisory services to cloud and cybersecurity.</div>
                         </div>
-                        <h3 class="font-bold text-xl text-fuchsia-500">Artificial Intelligence Intern</h3>
+                        <h3 class="font-bold text-xl text-fuchsia-500" data-i18n="experience.ntt.role">Artificial Intelligence Intern</h3>
                         <p class="text-gray-400">NTT DATA Europe & Latam</p>
                         <p class="text-gray-400">Sep 2024 – May 2025</p>
                     </div>
@@ -136,13 +165,13 @@
                                                          <div class="md:hidden company-logo-container">
                                                             <img src="imgs/nttdata.png" alt="NTT DATA Logo" class="h-14 w-40 object-contain mb-2">
                                                             <div class="company-tooltip">A global IT services provider and consulting firm, offering a wide range of solutions from advisory services to cloud and cybersecurity.</div>
-                                                        </div>                             <h3 class="md:hidden font-bold text-xl text-fuchsia-500">Artificial Intelligence Intern</h3>
+                                                        </div>                             <h3 class="md:hidden font-bold text-xl text-fuchsia-500" data-i18n="experience.ntt.role">Artificial Intelligence Intern</h3>
                              <p class="md:hidden text-gray-400">NTT DATA Europe & Latam</p>
                              <p class="md:hidden text-gray-400 mb-2">Sep 2024 – May 2025</p>
                             <ul class="list-disc list-inside text-lg text-gray-300 space-y-2">
-                                <li>Co-authored a <a href="https://www.sciencedirect.com/science/article/pii/S2352340925003427?via%3Dihub" target="_blank" class="text-indigo-400 hover:underline">paper on the first Iberian Bird dataset</a> for object detection.</li>
-                                <li>Participated in LLM fine-tuning, backend integration, and prompt engineering with LangChain and Azure for Nestlé.</li>
-                                <li>Benchmarked multimodal LLMs (GPT-4o, Gemini 2.5) for worker safety monitoring.</li>
+                                <li data-i18n="experience.ntt.desc1">Co-authored a <a href="https://www.sciencedirect.com/science/article/pii/S2352340925003427?via%3Dihub" target="_blank" class="text-indigo-400 hover:underline">paper on the first Iberian Bird dataset</a> for object detection.</li>
+                                <li data-i18n="experience.ntt.desc2">Participated in LLM fine-tuning, backend integration, and prompt engineering with LangChain and Azure for Nestlé.</li>
+                                <li data-i18n="experience.ntt.desc3">Benchmarked multimodal LLMs (GPT-4o, Gemini 2.5) for worker safety monitoring.</li>
                             </ul>
                         </div>
                     </div>
@@ -154,7 +183,7 @@
                             <img src="imgs/gonvarri.png" alt="Gonvarri Industries Logo" class="h-22 w-72 object-contain mx-auto md:mx-0 md:ml-auto mb-2">
                             <div class="company-tooltip">A leader in the transformation of flat steel and aluminum, providing metal solutions for the automotive, road safety, and solar energy sectors.</div>
                         </div>
-                        <h3 class="font-bold text-xl text-indigo-400">Data Engineering Intern</h3>
+                        <h3 class="font-bold text-xl text-indigo-400" data-i18n="experience.gonvarri.role">Data Engineering Intern</h3>
                         <p class="text-gray-400">Gonvarri Industries</p>
                         <p class="text-gray-400">Jul 2023 – Aug 2023</p>
                     </div>
@@ -165,12 +194,12 @@
                                 <img src="imgs/gonvarri.png" alt="Gonvarri Industries Logo" class="h-22 w-72 object-contain mb-2">
                                 <div class="company-tooltip">A leader in the transformation of flat steel and aluminum, providing metal solutions for the automotive, road safety, and solar energy sectors.</div>
                             </div>
-                            <h3 class="md:hidden font-bold text-xl text-indigo-400">Data Science Intern</h3>
+                            <h3 class="md:hidden font-bold text-xl text-indigo-400" data-i18n="experience.gonvarri.role">Data Engineering Intern</h3>
                             <p class="md:hidden text-gray-400">Gonvarri Industries</p>
                             <p class="md:hidden text-gray-400 mb-2">Jul 2023 – Aug 2023</p>
                             <ul class="list-disc list-inside text-lg text-gray-300 space-y-2">
-                                <li>Collaborated with R&D teams to understand industrial processes and initiatives.</li>
-                                <li>Performed time series analysis and data visualization in R to identify operational anomalies.</li>
+                                <li data-i18n="experience.gonvarri.desc1">Collaborated with R&D teams to understand industrial processes and initiatives.</li>
+                                <li data-i18n="experience.gonvarri.desc2">Performed time series analysis and data visualization in R to identify operational anomalies.</li>
                             </ul>
                         </div>
                     </div>
@@ -181,34 +210,34 @@
 
         <!-- Education & Achievements Section -->
         <section id="education" class="py-24">
-            <h2 class="text-4xl font-bold text-center mb-20">Education & Achievements</h2>
+            <h2 class="text-4xl font-bold text-center mb-20" data-i18n="education.mainTitle">Education & Achievements</h2>
             <div class="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
                 <!-- Education -->
                 <div>
-                    <h3 class="text-3xl font-bold text-center mb-8 text-fuchsia-500">Education</h3>
+                    <h3 class="text-3xl font-bold text-center mb-8 text-fuchsia-500" data-i18n="education.eduTitle">Education</h3>
                      <!-- START CUSTOM CONTENT: EDUCATION -->
                     <div class="space-y-8">
                         <div class="spotlight-card bg-gray-800 p-6 rounded-xl shadow-lg">
                             <div class="space-y-3">
-                                <h4 class="font-bold text-xl">Bachelor of Science in Data Science and Engineering</h4>
+                                <h4 class="font-bold text-xl" data-i18n="education.uni.degree">Bachelor of Science in Data Science and Engineering</h4>
                                 <p class="text-gray-400">University of Oviedo, Gijón, Spain - June 2025</p>
-                                <p class="text-gray-300 text-sm"><strong>Grade:</strong> <span class="font-bold text-indigo-400">7.2/10.0</span> (2:1 equivalent)</p>
+                                <p class="text-gray-300 text-sm" data-i18n="education.uni.grade"><strong>Grade:</strong> <span class="font-bold text-indigo-400">7.2/10.0</span> (2:1 equivalent)</p>
                                 
                                 <hr class="border-gray-700 my-3">
 
-                                <p class="text-sm"><strong>General competencies:</strong> <span class="text-gray-400">Artificial Intelligence · Object-Oriented Programming · Algorithmics · Statistics · Data Analysis · Databases · Machine Learning · Deep Learning · Data Engineering · Distributed Systems · Cryptography · IoT · Project Management · NLP · Cybersecurity</span></p>
+                                <p class="text-sm" data-i18n="education.uni.competencies"><strong>General competencies:</strong> <span class="text-gray-400">Artificial Intelligence · Object-Oriented Programming · Algorithmics · Statistics · Data Analysis · Databases · Machine Learning · Deep Learning · Data Engineering · Distributed Systems · Cryptography · IoT · Project Management · NLP · Cybersecurity</span></p>
                                 
                                 <hr class="border-gray-700 my-3">
                                 
-                                <p class="text-gray-300 text-sm">Completed semester abroad at Faculty of Sciences, University of Porto (Portugal), taking Master’s level courses delivered in English</p>
+                                <p class="text-gray-300 text-sm" data-i18n="education.uni.abroad">Completed semester abroad at Faculty of Sciences, University of Porto (Portugal), taking Master’s level courses delivered in English</p>
                                 
                                 <hr class="border-gray-700 my-3">
 
-                                <p class="text-gray-300 text-sm"><strong>Final Thesis (10.0, honors.):</strong> Classification of endangered flying birds through fine-tuned YOLO object detection model, achieving F1 score of 0.80.</p>
+                                <p class="text-gray-300 text-sm" data-i18n="education.uni.thesis"><strong>Final Thesis (10.0, honors.):</strong> Classification of endangered flying birds through fine-tuned YOLO object detection model, achieving F1 score of 0.80.</p>
                             </div>
                         </div>
                         <div class="spotlight-card bg-gray-800 p-6 rounded-xl shadow-lg">
-                            <h4 class="font-bold text-xl">Technological High School</h4>
+                            <h4 class="font-bold text-xl" data-i18n="education.school.name">Technological High School</h4>
                             <p class="text-gray-400">Colegio San Fernando, Avilés, Spain - June 2021</p>
                         </div>
                     </div>
@@ -216,19 +245,19 @@
                 </div>
                 <!-- Achievements -->
                 <div>
-                     <h3 class="text-3xl font-bold text-center mb-8 text-indigo-400">Achievements & More</h3>
+                     <h3 class="text-3xl font-bold text-center mb-8 text-indigo-400" data-i18n="education.achievements.title">Achievements & More</h3>
                      <!-- START CUSTOM CONTENT: ACHIEVEMENTS -->
                      <div class="space-y-8">
                         <div class="spotlight-card bg-gray-800 p-6 rounded-xl shadow-lg flex items-center space-x-4" style="background-image: linear-gradient(rgba(31, 41, 55, 0.85), rgba(31, 41, 55, 0.95)), url('imgs/premio.jpeg'); background-size: cover; background-position: center;">
                             <i data-lucide="award" class="w-10 h-10 text-indigo-400"></i>
                             <div>
-                                <h4 class="font-bold text-xl">Project Winner</h4>
-                                <p class="text-gray-400">"Application of Generative AI in Industrial Environments" for Delta (<a href="https://iturcemigrupo.com/" target="_blank" class="text-indigo-400 hover:underline">Iturcermi Group</a>).</p>
-                                <a href="https://www.linkedin.com/posts/ruben-pp_ganadores-del-proyecto-acad%C3%A9mico-aplicaci%C3%B3n-activity-7335225244451770368-pQ3a" target="_blank" class="text-indigo-400 hover:underline text-sm mt-1 block">View LinkedIn Post</a>
+                                <h4 class="font-bold text-xl" data-i18n="education.achievements.winner.title">Project Winner</h4>
+                                <p class="text-gray-400" data-i18n="education.achievements.winner.desc">"Application of Generative AI in Industrial Environments" for Delta (<a href="https://iturcemigrupo.com/" target="_blank" class="text-indigo-400 hover:underline">Iturcermi Group</a>).</p>
+                                <a href="https://www.linkedin.com/posts/ruben-pp_ganadores-del-proyecto-acad%C3%A9mico-aplicaci%C3%B3n-activity-7335225244451770368-pQ3a" target="_blank" class="text-indigo-400 hover:underline text-sm mt-1 block" data-i18n="education.achievements.winner.link">View LinkedIn Post</a>
                             </div>
                         </div>
                         <div class="spotlight-card bg-gray-800 p-6 rounded-xl shadow-lg">
-                            <h4 class="font-bold text-xl mb-3">Certifications</h4>
+                            <h4 class="font-bold text-xl mb-3" data-i18n="education.achievements.certs.title">Certifications</h4>
                             <ul class="list-disc list-inside text-gray-300 space-y-2">
                                 <li><a href="https://credentials.databricks.com/17118849-18d4-4d2c-a27f-9470ea8ff98c#acc.q0hlufGI" target="_blank" class="text-indigo-400 hover:underline">Generative AI Fundamentals (Databricks)</a></li>
                                 <li><a href="https://www.scrumstudy.com/certification/verify?type=SFC&number=1012974" target="_blank" class="text-indigo-400 hover:underline">Scrum Fundamentals Certified (SFC)</a></li>
@@ -236,7 +265,7 @@
                             </ul>
                         </div>
                         <div class="spotlight-card bg-gray-800 p-6 rounded-xl shadow-lg">
-                            <h4 class="font-bold text-xl mb-3">Hackathons Attendance</h4>
+                            <h4 class="font-bold text-xl mb-3" data-i18n="education.achievements.hackathons.title">Hackathons Attendance</h4>
                             <ul class="list-disc list-inside text-gray-300 space-y-2">
                                 <li><a href="imgs/hackathon_porto.jpeg" class="image-modal-trigger text-indigo-400 hover:underline">HackACity Porto 2023</a></li>
                                 <li><a href="imgs/hackathon_merkle.jpeg" class="image-modal-trigger text-indigo-400 hover:underline">Merkle Datathon 2023</a></li>
@@ -250,11 +279,11 @@
 
         <!-- Technical Skills Section -->
         <section id="skills" class="py-24">
-            <h2 class="text-4xl font-bold text-center mb-20">Technical Skills</h2>
+            <h2 class="text-4xl font-bold text-center mb-20" data-i18n="skills.title">Technical Skills</h2>
             <div class="max-w-6xl mx-auto">
                 <!-- Programming Languages -->
                 <div class="mb-12">
-                    <h3 class="text-2xl font-bold text-center mb-8 text-fuchsia-500">Programming Languages</h3>
+                    <h3 class="text-2xl font-bold text-center mb-8 text-fuchsia-500" data-i18n="skills.languages">Programming Languages</h3>
                     <div class="flex justify-center gap-8">
                         <div class="skill-icon-container"><img src="https://cdn.simpleicons.org/python" alt="Python" class="w-14 h-14 hover:scale-110 transition-transform duration-300"><span class="skill-tooltip">Python</span></div>
                         <div class="skill-icon-container"><img src="https://cdn.simpleicons.org/r" alt="R" class="w-14 h-14 hover:scale-110 transition-transform duration-300"><span class="skill-tooltip">R</span></div>
@@ -263,7 +292,7 @@
 
                 <!-- Technologies -->
                 <div class="mb-12">
-                    <h3 class="text-2xl font-bold text-center mb-8 text-indigo-400">Technologies</h3>
+                    <h3 class="text-2xl font-bold text-center mb-8 text-indigo-400" data-i18n="skills.tech">Technologies</h3>
                     <!-- Marquee Container -->
                     <div class="marquee-container relative overflow-hidden group py-8">
                         <!-- Marquee Content (Moving Track) -->
@@ -286,7 +315,7 @@
 
                 <!-- Libraries & Frameworks -->
                 <div>
-                    <h3 class="text-2xl font-bold text-center mb-8 text-fuchsia-500">Libraries & Frameworks</h3>
+                    <h3 class="text-2xl font-bold text-center mb-8 text-fuchsia-500" data-i18n="skills.libs">Libraries & Frameworks</h3>
                     <!-- Marquee Container -->
                     <div class="marquee-container relative overflow-hidden group py-8">
                          <!-- Marquee Content (Moving Track) -->
@@ -309,13 +338,13 @@
 
         <!-- Side Projects Section -->
         <section id="projects" class="py-24">
-            <h2 class="text-4xl font-bold text-center mb-20">Side Projects</h2>
+            <h2 class="text-4xl font-bold text-center mb-20" data-i18n="projects.title">Side Projects</h2>
             <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
                 <!-- START CUSTOM CONTENT: PROJECTS -->
                 <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group">
                     <div class="p-8 flex flex-col h-full">
-                        <h3 class="text-2xl font-bold mb-2 text-fuchsia-400">Real Time User Data Pipeline</h3>
-                        <p class="text-gray-400 mb-4 flex-grow">Built a real-time data pipeline for user sign-up data from an external API, covering ingestion, processing, storage, and automated visualization. Designed an interactive dashboard to present key insights from processed user data.</p>
+                        <h3 class="text-2xl font-bold mb-2 text-fuchsia-400" data-i18n="projects.pipeline.title">Real Time User Data Pipeline</h3>
+                        <p class="text-gray-400 mb-4 flex-grow" data-i18n="projects.pipeline.desc">Built a real-time data pipeline for user sign-up data from an external API, covering ingestion, processing, storage, and automated visualization. Designed an interactive dashboard to present key insights from processed user data.</p>
                         <div class="flex flex-wrap gap-2 mb-6">
                             <span class="bg-gray-700 text-sm font-semibold px-3 py-1 rounded-full">Python</span>
                             <span class="bg-gray-700 text-sm font-semibold px-3 py-1 rounded-full">Docker</span>
@@ -331,8 +360,8 @@
 
                  <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group">
                     <div class="p-8 flex flex-col h-full">
-                        <h3 class="text-2xl font-bold mb-2 text-fuchsia-400">Quantum Algorithms Predict Bankruptcy</h3>
-                        <p class="text-gray-400 mb-4 flex-grow">Solved a binary classification problem using quantum algorithms (QSVC, QNNs), earning a 10/10 grade. Explored embedding and dimensionality reduction methods, evaluating with Pennylane and IBM's quantum computers.</p>
+                        <h3 class="text-2xl font-bold mb-2 text-fuchsia-400" data-i18n="projects.quantum.title">Quantum Algorithms Predict Bankruptcy</h3>
+                        <p class="text-gray-400 mb-4 flex-grow" data-i18n="projects.quantum.desc">Solved a binary classification problem using quantum algorithms (QSVC, QNNs), earning a 10/10 grade. Explored embedding and dimensionality reduction methods, evaluating with Pennylane and IBM's quantum computers.</p>
                         <div class="flex flex-wrap gap-2 mb-6">
                             <span class="bg-gray-700 text-sm font-semibold px-3 py-1 rounded-full">Pennylane</span>
                             <span class="bg-gray-700 text-sm font-semibold px-3 py-1 rounded-full">Qiskit</span>
@@ -351,25 +380,25 @@
     <!-- Contact/Footer -->
     <footer id="contact" class="py-16 bg-gray-900/70 border-t border-gray-800 relative z-10">
         <div class="container mx-auto px-6 text-center">
-             <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
-             <p class="text-gray-400 max-w-xl mx-auto mb-8">
+             <h2 class="text-3xl font-bold mb-4" data-i18n="contact.title">Get In Touch</h2>
+             <p class="text-gray-400 max-w-xl mx-auto mb-8" data-i18n="contact.subtitle">
                 Feel free to reach out to propose and discuss any opportunity or topic :)
              </p>
             <!-- START CUSTOM CONTENT: CONTACT -->
              <form id="contact-form" class="max-w-lg mx-auto text-left mb-12 space-y-4">
                 <div>
-                    <label for="email" class="block text-gray-300 mb-2 font-medium">Your Email</label>
-                    <input type="email" id="email" name="email" required class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-fuchsia-500 focus:ring-1 focus:ring-fuchsia-500 transition-colors placeholder-gray-500" placeholder="you@example.com">
+                    <label for="email" class="block text-gray-300 mb-2 font-medium" data-i18n="contact.form.email">Your Email</label>
+                    <input type="email" id="email" name="email" required class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-fuchsia-500 focus:ring-1 focus:ring-fuchsia-500 transition-colors placeholder-gray-500" placeholder="you@example.com" data-i18n="contact.form.emailPlaceholder">
                 </div>
                 <div>
-                    <label for="subject" class="block text-gray-300 mb-2 font-medium">Subject</label>
-                    <input type="text" id="subject" name="subject" required class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-fuchsia-500 focus:ring-1 focus:ring-fuchsia-500 transition-colors" placeholder="Project Inquiry">
+                    <label for="subject" class="block text-gray-300 mb-2 font-medium" data-i18n="contact.form.subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-fuchsia-500 focus:ring-1 focus:ring-fuchsia-500 transition-colors" placeholder="Project Inquiry" data-i18n="contact.form.subjectPlaceholder">
                 </div>
                 <div>
-                    <label for="message" class="block text-gray-300 mb-2 font-medium">Message</label>
-                    <textarea id="message" name="message" rows="5" required class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-fuchsia-500 focus:ring-1 focus:ring-fuchsia-500 transition-colors resize-none" placeholder="How can I help you?"></textarea>
+                    <label for="message" class="block text-gray-300 mb-2 font-medium" data-i18n="contact.form.message">Message</label>
+                    <textarea id="message" name="message" rows="5" required class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-fuchsia-500 focus:ring-1 focus:ring-fuchsia-500 transition-colors resize-none" placeholder="How can I help you?" data-i18n="contact.form.messagePlaceholder"></textarea>
                 </div>
-                <button type="submit" class="w-full bg-fuchsia-500 text-white font-bold text-lg py-3 px-8 rounded-xl hover:bg-fuchsia-600 transition-all duration-300 shadow-lg shadow-fuchsia-500/30 hover:shadow-xl hover:shadow-fuchsia-500/50 transform hover:-translate-y-1">
+                <button type="submit" class="w-full bg-fuchsia-500 text-white font-bold text-lg py-3 px-8 rounded-xl hover:bg-fuchsia-600 transition-all duration-300 shadow-lg shadow-fuchsia-500/30 hover:shadow-xl hover:shadow-fuchsia-500/50 transform hover:-translate-y-1" data-i18n="contact.form.btn">
                     Send Message
                 </button>
              </form>
@@ -382,12 +411,13 @@
                  </a>
              </div>
              <!-- END CUSTOM CONTENT: CONTACT -->
-             <p class="text-gray-600 mt-12 text-sm">&copy; 2025 Ruben Parte Pombo. All rights reserved.</p>
+             <p class="text-gray-600 mt-12 text-sm" data-i18n="footer.rights">&copy; 2025 Ruben Parte Pombo. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="js/particles.min.js"></script>
     <script src="js/particles-config.js"></script>
+    <script src="js/translations.js"></script>
     <script src="js/main.js"></script>
     <script>
         lucide.createIcons();

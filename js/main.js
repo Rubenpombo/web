@@ -169,4 +169,132 @@ document.addEventListener('DOMContentLoaded', () => {
             card.style.setProperty('--mouse-y', `${y}px`);
         });
     });
+
+    // --- I18N / LANGUAGE SWITCHING ---
+    const langToggle = document.getElementById('lang-toggle');
+    const langDropdown = document.getElementById('lang-dropdown');
+    const langOptions = document.querySelectorAll('.lang-option');
+    const langOptionsMobile = document.querySelectorAll('.lang-option-mobile');
+    
+    // Toggle Dropdown
+    if (langToggle && langDropdown) {
+        langToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            langDropdown.classList.toggle('hidden');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!langToggle.contains(e.target) && !langDropdown.contains(e.target)) {
+                langDropdown.classList.add('hidden');
+            }
+        });
+    }
+
+    // Function to update text content based on language
+    const updateContent = (lang) => {
+        const elements = document.querySelectorAll('[data-i18n]');
+        elements.forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            const keys = key.split('.');
+            let value = translations[lang];
+            
+            // Traverse the translations object
+            keys.forEach(k => {
+                if (value) value = value[k];
+            });
+
+            if (value) {
+                if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                     el.placeholder = value;
+                } else {
+                    el.innerHTML = value; // Use innerHTML to support <br> and <span>
+                }
+            }
+        });
+        
+        // Update Hero Text Animation (re-trigger if needed, or just update text)
+        // Since the hero text is animated character by character, changing innerHTML might break the animation structure
+        // created by the previous logic.
+        // We need to re-run the hero text animation logic after update.
+        const heroTitle = document.querySelector('#hero h1');
+        if (heroTitle) {
+             // The text is already updated by the loop above.
+             // Now re-apply the span wrapping logic.
+             const text = heroTitle.textContent.trim();
+             heroTitle.innerHTML = '';
+             const chars = text.split('');
+             chars.forEach((char, index) => {
+                 if (char === ' ') {
+                     const space = document.createTextNode(' ');
+                     heroTitle.appendChild(space);
+                     return;
+                 }
+                 const mask = document.createElement('span');
+                 mask.className = 'hero-char-mask';
+                 const span = document.createElement('span');
+                 span.textContent = char;
+                 span.className = 'hero-char';
+                 // Reset animation by triggering reflow or just letting it run?
+                 // It will run on insert.
+                 span.style.animationDelay = `${index * 0.04}s`;
+                 mask.appendChild(span);
+                 heroTitle.appendChild(mask);
+             });
+        }
+
+        // Update Toggle Button Text/Icon (Desktop)
+        if (langToggle) {
+            const flag = lang === 'en' ? '🇬🇧' : '🇪🇸';
+            const code = lang === 'en' ? 'EN' : 'ES';
+            langToggle.querySelector('span:first-child').textContent = flag;
+            langToggle.querySelector('span:nth-child(2)').textContent = code;
+        }
+
+        // Update Mobile Buttons Active State
+        if (langOptionsMobile.length > 0) {
+             langOptionsMobile.forEach(btn => {
+                 if (btn.dataset.lang === lang) {
+                     btn.classList.remove('text-gray-400', 'border-transparent');
+                     btn.classList.add('text-white', 'border-gray-600'); // Add border or highlight
+                     // Actually, let's match the styling in HTML
+                     // In HTML: 
+                     // Active: text-white border-indigo-500 (I put that in the replacement?)
+                     // Let's just simplify:
+                     btn.style.opacity = '1';
+                     btn.style.borderColor = '#6366f1'; // Indigo 500
+                 } else {
+                     btn.classList.add('text-gray-400', 'border-transparent');
+                     btn.classList.remove('text-white', 'border-gray-600');
+                     btn.style.opacity = '0.7';
+                     btn.style.borderColor = 'transparent';
+                 }
+             });
+        }
+
+        // Save to localStorage
+        localStorage.setItem('preferredLanguage', lang);
+    };
+
+    // Event Listeners for Language Options (Desktop)
+    langOptions.forEach(option => {
+        option.addEventListener('click', () => {
+            const lang = option.getAttribute('data-lang');
+            updateContent(lang);
+            langDropdown.classList.add('hidden');
+        });
+    });
+
+    // Event Listeners for Mobile Options
+    langOptionsMobile.forEach(option => {
+        option.addEventListener('click', () => {
+            const lang = option.getAttribute('data-lang');
+            updateContent(lang);
+        });
+    });
+
+    // Initialize Language
+    const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+    updateContent(savedLang);
+
 });
