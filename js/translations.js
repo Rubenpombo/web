@@ -9,7 +9,7 @@ const translations = {
         hero: {
             eyebrow: "Hi, I'm Ruben Pombo",
             title: "Data Engineer & R&D Specialist",
-            subtitle: "Where a strong background, agency, and curiosity met.",
+            subtitle: "Where a strong background, agency, and curiosity <br> met.",
             cta: "Check my Work"
         },
         about: {
@@ -106,7 +106,7 @@ const translations = {
         hero: {
             eyebrow: "Hola, soy Ruben Pombo",
             title: "Ingeniero de Datos y Especialista en I+D",
-            subtitle: "Donde una base sólida, la iniciativa y la curiosidad se encuentran.",
+            subtitle: "Donde una base sólida, la iniciativa y la curiosidad <br> se encuentran.",
             cta: "Ver mis Trabajos"
         },
         about: {
