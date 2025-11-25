@@ -103,39 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- HERO TEXT ANIMATION ---
-    const heroTitle = document.querySelector('#hero h1');
-    if (heroTitle) {
-        // Get the text content (trimming excess whitespace but keeping internal spaces)
-        const text = heroTitle.textContent.trim();
-        // Clear current content
-        heroTitle.innerHTML = '';
-        
-        // Split text and wrap in spans
-        const chars = text.split('');
-        
-        chars.forEach((char, index) => {
-            // If it's a space, just append a text node or a simple span to preserve layout
-            if (char === ' ') {
-                const space = document.createTextNode(' ');
-                heroTitle.appendChild(space);
-                return;
-            }
-
-            // Create mask (wrapper)
-            const mask = document.createElement('span');
-            mask.className = 'hero-char-mask';
-            
-            // Create content (character)
-            const span = document.createElement('span');
-            span.textContent = char;
-            span.className = 'hero-char';
-            span.style.animationDelay = `${index * 0.04}s`; // Stagger delay
-            
-            mask.appendChild(span);
-            heroTitle.appendChild(mask);
-        });
-    }
 
     // --- INTERSECTION OBSERVER FOR SCROLL ANIMATIONS ---
     const scrollTargets = document.querySelectorAll('.scroll-target');
@@ -213,36 +180,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
         
-        // Update Hero Text Animation (re-trigger if needed, or just update text)
-        // Since the hero text is animated character by character, changing innerHTML might break the animation structure
-        // created by the previous logic.
-        // We need to re-run the hero text animation logic after update.
-        const heroTitle = document.querySelector('#hero h1');
-        if (heroTitle) {
-             // The text is already updated by the loop above.
-             // Now re-apply the span wrapping logic.
-             const text = heroTitle.textContent.trim();
-             heroTitle.innerHTML = '';
-             const chars = text.split('');
-             chars.forEach((char, index) => {
-                 if (char === ' ') {
-                     const space = document.createTextNode(' ');
-                     heroTitle.appendChild(space);
-                     return;
-                 }
-                 const mask = document.createElement('span');
-                 mask.className = 'hero-char-mask';
-                 const span = document.createElement('span');
-                 span.textContent = char;
-                 span.className = 'hero-char';
-                 // Reset animation by triggering reflow or just letting it run?
-                 // It will run on insert.
-                 span.style.animationDelay = `${index * 0.04}s`;
-                 mask.appendChild(span);
-                 heroTitle.appendChild(mask);
-             });
-        }
-
         // Update Toggle Button Text/Icon (Desktop)
         if (langToggle) {
             const flag = lang === 'en' ? '🇬🇧' : '🇪🇸';

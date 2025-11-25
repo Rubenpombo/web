@@ -99,7 +99,7 @@ body {
     opacity: 1;
 }
 
-/* Hero Text Animation */
+/* Hero Text Animation (Legacy - can be removed or kept if classes unused) */
 .hero-char-mask {
     display: inline-block;
     overflow: hidden;
@@ -121,6 +121,40 @@ body {
     100% {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+/* New Hero Animations */
+.slide-in-left {
+    animation: slideInLeft 1s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in-right {
+    animation: fadeInRight 1s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.3s; /* Slight delay for the visual */
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 

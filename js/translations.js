@@ -7,9 +7,10 @@ const translations = {
             contact: "Contact"
         },
         hero: {
-            title: "Engineering Data into Intelligence",
-            subtitle: "Turning Curiosity into Code and Data into Intelligence.",
-            cta: "View Projects"
+            eyebrow: "Hi, I'm Ruben Pombo",
+            title: "Data Engineer & R&D Specialist",
+            subtitle: "Where a strong background, agency, and curiosity met.",
+            cta: "Check my Work"
         },
         about: {
             title: "About Me",
@@ -103,9 +104,10 @@ const translations = {
             contact: "Contacto"
         },
         hero: {
-            title: "Ingeniería de Datos hacia la Inteligencia",
-            subtitle: "Convirtiendo la curiosidad en código y los datos en inteligencia.",
-            cta: "Ver Proyectos"
+            eyebrow: "Hola, soy Ruben Pombo",
+            title: "Ingeniero de Datos y Especialista en I+D",
+            subtitle: "Donde una base sólida, la iniciativa y la curiosidad se encuentran.",
+            cta: "Ver mis Trabajos"
         },
         about: {
             title: "Sobre Mí",
