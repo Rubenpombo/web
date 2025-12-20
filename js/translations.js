@@ -24,7 +24,7 @@ const translations = {
             },
             ntt: {
                 role: "Artificial Intelligence Intern",
-                desc1: "Co-authored a <a href='https://www.sciencedirect.com/science/article/pii/S2352340925003427?via%3Dihub' target='_blank' class='text-indigo-400 hover:underline'>paper on the first Iberian Bird dataset</a> for object detection.",
+                desc1: "Co-authored a <a href='https://www.sciencedirect.com/science/article/pii/S2352340925003427?via%3Dihub' target='_blank' class='text-blue-400 hover:underline'>paper on the first Iberian Bird dataset</a> for object detection.",
                 desc2: "Participated in LLM fine-tuning, backend integration, and prompt engineering with LangChain and Azure for Nestlé.",
                 desc3: "Benchmarked multimodal LLMs (GPT-4o, Gemini 2.5) for worker safety monitoring."
             },
@@ -39,8 +39,8 @@ const translations = {
             eduTitle: "Education",
             uni: {
                 degree: "Bachelor of Science in Data Science and Engineering",
-                grade: "<strong>Grade:</strong> <span class='font-bold text-indigo-400'>7.2/10.0</span> (2:1 equivalent)",
-                competencies: "<strong>General competencies:</strong> <span class='text-gray-400'>Artificial Intelligence · Object-Oriented Programming · Algorithmics · Statistics · Data Analysis · Databases · Machine Learning · Deep Learning · Data Engineering · Distributed Systems · Cryptography · IoT · Project Management · NLP · Cybersecurity</span>",
+                grade: "<strong>Grade:</strong> <span class='font-bold text-blue-400'>7.2/10.0</span> (2:1 equivalent)",
+                competencies: "<strong>General competencies:</strong> <span class='text-slate-400'>Artificial Intelligence · Object-Oriented Programming · Algorithmics · Statistics · Data Analysis · Databases · Machine Learning · Deep Learning · Data Engineering · Distributed Systems · Cryptography · IoT · Project Management · NLP · Cybersecurity</span>",
                 abroad: "Completed semester abroad at Faculty of Sciences, University of Porto (Portugal), taking Master’s level courses delivered in English",
                 thesis: "<strong>Final Thesis (10.0, honors.):</strong> Classification of endangered flying birds through fine-tuned YOLO object detection model, achieving F1 score of 0.80."
             },
@@ -51,7 +51,7 @@ const translations = {
                 title: "Achievements & More",
                 winner: {
                     title: "Project Winner",
-                    desc: "\"Application of Generative AI in Industrial Environments\" for Delta (<a href='https://iturcemigrupo.com/' target='_blank' class='text-indigo-400 hover:underline'>Iturcermi Group</a>).",
+                    desc: "\"Application of Generative AI in Industrial Environments\" for Delta (<a href='https://iturcemigrupo.com/' target='_blank' class='text-blue-400 hover:underline'>Iturcermi Group</a>).",
                     link: "View LinkedIn Post"
                 },
                 certs: {
@@ -121,7 +121,7 @@ const translations = {
             },
             ntt: {
                 role: "Becario de Inteligencia Artificial",
-                desc1: "Coautor de un <a href='https://www.sciencedirect.com/science/article/pii/S2352340925003427?via%3Dihub' target='_blank' class='text-indigo-400 hover:underline'>artículo sobre el primer dataset de aves ibéricas</a> para detección de objetos.",
+                desc1: "Coautor de un <a href='https://www.sciencedirect.com/science/article/pii/S2352340925003427?via%3Dihub' target='_blank' class='text-blue-400 hover:underline'>artículo sobre el primer dataset de aves ibéricas</a> para detección de objetos.",
                 desc2: "Participación en el ajuste fino de LLMs, integración backend e ingeniería de prompts con LangChain y Azure para Nestlé.",
                 desc3: "Benchmarking de LLMs multimodales (GPT-4o, Gemini 2.5) para la monitorización de seguridad de los trabajadores."
             },
@@ -136,8 +136,8 @@ const translations = {
             eduTitle: "Educación",
             uni: {
                 degree: "Grado en Ciencia e Ingeniería de Datos",
-                grade: "<strong>Nota:</strong> <span class='font-bold text-indigo-400'>7.2/10.0</span>",
-                competencies: "<strong>Competencias generales:</strong> <span class='text-gray-400'>Inteligencia Artificial · POO · Algoritmia · Estadística · Análisis de Datos · Bases de Datos · Machine Learning · Deep Learning · Ingeniería de Datos · Sistemas Distribuidos · Criptografía · IoT · Gestión de Proyectos · NLP · Ciberseguridad</span>",
+                grade: "<strong>Nota:</strong> <span class='font-bold text-blue-400'>7.2/10.0</span>",
+                competencies: "<strong>Competencias generales:</strong> <span class='text-slate-400'>Inteligencia Artificial · POO · Algoritmia · Estadística · Análisis de Datos · Bases de Datos · Machine Learning · Deep Learning · Ingeniería de Datos · Sistemas Distribuidos · Criptografía · IoT · Gestión de Proyectos · NLP · Ciberseguridad</span>",
                 abroad: "Semestre en el extranjero en la Facultad de Ciencias, Universidad de Oporto (Portugal), cursando asignaturas de nivel de Máster en inglés",
                 thesis: "<strong>TFG (10.0, Matrícula de Honor):</strong> Clasificación de aves en peligro mediante modelo YOLO fine-tuned, logrando un F1-score de 0.80."
             },
@@ -148,7 +148,7 @@ const translations = {
                 title: "Logros y Más",
                 winner: {
                     title: "Ganador de Proyecto",
-                    desc: "\"Aplicación de IA Generativa en Entornos Industriales\" para Delta (<a href='https://iturcemigrupo.com/' target='_blank' class='text-indigo-400 hover:underline'>Grupo Iturcermi</a>).",
+                    desc: "\"Aplicación de IA Generativa en Entornos Industriales\" para Delta (<a href='https://iturcemigrupo.com/' target='_blank' class='text-blue-400 hover:underline'>Grupo Iturcermi</a>).",
                     link: "Ver publicación en LinkedIn"
                 },
                 certs: {

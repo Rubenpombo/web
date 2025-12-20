@@ -40,7 +40,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #1f2937; /* bg-gray-800 */
+    background-color: #1e293b; /* bg-gray-800 */
     border-radius: 0.75rem; /* rounded-xl */
     padding: 1rem; /* p-4 */
     transition: all 0.2s ease-in-out;
@@ -50,7 +50,7 @@ body {
 }
 .skill-icon-container:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 15px -3px rgb(99 102 241 / 0.2), 0 4px 6px -4px rgb(99 102 241 / 0.2);
+    box-shadow: 0 10px 15px -3px rgb(59 130 246 / 0.2), 0 4px 6px -4px rgb(59 130 246 / 0.2);
 }
 .skill-tooltip {
     position: absolute;
@@ -58,7 +58,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 8px;
-    background-color: #4b5563; /* bg-gray-600 */
+    background-color: #475569; /* bg-gray-600 */
     color: white;
     padding: 4px 8px;
     border-radius: 6px;
@@ -82,7 +82,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 10px;
-    background-color: #374151; /* bg-gray-700 */
+    background-color: #334155; /* bg-gray-700 */
     color: white;
     padding: 8px 12px;
     border-radius: 6px;

@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
                      // Active: text-white border-indigo-500 (I put that in the replacement?)
                      // Let's just simplify:
                      btn.style.opacity = '1';
-                     btn.style.borderColor = '#6366f1'; // Indigo 500
+                     btn.style.borderColor = '#2563eb'; // Blue 600
                  } else {
                      btn.classList.add('text-gray-400', 'border-transparent');
                      btn.classList.remove('text-white', 'border-gray-600');
