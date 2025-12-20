@@ -20,7 +20,7 @@ const translations = {
             title: "Professional Experience",
             arcelor: {
                 role: "Junior R&D Engineer",
-                desc: "Mechatronics team member."
+                desc: "Applying data science and analytical techniques to optimize continuous casting processes within the Mechatronics R&D team."
             },
             ntt: {
                 role: "Artificial Intelligence Intern",
@@ -117,7 +117,7 @@ const translations = {
             title: "Experiencia Profesional",
             arcelor: {
                 role: "Ingeniero de I+D Junior",
-                desc: "Miembro del equipo de Mecatrónica."
+                desc: "Aplicación de ciencia de datos y técnicas analíticas para optimizar procesos de colada continua dentro del equipo de I+D de Mecatrónica."
             },
             ntt: {
                 role: "Becario de Inteligencia Artificial",
