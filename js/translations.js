@@ -2,6 +2,7 @@ const translations = {
     en: {
         nav: {
             about: "About",
+            education: "Education",
             experience: "Experience",
             projects: "Projects",
             contact: "Contact"
@@ -99,6 +100,7 @@ const translations = {
     es: {
         nav: {
             about: "Sobre Mí",
+            education: "Educación",
             experience: "Experiencia",
             projects: "Proyectos",
             contact: "Contacto"
