@@ -224,62 +224,73 @@
         <!-- Education & Achievements Section -->
         <section id="education" class="py-24">
             <h2 class="text-4xl font-bold text-center mb-20" data-i18n="education.mainTitle">Education & Achievements</h2>
-            <div class="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
-                <!-- Education -->
-                <div>
+            <div class="max-w-6xl mx-auto">
+                <!-- Education (Full Width) -->
+                <div class="w-full mb-16">
                     <h3 class="text-3xl font-bold text-center mb-8 text-cyan-500" data-i18n="education.eduTitle">Education</h3>
                      <!-- START CUSTOM CONTENT: EDUCATION -->
-                    <div class="space-y-8">
-                        <div class="spotlight-card bg-slate-800 p-6 rounded-xl shadow-lg">
-                            <div class="space-y-3">
-                                <h4 class="font-bold text-xl" data-i18n="education.uni.degree">Bachelor of Science in Data Science and Engineering</h4>
-                                <p class="text-slate-400">University of Oviedo, Gijón, Spain - June 2025</p>
-                                <p class="text-slate-300 text-sm" data-i18n="education.uni.grade"><strong>Grade:</strong> <span class="font-bold text-blue-400">7.2/10.0</span> (2:1 equivalent)</p>
+                    <div class="flex flex-col gap-8">
+                        <div class="spotlight-card bg-slate-800 p-10 rounded-xl shadow-lg w-full">
+                            <div class="space-y-4">
+                                <h4 class="font-bold text-2xl" data-i18n="education.uni.degree">Bachelor of Science in Data Science and Engineering</h4>
+                                <p class="text-slate-400 text-lg">University of Oviedo, Gijón, Spain - June 2025</p>
+                                <p class="text-slate-300 text-base" data-i18n="education.uni.grade"><strong>Grade:</strong> <span class="font-bold text-cyan-400">7.2/10.0</span> (2:1 equivalent)</p>
                                 
-                                <hr class="border-slate-700 my-3">
+                                <hr class="border-slate-700 my-4">
 
-                                <p class="text-sm" data-i18n="education.uni.competencies"><strong>General competencies:</strong> <span class="text-slate-400">Artificial Intelligence · Object-Oriented Programming · Algorithmics · Statistics · Data Analysis · Databases · Machine Learning · Deep Learning · Data Engineering · Distributed Systems · Cryptography · IoT · Project Management · NLP · Cybersecurity</span></p>
+                                <!-- Competencies Tags -->
+                                <div class="flex flex-wrap gap-2" data-i18n="education.uni.competencies">
+                                    <!-- Injected from JS -->
+                                </div>
                                 
-                                <hr class="border-slate-700 my-3">
+                                <hr class="border-slate-700 my-4">
                                 
-                                <p class="text-slate-300 text-sm" data-i18n="education.uni.abroad">Completed semester abroad at Faculty of Sciences, University of Porto (Portugal), taking Master’s level courses delivered in English</p>
+                                <p class="text-slate-300 text-base leading-relaxed" data-i18n="education.uni.abroad">Completed semester abroad at Faculty of Sciences, University of Porto (Portugal), taking Master’s level courses delivered in English</p>
                                 
-                                <hr class="border-slate-700 my-3">
+                                <hr class="border-slate-700 my-4">
 
-                                <p class="text-slate-300 text-sm" data-i18n="education.uni.thesis"><strong>Final Thesis (10.0, honors.):</strong> Classification of endangered flying birds through fine-tuned YOLO object detection model, achieving F1 score of 0.80.</p>
+                                <p class="text-slate-300 text-base leading-relaxed" data-i18n="education.uni.thesis"><strong>Final Thesis (10.0, honors.):</strong> Classification of endangered flying birds through fine-tuned YOLO object detection model, achieving F1 score of 0.80.</p>
                             </div>
                         </div>
-                        <div class="spotlight-card bg-slate-800 p-6 rounded-xl shadow-lg">
+                        <div class="spotlight-card bg-slate-800 p-8 rounded-xl shadow-lg w-full">
                             <h4 class="font-bold text-xl" data-i18n="education.school.name">Technological High School</h4>
-                            <p class="text-slate-400">Colegio San Fernando, Avilés, Spain - June 2021</p>
+                            <p class="text-slate-400 text-base">Colegio San Fernando, Avilés, Spain - June 2021</p>
                         </div>
                     </div>
                      <!-- END CUSTOM CONTENT: EDUCATION -->
                 </div>
-                <!-- Achievements -->
+                
+                <!-- Achievements Grid (Bottom) -->
                 <div>
                      <h3 class="text-3xl font-bold text-center mb-8 text-blue-400" data-i18n="education.achievements.title">Achievements & More</h3>
                      <!-- START CUSTOM CONTENT: ACHIEVEMENTS -->
-                     <div class="space-y-8">
-                        <div class="spotlight-card bg-slate-800 p-6 rounded-xl shadow-lg flex items-center space-x-4" style="background-image: linear-gradient(rgba(31, 41, 55, 0.85), rgba(31, 41, 55, 0.95)), url('imgs/premio.jpeg'); background-size: cover; background-position: center;">
-                            <i data-lucide="award" class="w-10 h-10 text-blue-400"></i>
-                            <div>
+                     <div class="grid md:grid-cols-3 gap-6">
+                        <!-- Winner -->
+                        <div class="spotlight-card bg-slate-800 p-8 rounded-xl shadow-lg flex flex-col h-full" style="background-image: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.95)), url('imgs/premio.jpeg'); background-size: cover; background-position: center;">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <i data-lucide="award" class="w-8 h-8 text-blue-400 shrink-0"></i>
                                 <h4 class="font-bold text-xl" data-i18n="education.achievements.winner.title">Project Winner</h4>
-                                <p class="text-slate-400" data-i18n="education.achievements.winner.desc">"Application of Generative AI in Industrial Environments" for Delta (<a href="https://iturcemigrupo.com/" target="_blank" class="text-blue-400 hover:underline">Iturcermi Group</a>).</p>
-                                <a href="https://www.linkedin.com/posts/ruben-pp_ganadores-del-proyecto-acad%C3%A9mico-aplicaci%C3%B3n-activity-7335225244451770368-pQ3a" target="_blank" class="text-blue-400 hover:underline text-sm mt-1 block" data-i18n="education.achievements.winner.link">View LinkedIn Post</a>
                             </div>
+                            <div class="flex-grow">
+                                <p class="text-slate-300 text-base leading-relaxed" data-i18n="education.achievements.winner.desc">"Application of Generative AI in Industrial Environments" for Delta (<a href="https://iturcemigrupo.com/" target="_blank" class="text-blue-400 hover:underline">Iturcermi Group</a>).</p>
+                            </div>
+                            <a href="https://www.linkedin.com/posts/ruben-pp_ganadores-del-proyecto-acad%C3%A9mico-aplicaci%C3%B3n-activity-7335225244451770368-pQ3a" target="_blank" class="text-blue-400 hover:underline text-sm mt-4 block" data-i18n="education.achievements.winner.link">View LinkedIn Post</a>
                         </div>
-                        <div class="spotlight-card bg-slate-800 p-6 rounded-xl shadow-lg">
-                            <h4 class="font-bold text-xl mb-3" data-i18n="education.achievements.certs.title">Certifications</h4>
-                            <ul class="list-disc list-inside text-slate-300 space-y-2">
+                        
+                        <!-- Certifications -->
+                        <div class="spotlight-card bg-slate-800 p-8 rounded-xl shadow-lg h-full">
+                            <h4 class="font-bold text-xl mb-4" data-i18n="education.achievements.certs.title">Certifications</h4>
+                            <ul class="list-disc list-inside text-slate-300 space-y-3 text-base leading-relaxed">
                                 <li><a href="https://credentials.databricks.com/17118849-18d4-4d2c-a27f-9470ea8ff98c#acc.q0hlufGI" target="_blank" class="text-blue-400 hover:underline">Generative AI Fundamentals (Databricks)</a></li>
                                 <li><a href="https://www.scrumstudy.com/certification/verify?type=SFC&number=1012974" target="_blank" class="text-blue-400 hover:underline">Scrum Fundamentals Certified (SFC)</a></li>
                                 <li><a href="https://www.linkedin.com/learning/certificates/5ca15660d79a306b8a1acf634a71f4fe664577561d50548d8c1919ce6142df16?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BcfkX0hKFTmKywKGTReXXLA%3D%3D" target="_blank" class="text-blue-400 hover:underline">Getting Started with Power BI (LinkedIn Learning)</a></li>
                             </ul>
                         </div>
-                        <div class="spotlight-card bg-slate-800 p-6 rounded-xl shadow-lg">
-                            <h4 class="font-bold text-xl mb-3" data-i18n="education.achievements.hackathons.title">Hackathons Attendance</h4>
-                            <ul class="list-disc list-inside text-slate-300 space-y-2">
+                        
+                        <!-- Hackathons -->
+                        <div class="spotlight-card bg-slate-800 p-8 rounded-xl shadow-lg h-full">
+                            <h4 class="font-bold text-xl mb-4" data-i18n="education.achievements.hackathons.title">Hackathons Attendance</h4>
+                            <ul class="list-disc list-inside text-slate-300 space-y-3 text-base leading-relaxed">
                                 <li><a href="imgs/hackathon_porto.jpeg" class="image-modal-trigger text-blue-400 hover:underline">HackACity Porto 2023</a></li>
                                 <li><a href="imgs/hackathon_merkle.jpeg" class="image-modal-trigger text-blue-400 hover:underline">Merkle Datathon 2023</a></li>
                             </ul>
