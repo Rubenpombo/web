@@ -21,18 +21,21 @@ const translations = {
             title: "Professional Experience",
             arcelor: {
                 role: "Junior R&D Engineer",
-                desc: "Applying data science and analytical techniques to optimize continuous casting processes within the Mechatronics R&D team."
+                desc: "Applying data science and analytical techniques to optimize continuous casting processes within the Mechatronics R&D team.",
+                tags: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Python</span>'
             },
             ntt: {
                 role: "Artificial Intelligence Intern",
                 desc1: "Co-authored a <a href='https://www.sciencedirect.com/science/article/pii/S2352340925003427?via%3Dihub' target='_blank' class='text-blue-400 hover:underline'>paper on the first Iberian Bird dataset</a> for object detection.",
-                desc2: "Participated in LLM fine-tuning, backend integration, and prompt engineering with LangChain and Azure for Nestlé.",
-                desc3: "Benchmarked multimodal LLMs (GPT-4o, Gemini 2.5) for worker safety monitoring."
+                desc2: "Participated in LLM fine-tuning, backend integration, and prompt engineering for Nestlé.",
+                desc3: "Benchmarked multimodal LLMs (GPT-4o, Gemini 2.5) for worker safety monitoring.",
+                tags: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Python</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">LangChain</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Azure</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">OpenCV</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">YOLO</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">MLflow</span>'
             },
             gonvarri: {
                 role: "Data Science Intern",
                 desc1: "Collaborated with R&D teams to understand industrial processes and initiatives.",
-                desc2: "Performed time series analysis and data visualization in R to identify operational anomalies."
+                desc2: "Performed time series analysis and data visualization to identify operational anomalies.",
+                tags: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Python</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">R</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Forecast</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">ggplot2</span>'
             }
         },
         education: {
@@ -121,18 +124,21 @@ const translations = {
             title: "Experiencia Profesional",
             arcelor: {
                 role: "Ingeniero de I+D Junior",
-                desc: "Aplicación de ciencia de datos y técnicas analíticas para optimizar procesos de colada continua dentro del equipo de I+D de Mecatrónica."
+                desc: "Aplicación de ciencia de datos y técnicas analíticas para optimizar procesos de colada continua dentro del equipo de I+D de Mecatrónica.",
+                tags: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Python</span>'
             },
             ntt: {
                 role: "Becario de Inteligencia Artificial",
                 desc1: "Coautor de un <a href='https://www.sciencedirect.com/science/article/pii/S2352340925003427?via%3Dihub' target='_blank' class='text-blue-400 hover:underline'>artículo sobre el primer dataset de aves ibéricas</a> para detección de objetos.",
-                desc2: "Participación en fine-tuning de LLMs, integración backend e ingeniería de prompts con LangChain y Azure para Nestlé.",
-                desc3: "Benchmarking de LLMs multimodales (GPT-4o, Gemini 2.5) para la monitorización de seguridad de los trabajadores."
+                desc2: "Participación en fine-tuning de LLMs, integración backend e ingeniería de prompts para Nestlé.",
+                desc3: "Benchmarking de LLMs multimodales (GPT-4o, Gemini 2.5) para la monitorización de seguridad de los trabajadores.",
+                tags: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Python</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">LangChain</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Azure</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">OpenCV</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">YOLO</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">MLflow</span>'
             },
             gonvarri: {
                 role: "Becario de Ciencia de Datos",
                 desc1: "Colaboración con equipos de I+D para entender procesos e iniciativas industriales.",
-                desc2: "Análisis de series temporales y visualización de datos en R para identificar anomalías operativas."
+                desc2: "Análisis de series temporales y visualización de datos para identificar anomalías operativas.",
+                tags: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Python</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">R</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Forecast</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">ggplot2</span>'
             }
         },
         education: {
