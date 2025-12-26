@@ -254,7 +254,8 @@
                                 <p class="text-slate-300 text-base leading-relaxed" data-i18n="education.uni.thesis"><strong>Final Thesis (10.0, honors.):</strong> Classification of endangered flying birds through fine-tuned YOLO object detection model, achieving F1 score of 0.80.</p>
                             </div>
                         </div>
-                        <div class="spotlight-card bg-slate-800 p-8 lg:p-10 rounded-xl shadow-lg w-full">
+                        <div class="spotlight-card bg-slate-800 p-8 lg:p-10 rounded-xl shadow-lg w-full relative">
+                            <img src="imgs/sanfer.png" alt="Colegio San Fernando Logo" class="absolute top-6 right-10 w-28 h-28 object-contain rounded-lg">
                             <h4 class="font-bold text-xl" data-i18n="education.school.name">Technological High School</h4>
                             <p class="text-slate-400 text-base">Colegio San Fernando, Avilés, Spain - June 2021</p>
                             
@@ -454,39 +455,6 @@
     <script src="js/main.js"></script>
     <script>
         lucide.createIcons();
-    </script>
-    <script type="module">
-        // Mobile Menu Toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Close mobile menu when a link is clicked
-        document.querySelectorAll('#mobile-menu a, nav a').forEach(link => {
-            link.addEventListener('click', () => {
-                if(!mobileMenu.classList.contains('hidden')) {
-                   mobileMenu.classList.add('hidden');
-                }
-            });
-        });
-
-        // --- INTERSECTION OBSERVER FOR SCROLL ANIMATIONS ---
-        const scrollTargets = document.querySelectorAll('.scroll-target');
-        
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
-
-        scrollTargets.forEach(target => {
-            observer.observe(target);
-        });
     </script>
     <!-- Image Modal -->
     <div id="image-modal" class="fixed inset-0 z-[100] hidden bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
