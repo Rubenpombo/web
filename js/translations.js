@@ -30,7 +30,7 @@ const translations = {
                 desc3: "Benchmarked multimodal LLMs (GPT-4o, Gemini 2.5) for worker safety monitoring."
             },
             gonvarri: {
-                role: "Data Engineering Intern",
+                role: "Data Science Intern",
                 desc1: "Collaborated with R&D teams to understand industrial processes and initiatives.",
                 desc2: "Performed time series analysis and data visualization in R to identify operational anomalies."
             }
@@ -126,11 +126,11 @@ const translations = {
             ntt: {
                 role: "Becario de Inteligencia Artificial",
                 desc1: "Coautor de un <a href='https://www.sciencedirect.com/science/article/pii/S2352340925003427?via%3Dihub' target='_blank' class='text-blue-400 hover:underline'>artículo sobre el primer dataset de aves ibéricas</a> para detección de objetos.",
-                desc2: "Participación en el ajuste fino de LLMs, integración backend e ingeniería de prompts con LangChain y Azure para Nestlé.",
+                desc2: "Participación en fine-tuning de LLMs, integración backend e ingeniería de prompts con LangChain y Azure para Nestlé.",
                 desc3: "Benchmarking de LLMs multimodales (GPT-4o, Gemini 2.5) para la monitorización de seguridad de los trabajadores."
             },
             gonvarri: {
-                role: "Becario de Ingeniería de Datos",
+                role: "Becario de Ciencia de Datos",
                 desc1: "Colaboración con equipos de I+D para entender procesos e iniciativas industriales.",
                 desc2: "Análisis de series temporales y visualización de datos en R para identificar anomalías operativas."
             }
