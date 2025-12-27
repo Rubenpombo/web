@@ -43,14 +43,14 @@ const translations = {
             eduTitle: "Education",
             uni: {
                 degree: "Bachelor of Science in Data Science and Engineering",
-                grade: "<strong>Grade:</strong> <strong>7.2/10.0</strong> (2:1 equivalent)",
+                grade: "<strong>ECTS:</strong> 240 <br> <strong>Grade:</strong> <strong>7.2/10.0</strong> (2:1 equivalent)",
                 competencies: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Artificial Intelligence</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Object-Oriented Programming</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Algorithmics</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Statistics</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Data Analysis</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Databases</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Machine Learning</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Deep Learning</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Data Engineering</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Distributed Systems</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Cryptography</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">IoT</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Project Management</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">NLP</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Cybersecurity</span>',
                 abroad: "Completed semester abroad at Faculty of Sciences, University of Porto (Portugal), taking Master’s level courses delivered in English",
                 thesis: "<strong>Final Thesis (10.0, honors.):</strong> Classification of endangered flying birds through fine-tuned YOLO object detection model, achieving F1 score of 0.80."
             },
             school: {
                 name: "Technological High School",
-                grade: "Final Grade: <strong>9.0/10.0</strong>",
+                grade: "<strong>Grade:</strong> <strong>9.0/10.0</strong>",
                 ranking: "Among the top 100 Spanish colleges"
             },
             achievements: {
@@ -146,14 +146,14 @@ const translations = {
             eduTitle: "Educación",
             uni: {
                 degree: "Grado en Ciencia e Ingeniería de Datos",
-                grade: "<strong>Nota:</strong> <strong>7.2/10.0</strong>",
+                grade: "<strong>ECTS:</strong> 240 <br> <strong>Nota:</strong> <strong>7.2/10.0</strong>",
                 competencies: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Inteligencia Artificial</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">POO</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Algoritmia</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Estadística</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Análisis de Datos</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Bases de Datos</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Machine Learning</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Deep Learning</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Ingeniería de Datos</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Sistemas Distribuidos</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Criptografía</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">IoT</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Gestión de Proyectos</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">NLP</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Ciberseguridad</span>',
                 abroad: "Semestre en el extranjero en la Facultad de Ciencias, Universidad de Oporto (Portugal), cursando asignaturas de nivel de Máster en inglés",
                 thesis: "<strong>TFG (10.0, Matrícula de Honor):</strong> Clasificación de aves en peligro mediante modelo YOLO fine-tuned, logrando un F1-score de 0.80."
             },
             school: {
                 name: "Bachillerato Tecnológico",
-                grade: "Nota Final: <strong>9.0/10.0</strong>",
+                grade: "<strong>Nota:</strong> <strong>9.0/10.0</strong>",
                 ranking: "Entre los 100 mejores colegios de España"
             },
             achievements: {
