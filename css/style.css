@@ -200,7 +200,7 @@ body {
     border-radius: inherit;
     z-index: 1;
     background: radial-gradient(
-        600px circle at var(--mouse-x) var(--mouse-y),
+        420px circle at var(--mouse-x) var(--mouse-y),
         rgba(255, 255, 255, 0.06),
         transparent 40%
     );
