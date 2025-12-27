@@ -10,12 +10,12 @@ const translations = {
         hero: {
             eyebrow: "Hi, I'm Ruben Pombo",
             title: "Data Engineer & R&D Specialist",
-            subtitle: "Where a strong background, agency, and curiosity <br> met.",
+            subtitle: "Applying technical knowledge <br> with enthusiasm and dedication.",
             cta: "Check my Work"
         },
         about: {
             title: "About Me",
-            text: "I'm Ruben Parte Pombo, a Data Engineer who combines the rigour of R&D with a builder's mindset. <br><br>My technical foundation spans Machine Learning, Cryptography, and Statistics, and I am actively expanding into DevOps to bridge the gap between code design and deployment. <br><br>I believe that agency and rapid exploration are key to growth. That's why I'm frequently diving into new topics, aiming to find my true passion."
+            text: "I’m Ruben Pombo, a Data Science and Engineering graduate currently working as a Junior R&D Engineer in the industrial field. I enjoy tackling abstract and complex problems that require careful analysis and deep thinking before taking action. My technical foundation has been shaped by my university studies, professional experience, and personal projects. This journey has allowed me to work across various areas, including statistics, data analysis, machine learning, and big data infrastructure. Driven by a commitment to continuous learning, I am currently expanding my expertise into DevOps and Cloud to build more scalable and secure solutions. My goal is to integrate these skills with my machine learning background to specialize in MLOps. Additionally, I am exploring MCP protocols to enhance the integration and capabilities of modern AI Agents."
         },
         experience: {
             title: "Professional Experience",
@@ -113,12 +113,12 @@ const translations = {
         hero: {
             eyebrow: "Hola, soy Ruben Pombo",
             title: "Ingeniero de Datos y Especialista en I+D",
-            subtitle: "Donde una base sólida, la iniciativa y la curiosidad <br> se encuentran.",
+            subtitle: "Aplicando conocimientos técnicos <br> con entusiasmo y dedicación.",
             cta: "Ver mis Trabajos"
         },
         about: {
             title: "Sobre Mí",
-            text: "Soy Ruben Parte Pombo, un Ingeniero de Datos que combina el rigor de la I+D con la mentalidad de constructor. <br><br>Mi base técnica abarca Machine Learning, Criptografía y Estadística, y actualmente me estoy expandiendo hacia DevOps para cerrar la brecha entre el diseño de código y el despliegue. <br><br>Creo que tener iniciativa y capacidad de aprendizaje rápido son claves para el crecimiento, por eso intento adentrarme en nuevos temas cada cierto tiempo con el objetivo de encontrar mi verdadera pasión."
+            text: "Soy Rubén Pombo, graduado en Ciencia e Ingeniería de Datos y actualmente trabajo como Ingeniero de I+D Junior en el sector industrial. Me apasiona resolver problemas abstractos y complejos que requieren un análisis meticuloso y una reflexión profunda antes de actuar. Mi base técnica se ha forjado a través de mis estudios universitarios, mi experiencia profesional y mis proyectos personales. Este recorrido me ha permitido trabajar en diversas áreas, como la estadística, el análisis de datos, el aprendizaje automático y la infraestructura de Big Data. Impulsado por un compromiso con el aprendizaje continuo, actualmente estoy ampliando mis conocimientos en DevOps y Cloud para construir soluciones más escalables y seguras. Mi objetivo es integrar estas habilidades con mi experiencia en Machine Learning para especializarme en MLOps. Además, estoy explorando los protocolos MCP para mejorar la integración y las capacidades de los agentes de IA modernos."
         },
         experience: {
             title: "Experiencia Profesional",
