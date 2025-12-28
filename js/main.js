@@ -231,4 +231,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('preferredLanguage') || 'en';
     updateContent(savedLang);
 
+    // --- PROJECTS CAROUSEL LOGIC ---
+    const track = document.getElementById('carousel-track');
+    const prevBtn = document.getElementById('prev-project');
+    const nextBtn = document.getElementById('next-project');
+    
+    if (track && prevBtn && nextBtn) {
+        let currentIndex = 0;
+        const slides = track.children;
+        const totalSlides = slides.length;
+
+        const updateCarousel = () => {
+            const width = track.clientWidth; // Get container width
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        };
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateCarousel();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        });
+
+        // Handle Resize to keep alignment correct
+        window.addEventListener('resize', updateCarousel);
+    }
+
 });
