@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -31,18 +31,18 @@
                 
                 <!-- Language Selector (Desktop) -->
                 <div class="relative">
-                    <button id="lang-toggle" class="flex items-center space-x-1 text-white hover:text-blue-400 transition-colors focus:outline-none">
-                        <span class="text-xl">🇬🇧</span>
-                        <span class="font-medium">EN</span>
-                        <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    <button id="lang-toggle" class="flex items-center space-x-2 text-slate-300 hover:text-white transition-colors focus:outline-none py-2 px-3 rounded-lg hover:bg-slate-800">
+                        <i data-lucide="globe" class="w-5 h-5"></i>
+                        <span class="font-medium text-sm tracking-wide">EN</span>
+                        <i data-lucide="chevron-down" class="w-4 h-4 opacity-70"></i>
                     </button>
-                    <div id="lang-dropdown" class="hidden absolute right-0 mt-2 w-32 bg-slate-800 rounded-xl shadow-xl border border-slate-700 overflow-hidden">
-                        <button class="lang-option w-full text-left px-4 py-3 hover:bg-slate-700 text-white transition-colors flex items-center space-x-3" data-lang="en">
-                            <span>🇬🇧</span>
+                    <div id="lang-dropdown" class="hidden absolute right-0 mt-2 w-32 bg-slate-800 rounded-xl shadow-xl border border-slate-700/50 backdrop-blur-md overflow-hidden z-50">
+                        <button class="lang-option w-full text-left px-4 py-3 hover:bg-slate-700/50 text-slate-300 hover:text-white transition-all flex items-center space-x-3 group" data-lang="en">
+                            <span class="font-bold text-slate-500 group-hover:text-blue-400 transition-colors">EN</span>
                             <span>English</span>
                         </button>
-                        <button class="lang-option w-full text-left px-4 py-3 hover:bg-slate-700 text-white transition-colors flex items-center space-x-3" data-lang="es">
-                            <span>🇪🇸</span>
+                        <button class="lang-option w-full text-left px-4 py-3 hover:bg-slate-700/50 text-slate-300 hover:text-white transition-all flex items-center space-x-3 group" data-lang="es">
+                            <span class="font-bold text-slate-500 group-hover:text-blue-400 transition-colors">ES</span>
                             <span>Español</span>
                         </button>
                     </div>
@@ -61,12 +61,12 @@
             <a href="#contact" class="block text-center py-3 px-6 text-lg hover:bg-slate-800 transition-colors" data-i18n="nav.contact">Contact</a>
             
             <!-- Language Selector (Mobile) -->
-            <div class="flex justify-center py-4 border-t border-slate-800 space-x-4">
-                <button class="lang-option-mobile px-4 py-2 rounded-lg bg-slate-800 text-white border border-slate-600 hover:border-blue-500 transition-all flex items-center space-x-2" data-lang="en">
-                    <span>🇬🇧</span> <span>EN</span>
+            <div class="flex justify-center py-6 border-t border-slate-800 space-x-4">
+                <button class="lang-option-mobile px-6 py-2 rounded-full bg-slate-800 text-slate-300 border border-slate-700 hover:border-blue-500 hover:text-white transition-all text-sm font-medium tracking-wide" data-lang="en">
+                    EN
                 </button>
-                <button class="lang-option-mobile px-4 py-2 rounded-lg bg-slate-800 text-slate-400 border border-transparent hover:text-white hover:border-slate-600 transition-all flex items-center space-x-2" data-lang="es">
-                    <span>🇪🇸</span> <span>ES</span>
+                <button class="lang-option-mobile px-6 py-2 rounded-full bg-slate-800 text-slate-300 border border-slate-700 hover:border-blue-500 hover:text-white transition-all text-sm font-medium tracking-wide" data-lang="es">
+                    ES
                 </button>
             </div>
         </div>
@@ -87,7 +87,7 @@
                     </p>
                     
                     <div class="flex items-center gap-6">
-                        <a href="#projects" class="bg-blue-600 text-white font-bold text-lg py-3 px-8 rounded-xl hover:bg-blue-700 transition-all duration-300 shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-blue-500/50 transform hover:-translate-y-1" data-i18n="hero.cta">
+                        <a href="#projects" class="bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-bold text-lg py-3 px-8 rounded-xl transition-all duration-300 shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 transform hover:-translate-y-1" data-i18n="hero.cta">
                             Check my Work
                         </a>
                         <div class="flex items-center gap-4">
@@ -115,7 +115,7 @@
 
         <!-- About Section -->
         <section id="about" class="py-24 lg:py-32">
-            <div class="max-w-3xl mx-auto px-6 z-10">
+            <div class="max-w-5xl mx-auto px-6 z-10">
                 <h2 class="text-4xl font-bold mb-16 text-center text-blue-400" data-i18n="about.title">About Me</h2>
                 <div class="text-xl text-slate-300 leading-relaxed text-center">
                      <!-- START CUSTOM CONTENT: ABOUT -->
@@ -240,7 +240,7 @@
                     <h2 class="text-4xl font-bold text-center mb-16 text-blue-400" data-i18n="education.eduTitle">Education</h2>
                      <!-- START CUSTOM CONTENT: EDUCATION -->
                     <div class="flex flex-col gap-8">
-                        <div class="spotlight-card bg-slate-800 p-10 lg:p-12 rounded-xl shadow-lg w-full relative">
+                        <div class="spotlight-card bg-slate-900/60 backdrop-blur-md border border-slate-700/50 p-10 lg:p-12 rounded-xl shadow-lg w-full relative">
                             <img src="imgs/uniovi.png" alt="University of Oviedo Logo" class="absolute top-6 right-10 w-28 h-28 object-contain rounded-lg">
                             <div class="space-y-4">
                                 <h4 class="font-bold text-2xl pr-32" data-i18n="education.uni.degree">Bachelor of Science in Data Science and Engineering</h4>
@@ -263,7 +263,7 @@
                                 <p class="text-slate-300 text-base leading-relaxed" data-i18n="education.uni.thesis"><strong>Final Thesis (10.0, honors.):</strong> Classification of endangered flying birds through fine-tuned YOLO object detection model, achieving F1 score of 0.80.</p>
                             </div>
                         </div>
-                        <div class="spotlight-card bg-slate-800 p-8 lg:p-10 rounded-xl shadow-lg w-full relative">
+                        <div class="spotlight-card bg-slate-900/60 backdrop-blur-md border border-slate-700/50 p-8 lg:p-10 rounded-xl shadow-lg w-full relative">
                             <img src="imgs/sanfer.png" alt="Colegio San Fernando Logo" class="absolute top-6 right-10 w-[4.5rem] h-[4.5rem] object-contain rounded-lg">
                             <h4 class="font-bold text-xl" data-i18n="education.school.name">Technological High School</h4>
                             <p class="text-slate-400 text-base">Colegio San Fernando, Avilés, Spain - June 2021</p>
@@ -285,7 +285,7 @@
                      <!-- START CUSTOM CONTENT: ACHIEVEMENTS -->
                      <div class="grid md:grid-cols-3 gap-12">
                         <!-- Winner -->
-                        <div class="spotlight-card bg-slate-800 p-8 lg:p-10 rounded-xl shadow-lg flex flex-col h-full" style="background-image: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.95)), url('imgs/premio.jpeg'); background-size: cover; background-position: center;">
+                        <div class="spotlight-card bg-slate-900/60 backdrop-blur-md border border-slate-700/50 p-8 lg:p-10 rounded-xl shadow-lg flex flex-col h-full" style="background-image: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.95)), url('imgs/premio.jpeg'); background-size: cover; background-position: center;">
                             <div class="flex items-center space-x-3 mb-4">
                                 <i data-lucide="award" class="w-8 h-8 text-blue-400 shrink-0"></i>
                                 <h4 class="font-bold text-xl" data-i18n="education.achievements.winner.title">Project Winner</h4>
@@ -358,22 +358,19 @@
 
                 <!-- Libraries & Frameworks -->
                 <div>
-                    <h3 class="text-2xl font-bold text-center mb-8 text-cyan-500" data-i18n="skills.libs">Libraries & Frameworks</h3>
-                    <!-- Marquee Container -->
-                    <div class="marquee-container relative overflow-hidden group py-8">
-                         <!-- Marquee Content (Moving Track) -->
-                        <div class="marquee-content flex gap-8 w-max">
-                            <div class="skill-icon-container"><img src="https://cdn.simpleicons.org/pandas" alt="Pandas" class="w-14 h-14 hover:scale-110 transition-transform duration-300"><span class="skill-tooltip">Pandas</span></div>
-                            <div class="skill-icon-container"><img src="https://cdn.simpleicons.org/numpy" alt="NumPy" class="w-14 h-14 hover:scale-110 transition-transform duration-300"><span class="skill-tooltip">NumPy</span></div>
-                            <div class="skill-icon-container"><img src="https://cdn.simpleicons.org/scikitlearn" alt="Scikit-Learn" class="w-14 h-14 hover:scale-110 transition-transform duration-300"><span class="skill-tooltip">Scikit-Learn</span></div>
-                            <div class="skill-icon-container"><img src="https://cdn.simpleicons.org/pytorch" alt="PyTorch" class="w-14 h-14 hover:scale-110 transition-transform duration-300"><span class="skill-tooltip">PyTorch</span></div>
-                            <div class="skill-icon-container"><img src="https://cdn.simpleicons.org/spacy" alt="spaCy" class="w-14 h-14 hover:scale-110 transition-transform duration-300"><span class="skill-tooltip">spaCy</span></div>
-                            <div class="skill-icon-container"><img src="https://cdn.simpleicons.org/huggingface" alt="Transformers" class="w-14 h-14 hover:scale-110 transition-transform duration-300"><span class="skill-tooltip">Transformers</span></div>
-                            <div class="skill-icon-container"><img src="https://cdn.simpleicons.org/tensorflow" alt="TensorFlow" class="w-14 h-14 hover:scale-110 transition-transform duration-300"><span class="skill-tooltip">TensorFlow</span></div>
-                            <div class="skill-icon-container"><img src="https://cdn.simpleicons.org/keras" alt="Keras" class="w-14 h-14 hover:scale-110 transition-transform duration-300"><span class="skill-tooltip">Keras</span></div>
-                            <div class="skill-icon-container"><img src="https://cdn.simpleicons.org/langchain" alt="LangChain" class="w-14 h-14 hover:scale-110 transition-transform duration-300"><span class="skill-tooltip">LangChain</span></div>
-                            <div class="skill-icon-container"><img src="https://cdn.simpleicons.org/apachespark" alt="PySpark" class="w-14 h-14 hover:scale-110 transition-transform duration-300"><span class="skill-tooltip">PySpark</span></div>
-                        </div>
+                    <h3 class="text-2xl font-bold text-center mb-10 text-cyan-500" data-i18n="skills.libs">Libraries & Frameworks</h3>
+                    <!-- Grid Container (Replaces Marquee) -->
+                    <div class="flex flex-wrap justify-center gap-6 md:gap-8 px-4">
+                        <div class="skill-icon-container bg-slate-800/50 hover:bg-slate-800 border border-slate-700/30 hover:border-cyan-500/50 transition-all duration-300"><img src="https://cdn.simpleicons.org/pandas" alt="Pandas" class="w-12 h-12 md:w-14 md:h-14"><span class="skill-tooltip">Pandas</span></div>
+                        <div class="skill-icon-container bg-slate-800/50 hover:bg-slate-800 border border-slate-700/30 hover:border-cyan-500/50 transition-all duration-300"><img src="https://cdn.simpleicons.org/numpy" alt="NumPy" class="w-12 h-12 md:w-14 md:h-14"><span class="skill-tooltip">NumPy</span></div>
+                        <div class="skill-icon-container bg-slate-800/50 hover:bg-slate-800 border border-slate-700/30 hover:border-cyan-500/50 transition-all duration-300"><img src="https://cdn.simpleicons.org/scikitlearn" alt="Scikit-Learn" class="w-12 h-12 md:w-14 md:h-14"><span class="skill-tooltip">Scikit-Learn</span></div>
+                        <div class="skill-icon-container bg-slate-800/50 hover:bg-slate-800 border border-slate-700/30 hover:border-cyan-500/50 transition-all duration-300"><img src="https://cdn.simpleicons.org/pytorch" alt="PyTorch" class="w-12 h-12 md:w-14 md:h-14"><span class="skill-tooltip">PyTorch</span></div>
+                        <div class="skill-icon-container bg-slate-800/50 hover:bg-slate-800 border border-slate-700/30 hover:border-cyan-500/50 transition-all duration-300"><img src="https://cdn.simpleicons.org/spacy" alt="spaCy" class="w-12 h-12 md:w-14 md:h-14"><span class="skill-tooltip">spaCy</span></div>
+                        <div class="skill-icon-container bg-slate-800/50 hover:bg-slate-800 border border-slate-700/30 hover:border-cyan-500/50 transition-all duration-300"><img src="https://cdn.simpleicons.org/huggingface" alt="Transformers" class="w-12 h-12 md:w-14 md:h-14"><span class="skill-tooltip">Transformers</span></div>
+                        <div class="skill-icon-container bg-slate-800/50 hover:bg-slate-800 border border-slate-700/30 hover:border-cyan-500/50 transition-all duration-300"><img src="https://cdn.simpleicons.org/tensorflow" alt="TensorFlow" class="w-12 h-12 md:w-14 md:h-14"><span class="skill-tooltip">TensorFlow</span></div>
+                        <div class="skill-icon-container bg-slate-800/50 hover:bg-slate-800 border border-slate-700/30 hover:border-cyan-500/50 transition-all duration-300"><img src="https://cdn.simpleicons.org/keras" alt="Keras" class="w-12 h-12 md:w-14 md:h-14"><span class="skill-tooltip">Keras</span></div>
+                        <div class="skill-icon-container bg-slate-800/50 hover:bg-slate-800 border border-slate-700/30 hover:border-cyan-500/50 transition-all duration-300"><img src="https://cdn.simpleicons.org/langchain" alt="LangChain" class="w-12 h-12 md:w-14 md:h-14"><span class="skill-tooltip">LangChain</span></div>
+                        <div class="skill-icon-container bg-slate-800/50 hover:bg-slate-800 border border-slate-700/30 hover:border-cyan-500/50 transition-all duration-300"><img src="https://cdn.simpleicons.org/apachespark" alt="PySpark" class="w-12 h-12 md:w-14 md:h-14"><span class="skill-tooltip">PySpark</span></div>
                     </div>
                 </div>
             </div>
@@ -384,7 +381,7 @@
             <h2 class="text-4xl font-bold text-center mb-16 text-blue-400" data-i18n="projects.title">Side Projects</h2>
             <div class="grid md:grid-cols-2 gap-12 max-w-7xl mx-auto">
                 <!-- START CUSTOM CONTENT: PROJECTS -->
-                <div class="bg-slate-800 rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group">
+                <div class="bg-slate-900/60 backdrop-blur-md border border-slate-700/50 rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group">
                     <div class="p-8 lg:p-10 flex flex-col h-full">
                         <h3 class="text-2xl font-bold mb-2 text-cyan-400" data-i18n="projects.pipeline.title">Real Time User Data Pipeline</h3>
                         <p class="text-slate-400 mb-4 flex-grow" data-i18n="projects.pipeline.desc">Built a real-time data pipeline for user sign-up data from an external API, covering ingestion, processing, storage, and automated visualization. Designed an interactive dashboard to present key insights from processed user data.</p>
@@ -401,7 +398,7 @@
                     </div>
                 </div>
 
-                 <div class="bg-slate-800 rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group">
+                 <div class="bg-slate-900/60 backdrop-blur-md border border-slate-700/50 rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group">
                     <div class="p-8 lg:p-10 flex flex-col h-full">
                         <h3 class="text-2xl font-bold mb-2 text-cyan-400" data-i18n="projects.quantum.title">Quantum Algorithms Predict Bankruptcy</h3>
                         <p class="text-slate-400 mb-4 flex-grow" data-i18n="projects.quantum.desc">Solved a binary classification problem using quantum algorithms (QSVC, QNNs), earning a 10/10 grade. Explored embedding and dimensionality reduction methods, evaluating with Pennylane and IBM's quantum computers.</p>
@@ -441,7 +438,7 @@
                     <label for="message" class="block text-slate-300 mb-2 font-medium" data-i18n="contact.form.message">Message</label>
                     <textarea id="message" name="message" rows="5" required class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-blue-500 transition-colors resize-none" placeholder="How can I help you?" data-i18n="contact.form.messagePlaceholder"></textarea>
                 </div>
-                <button type="submit" class="w-full bg-blue-600 text-white font-bold text-lg py-3 px-8 rounded-xl hover:bg-blue-700 transition-all duration-300 shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-blue-500/50 transform hover:-translate-y-1" data-i18n="contact.form.btn">
+                <button type="submit" class="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-bold text-lg py-3 px-8 rounded-xl transition-all duration-300 shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 transform hover:-translate-y-1" data-i18n="contact.form.btn">
                     Send Message
                 </button>
              </form>

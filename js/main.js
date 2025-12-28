@@ -182,30 +182,27 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Update Toggle Button Text/Icon (Desktop)
         if (langToggle) {
-            const flag = lang === 'en' ? '🇬🇧' : '🇪🇸';
             const code = lang === 'en' ? 'EN' : 'ES';
-            langToggle.querySelector('span:first-child').textContent = flag;
-            langToggle.querySelector('span:nth-child(2)').textContent = code;
+            // The first span is the text "EN"/"ES"
+            const textSpan = langToggle.querySelector('span');
+            if (textSpan) textSpan.textContent = code;
         }
 
         // Update Mobile Buttons Active State
         if (langOptionsMobile.length > 0) {
              langOptionsMobile.forEach(btn => {
                  if (btn.dataset.lang === lang) {
-                     btn.classList.remove('text-gray-400', 'border-transparent');
-                     btn.classList.add('text-white', 'border-gray-600'); // Add border or highlight
-                     // Actually, let's match the styling in HTML
-                     // In HTML: 
-                     // Active: text-white border-indigo-500 (I put that in the replacement?)
-                     // Let's just simplify:
-                     btn.style.opacity = '1';
-                     btn.style.borderColor = '#2563eb'; // Blue 600
+                     // Active State
+                     btn.classList.remove('text-slate-300', 'border-slate-700');
+                     btn.classList.add('text-white', 'border-blue-500', 'bg-slate-700');
                  } else {
-                     btn.classList.add('text-gray-400', 'border-transparent');
-                     btn.classList.remove('text-white', 'border-gray-600');
-                     btn.style.opacity = '0.7';
-                     btn.style.borderColor = 'transparent';
+                     // Inactive State
+                     btn.classList.add('text-slate-300', 'border-slate-700');
+                     btn.classList.remove('text-white', 'border-blue-500', 'bg-slate-700');
                  }
+                 // Clear inline styles if any were set previously
+                 btn.style.opacity = '';
+                 btn.style.borderColor = '';
              });
         }
 

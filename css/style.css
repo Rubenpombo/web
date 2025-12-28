@@ -2,6 +2,11 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: #020c1b;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+}
+
 #particles-js {
     position: fixed;
     top: 0;
@@ -97,31 +102,6 @@ body {
 }
 .company-logo-container:hover .company-tooltip {
     opacity: 1;
-}
-
-/* Hero Text Animation (Legacy - can be removed or kept if classes unused) */
-.hero-char-mask {
-    display: inline-block;
-    overflow: hidden;
-    vertical-align: bottom;
-}
-
-.hero-char {
-    display: inline-block;
-    transform: translateY(-100%);
-    opacity: 0;
-    animation: heroSlideDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-@keyframes heroSlideDown {
-    0% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
 }
 
 /* New Hero Animations */
