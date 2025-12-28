@@ -80,6 +80,10 @@ const translations = {
                 title: "Real Time User Data Pipeline",
                 desc: "Built a real-time data pipeline for user sign-up data from an external API, covering ingestion, processing, storage, and automated visualization. Designed an interactive dashboard to present key insights from processed user data."
             },
+            nlp: {
+                title: "NLP Analysis of Spanish Recipes",
+                desc: "Analyzed ingredient relationships in Spanish cuisine using NLP and graph theory to uncover culinary patterns. Built a graph network to visualize ingredient communities and identify key components using centrality metrics."
+            },
             quantum: {
                 title: "Quantum Algorithms Predict Bankruptcy",
                 desc: "Solved a binary classification problem using quantum algorithms (QSVC, QNNs), earning a 10/10 grade. Explored embedding and dimensionality reduction methods, evaluating with Pennylane and IBM's quantum computers."
@@ -182,6 +186,10 @@ const translations = {
             pipeline: {
                 title: "Pipeline de Datos de Usuarios en Tiempo Real",
                 desc: "Construcción de un pipeline de datos en tiempo real para registros de usuarios desde API externa, cubriendo ingesta, procesamiento, almacenamiento y visualización. Diseño de dashboard interactivo para insights clave."
+            },
+            nlp: {
+                title: "Análisis NLP de Recetas Españolas",
+                desc: "Análisis de relaciones entre ingredientes en cocina española usando NLP y teoría de grafos para descubrir patrones. Construcción de red de grafos para visualizar comunidades e identificar componentes clave mediante métricas de centralidad."
             },
             quantum: {
                 title: "Algoritmos Cuánticos para Predicción de Quiebra",
