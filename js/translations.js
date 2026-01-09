@@ -76,6 +76,10 @@ const translations = {
         },
         projects: {
             title: "Side Projects",
+            iberbirds: {
+                title: "IberBirds: Iberian Birds Classifier",
+                desc: "Developed a computer vision application to identify 10 species of Iberian birds of prey and storks using a fine-tuned YOLO11 model. Deployed as a full-stack Dockerized app with React and FastAPI on Hugging Face Spaces."
+            },
             pipeline: {
                 title: "Real Time User Data Pipeline",
                 desc: "Built a real-time data pipeline for user sign-up data from an external API, covering ingestion, processing, storage, and automated visualization. Designed an interactive dashboard to present key insights from processed user data."
@@ -183,6 +187,10 @@ const translations = {
         },
         projects: {
             title: "Proyectos Personales",
+            iberbirds: {
+                title: "IberBirds: Clasificador de Aves Ibéricas",
+                desc: "Desarrollo de una aplicación de visión por computador para identificar 10 especies de aves rapaces y cigüeñas ibéricas usando un modelo YOLO11 fine-tuned. Desplegada como app full-stack Dockerizada con React y FastAPI en Hugging Face Spaces."
+            },
             pipeline: {
                 title: "Pipeline de Datos de Usuarios en Tiempo Real",
                 desc: "Construcción de un pipeline de datos en tiempo real para registros de usuarios desde API externa, cubriendo ingesta, procesamiento, almacenamiento y visualización. Diseño de dashboard interactivo para insights clave."
