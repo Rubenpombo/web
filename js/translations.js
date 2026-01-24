@@ -67,7 +67,7 @@ const translations = {
                     link: "View LinkedIn Post"
                 },
                 certs: {
-                    title: "Certifications"
+                    title: "Certifications & Courses"
                 },
                 hackathons: {
                     title: "Hackathons Attendance"
@@ -184,7 +184,7 @@ const translations = {
                     link: "Ver publicación en LinkedIn"
                 },
                 certs: {
-                    title: "Certificaciones"
+                    title: "Certificaciones y Cursos"
                 },
                 hackathons: {
                     title: "Asistencia a Hackathons"
