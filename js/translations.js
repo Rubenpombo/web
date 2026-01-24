@@ -41,6 +41,12 @@ const translations = {
         education: {
             mainTitle: "Education & Achievements",
             eduTitle: "Education",
+            uoc: {
+                degree: "MSc in Cybersecurity and Privacy (Technology Specialization)",
+                info: "UOC (Universitat Oberta de Catalunya), Barcelona, Spain (Online) - February 2026 – January 2028",
+                desc: "Pursuing part-time alongside full-time roles to integrate a security-first approach into engineering workflows.",
+                competencies: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Software and Systems Security</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Security Architectures and Protocols</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Offensive Security and Pentesting</span>'
+            },
             uni: {
                 degree: "Bachelor of Science in Data Science and Engineering",
                 grade: "<strong>ECTS:</strong> 240 <br> <strong>Grade:</strong> <strong>7.2/10.0</strong> (2:1 equivalent)",
@@ -152,6 +158,12 @@ const translations = {
         education: {
             mainTitle: "Formación y Logros",
             eduTitle: "Educación",
+            uoc: {
+                degree: "Máster Universitario en Ciberseguridad y Privacidad (Especialización Tecnológica)",
+                info: "UOC (Universitat Oberta de Catalunya), Barcelona, España (Online) - Febrero 2026 – Enero 2028",
+                desc: "Cursando a tiempo parcial junto con roles a tiempo completo para integrar un enfoque prioritario en la seguridad en los flujos de trabajo de ingeniería.",
+                competencies: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Seguridad de Software y Sistemas</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Arquitecturas y Protocolos de Seguridad</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Seguridad Ofensiva y Pentesting</span>'
+            },
             uni: {
                 degree: "Grado en Ciencia e Ingeniería de Datos",
                 grade: "<strong>ECTS:</strong> 240 <br> <strong>Nota:</strong> <strong>7.2/10.0</strong>",
