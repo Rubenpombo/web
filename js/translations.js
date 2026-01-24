@@ -43,12 +43,15 @@ const translations = {
             eduTitle: "Education",
             uoc: {
                 degree: "MSc in Cybersecurity and Privacy (Technology Specialization)",
-                info: "UOC (Universitat Oberta de Catalunya), Barcelona, Spain (Online) - February 2026 – January 2028",
+                university: "UOC (Universitat Oberta de Catalunya), Barcelona, Spain (Online)",
+                date: "February 2026 – January 2028",
                 desc: "Pursuing part-time alongside full-time roles to integrate a security-first approach into engineering workflows.",
                 competencies: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Software and Systems Security</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Security Architectures and Protocols</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Offensive Security and Pentesting</span>'
             },
             uni: {
                 degree: "Bachelor of Science in Data Science and Engineering",
+                university: "University of Oviedo, Gijón, Spain",
+                date: "June 2025",
                 grade: "<strong>ECTS:</strong> 240 <br> <strong>Grade:</strong> <strong>7.2/10.0</strong> (2:1 equivalent)",
                 competencies: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Artificial Intelligence</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Object-Oriented Programming</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Algorithmics</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Statistics</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Data Analysis</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Databases</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Machine Learning</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Deep Learning</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Data Engineering</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Distributed Systems</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Cryptography</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">IoT</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Project Management</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">NLP</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Cybersecurity</span>',
                 abroad: "Completed semester abroad at Faculty of Sciences, University of Porto (Portugal), taking Master’s level courses delivered in English",
@@ -56,6 +59,8 @@ const translations = {
             },
             school: {
                 name: "Technological High School",
+                center: "Colegio San Fernando, Avilés, Spain",
+                date: "June 2021",
                 grade: "<strong>Grade:</strong> <strong>9.0/10.0</strong>",
                 ranking: "Among the top 100 Spanish colleges"
             },
@@ -160,12 +165,15 @@ const translations = {
             eduTitle: "Educación",
             uoc: {
                 degree: "Máster Universitario en Ciberseguridad y Privacidad (Especialización Tecnológica)",
-                info: "UOC (Universitat Oberta de Catalunya), Barcelona, España (Online) - Febrero 2026 – Enero 2028",
+                university: "UOC (Universitat Oberta de Catalunya), Barcelona, España (Online)",
+                date: "Febrero 2026 – Enero 2028",
                 desc: "Cursando a tiempo parcial junto con roles a tiempo completo para integrar un enfoque prioritario en la seguridad en los flujos de trabajo de ingeniería.",
                 competencies: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Seguridad de Software y Sistemas</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Arquitecturas y Protocolos de Seguridad</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Seguridad Ofensiva y Pentesting</span>'
             },
             uni: {
                 degree: "Grado en Ciencia e Ingeniería de Datos",
+                university: "Universidad de Oviedo, Gijón, España",
+                date: "Junio 2025",
                 grade: "<strong>ECTS:</strong> 240 <br> <strong>Nota:</strong> <strong>7.2/10.0</strong>",
                 competencies: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Inteligencia Artificial</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">POO</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Algoritmia</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Estadística</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Análisis de Datos</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Bases de Datos</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Machine Learning</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Deep Learning</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Ingeniería de Datos</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Sistemas Distribuidos</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Criptografía</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">IoT</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Gestión de Proyectos</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">NLP</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Ciberseguridad</span>',
                 abroad: "Semestre en el extranjero en la Facultad de Ciencias, Universidad de Oporto (Portugal), cursando asignaturas de nivel de Máster en inglés",
@@ -173,6 +181,8 @@ const translations = {
             },
             school: {
                 name: "Bachillerato Tecnológico",
+                center: "Colegio San Fernando, Avilés, España",
+                date: "Junio 2021",
                 grade: "<strong>Nota:</strong> <strong>9.0/10.0</strong>",
                 ranking: "Entre los 100 mejores colegios de España"
             },
