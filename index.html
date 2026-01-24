@@ -240,61 +240,67 @@
                     <h2 class="text-4xl font-bold text-center mb-16 text-blue-400" data-i18n="education.eduTitle">Education</h2>
                      <!-- START CUSTOM CONTENT: EDUCATION -->
                     <div class="flex flex-col gap-8">
+                        <!-- UOC Master -->
                         <div class="spotlight-card bg-slate-900/60 backdrop-blur-md border border-slate-700/50 p-10 lg:p-12 rounded-xl shadow-lg w-full relative">
                             <img src="imgs/uoc.png" alt="UOC Logo" class="absolute top-6 right-10 w-28 h-28 object-contain rounded-lg">
                             <div class="space-y-4">
                                 <h4 class="font-bold text-2xl pr-32" data-i18n="education.uoc.degree">MSc in Cybersecurity and Privacy (Technology Specialization)</h4>
                                 <p class="text-slate-400 text-lg" data-i18n="education.uoc.university">UOC (Universitat Oberta de Catalunya), Barcelona, Spain (Online)</p>
-                                <p class="text-slate-500 text-base mb-2" data-i18n="education.uoc.date">February 2026 – January 2028</p>
+                                <!-- Date moved to right column on desktop -->
+                                <p class="text-slate-500 text-base mb-2 lg:absolute lg:top-36 lg:right-10 lg:text-right lg:mb-0" data-i18n="education.uoc.date">February 2026 – January 2028</p>
                                 
                                 <hr class="border-slate-700 my-4">
                                 
                                 <p class="text-slate-300 text-base leading-relaxed" data-i18n="education.uoc.desc">Pursuing part-time alongside full-time roles to integrate a security-first approach into engineering workflows.</p>
 
-                                <hr class="border-slate-700 my-4">
-
-                                <!-- Competencies Tags -->
-                                <div class="flex flex-wrap gap-2" data-i18n="education.uoc.competencies">
+                                <!-- Competencies Tags at bottom -->
+                                <div class="flex flex-wrap gap-2 mt-2" data-i18n="education.uoc.competencies">
                                     <!-- Injected from JS -->
                                 </div>
                             </div>
                         </div>
+
+                        <!-- University of Oviedo -->
                         <div class="spotlight-card bg-slate-900/60 backdrop-blur-md border border-slate-700/50 p-10 lg:p-12 rounded-xl shadow-lg w-full relative">
                             <img src="imgs/uniovi.png" alt="University of Oviedo Logo" class="absolute top-6 right-10 w-28 h-28 object-contain rounded-lg">
                             <div class="space-y-4">
                                 <h4 class="font-bold text-2xl pr-32" data-i18n="education.uni.degree">Bachelor of Science in Data Science and Engineering</h4>
                                 <p class="text-slate-400 text-lg" data-i18n="education.uni.university">University of Oviedo, Gijón, Spain</p>
-                                <p class="text-slate-500 text-base mb-2" data-i18n="education.uni.date">June 2025</p>
+                                <!-- Date moved to right column on desktop -->
+                                <p class="text-slate-500 text-base mb-2 lg:absolute lg:top-36 lg:right-10 lg:text-right lg:mb-0" data-i18n="education.uni.date">June 2025</p>
                                 <p class="text-slate-300 text-base" data-i18n="education.uni.grade"><strong>ECTS:</strong> 240 <br> <strong>Grade:</strong> <strong>7.2/10.0</strong> (2:1 equivalent)</p>
                                 
                                 <hr class="border-slate-700 my-4">
 
-                                <!-- Competencies Tags -->
-                                <div class="flex flex-wrap gap-2" data-i18n="education.uni.competencies">
+                                <!-- Details in a list without extra separators -->
+                                <ul class="list-disc list-inside text-slate-300 text-base space-y-2 leading-relaxed">
+                                    <li data-i18n="education.uni.abroad">Completed semester abroad at Faculty of Sciences, University of Porto (Portugal), taking Master’s level courses delivered in English</li>
+                                    <li data-i18n="education.uni.thesis"><strong>Final Thesis (10.0, honors.):</strong> Classification of endangered flying birds through fine-tuned YOLO object detection model, achieving F1 score of 0.80.</li>
+                                </ul>
+
+                                <!-- Competencies Tags at bottom -->
+                                <div class="flex flex-wrap gap-2 mt-4" data-i18n="education.uni.competencies">
                                     <!-- Injected from JS -->
                                 </div>
-                                
-                                <hr class="border-slate-700 my-4">
-                                
-                                <p class="text-slate-300 text-base leading-relaxed" data-i18n="education.uni.abroad">Completed semester abroad at Faculty of Sciences, University of Porto (Portugal), taking Master’s level courses delivered in English</p>
-                                
-                                <hr class="border-slate-700 my-4">
-
-                                <p class="text-slate-300 text-base leading-relaxed" data-i18n="education.uni.thesis"><strong>Final Thesis (10.0, honors.):</strong> Classification of endangered flying birds through fine-tuned YOLO object detection model, achieving F1 score of 0.80.</p>
                             </div>
                         </div>
+
+                        <!-- High School -->
                         <div class="spotlight-card bg-slate-900/60 backdrop-blur-md border border-slate-700/50 p-8 lg:p-10 rounded-xl shadow-lg w-full relative">
                             <img src="imgs/sanfer.png" alt="Colegio San Fernando Logo" class="absolute top-6 right-10 w-[4.5rem] h-[4.5rem] object-contain rounded-lg">
-                            <h4 class="font-bold text-xl" data-i18n="education.school.name">Technological High School</h4>
-                            <p class="text-slate-400 text-base" data-i18n="education.school.center">Colegio San Fernando, Avilés, Spain</p>
-                            <p class="text-slate-500 text-sm mb-2" data-i18n="education.school.date">June 2021</p>
-                            <p class="text-slate-300 text-base" data-i18n="education.school.grade"><strong>Grade:</strong> <strong>9.0/10.0</strong></p>
-                            
-                            <hr class="border-slate-700 my-4">
-                            
-                            <ul class="list-disc list-inside text-slate-300 text-base space-y-1">
-                                <li data-i18n="education.school.ranking">Among the top 100 Spanish colleges</li>
-                            </ul>
+                            <div class="space-y-4">
+                                <h4 class="font-bold text-xl pr-32" data-i18n="education.school.name">Technological High School</h4>
+                                <p class="text-slate-400 text-base" data-i18n="education.school.center">Colegio San Fernando, Avilés, Spain</p>
+                                <!-- Date moved to right column on desktop -->
+                                <p class="text-slate-500 text-sm mb-2 lg:absolute lg:top-28 lg:right-10 lg:text-right lg:mb-0" data-i18n="education.school.date">June 2021</p>
+                                <p class="text-slate-300 text-base" data-i18n="education.school.grade"><strong>Grade:</strong> <strong>9.0/10.0</strong></p>
+                                
+                                <hr class="border-slate-700 my-4">
+                                
+                                <ul class="list-disc list-inside text-slate-300 text-base space-y-1">
+                                    <li data-i18n="education.school.ranking">Among the top 100 Spanish colleges</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                      <!-- END CUSTOM CONTENT: EDUCATION -->
