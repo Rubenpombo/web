@@ -45,7 +45,7 @@ const translations = {
                 degree: "MSc in Cybersecurity and Privacy (Technology Specialization)",
                 university: "UOC (Universitat Oberta de Catalunya), Barcelona, Spain (Online)",
                 date: "In progress",
-                desc: "Pursuing part-time alongside full-time roles to integrate a security-first approach into engineering workflows.",
+                desc: "Integrating a security-first approach into engineering workflows alongside professional activity.",
                 competencies: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Software and Systems Security</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Security Architectures and Protocols</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Offensive Security and Pentesting</span>'
             },
             uni: {
@@ -167,7 +167,7 @@ const translations = {
                 degree: "Máster Universitario en Ciberseguridad y Privacidad (Especialización Tecnológica)",
                 university: "UOC (Universitat Oberta de Catalunya), Barcelona, España (Online)",
                 date: "En curso",
-                desc: "Cursando a tiempo parcial junto con roles a tiempo completo para integrar un enfoque prioritario en la seguridad en los flujos de trabajo de ingeniería.",
+                desc: "Integrando un enfoque de seguridad (security-first) en flujos de ingeniería compaginado con actividad profesional.",
                 competencies: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Seguridad de Software y Sistemas</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Arquitecturas y Protocolos de Seguridad</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Seguridad Ofensiva y Pentesting</span>'
             },
             uni: {
