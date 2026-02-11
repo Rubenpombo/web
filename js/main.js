@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const PUBLIC_KEY = "a5gX8a2eoWhuJ86Sz"; // e.g., "user_123456"
     const SERVICE_ID = "service_02b2zdt"; // e.g., "service_xyz"
-    const TEMPLATE_ID = "template_k4bnoa9"; // e.g., "template_abc"
+    const TEMPLATE_ID = "template_goc3uzi"; // e.g., "template_abc"
 
     try {
         emailjs.init(PUBLIC_KEY);
