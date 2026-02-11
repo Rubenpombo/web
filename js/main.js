@@ -29,26 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Prepare parameters matching your EmailJS template variables
             const templateParams = {
-                // 'name' rellena {{name}} en tu HTML y en el mensaje de bienvenida
-                name: "Nuevo Contacto", 
-                
-                // 'email' es necesario para el campo "Reply To: {{email}}" de tu configuración
+                name: document.getElementById('email').value,
                 email: document.getElementById('email').value,
-                
-                // 'title' rellena {{title}} en el asunto: "Contact Us: {{title}}"
                 title: document.getElementById('subject').value,
-                
-                // 'message' rellena {{message}} en el cuerpo del correo
-                message: document.getElementById('message').value,
-                
-                // 'time' rellena {{time}}. EmailJS no lo genera solo, hay que enviarlo:
-                time: new Date().toLocaleString('es-ES', { 
-                    day: '2-digit', 
-                    month: '2-digit', 
-                    year: 'numeric', 
-                    hour: '2-digit', 
-                    minute: '2-digit' 
-                })
+                message: document.getElementById('message').value
             };
 
             emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams)
