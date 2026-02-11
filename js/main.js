@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // 3. Create an Email Template -> Get Template ID
     // 4. Go to Account > API Keys -> Get Public Key
     
-    const PUBLIC_KEY = "ogvuqPjn80l6o57Gf"; // e.g., "user_123456"
-    const SERVICE_ID = "service_bvz5x9e"; // e.g., "service_xyz"
-    const TEMPLATE_ID = "template_0fykrd4"; // e.g., "template_abc"
+    const PUBLIC_KEY = "a5gX8a2eoWhuJ86Sz"; // e.g., "user_123456"
+    const SERVICE_ID = "service_02b2zdt"; // e.g., "service_xyz"
+    const TEMPLATE_ID = "template_k4bnoa9"; // e.g., "template_abc"
 
     try {
         emailjs.init(PUBLIC_KEY);
