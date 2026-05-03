@@ -1,6 +1,5 @@
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #020c1b;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -45,9 +44,6 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #1e293b; /* bg-gray-800 */
-    border-radius: 0.75rem; /* rounded-xl */
-    padding: 1rem; /* p-4 */
     transition: all 0.2s ease-in-out;
     /* Ensure flex items don't shrink in marquee */
     flex-shrink: 0;
@@ -55,7 +51,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .skill-icon-container:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 15px -3px rgb(59 130 246 / 0.2), 0 4px 6px -4px rgb(59 130 246 / 0.2);
 }
 .skill-tooltip {
     position: absolute;
@@ -63,8 +58,8 @@ h1, h2, h3, h4, h5, h6 {
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 8px;
-    background-color: #475569; /* bg-gray-600 */
-    color: white;
+    background-color: #1c1917; /* stone-900 */
+    color: #fafaf9; /* stone-50 */
     padding: 4px 8px;
     border-radius: 6px;
     font-size: 0.875rem;
@@ -87,8 +82,8 @@ h1, h2, h3, h4, h5, h6 {
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 10px;
-    background-color: #334155; /* bg-gray-700 */
-    color: white;
+    background-color: #1c1917; /* stone-900 */
+    color: #fafaf9; /* stone-50 */
     padding: 8px 12px;
     border-radius: 6px;
     font-size: 0.875rem;
@@ -169,8 +164,6 @@ h1, h2, h3, h4, h5, h6 {
 .spotlight-card {
     position: relative;
     overflow: hidden;
-    /* Ensure background color is set explicitly if not already by Tailwind, 
-       but .bg-gray-800 handles it. */
 }
 
 .spotlight-card::after {
@@ -181,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
     background: radial-gradient(
         420px circle at var(--mouse-x) var(--mouse-y),
-        rgba(255, 255, 255, 0.06),
+        rgba(0, 0, 0, 0.03),
         transparent 40%
     );
     opacity: 0;
@@ -199,7 +192,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 2;
 }
 
-/* Large Screen Scaling (27" Monitors / >1440px) */
+/* Large Screen Scaling (27\" Monitors / >1440px) */
 @media (min-width: 1440px) {
     html {
         font-size: 18px; /* Scales everything (1rem = 18px) - approx +12.5% */

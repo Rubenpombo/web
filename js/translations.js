@@ -1,5 +1,6 @@
 const translations = {
     en: {
+        title: "Ruben Parte Pombo - Data Engineer",
         nav: {
             about: "About",
             education: "Education",
@@ -21,25 +22,33 @@ const translations = {
             title: "Professional Experience",
             arcelor: {
                 role: "Junior R&D Engineer",
+                company: "ArcelorMittal Global R&D",
+                date: "Aug 2025 – Present",
+                tooltip: "A world-leading steel and mining company, supplying quality steel products to various sectors including automotive, construction, and packaging.",
                 desc: "Applying data science and analytical techniques to optimize continuous casting processes within the Mechatronics R&D team.",
-                tags: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Python</span>'
+                tags: ["Python"]
             },
             ntt: {
                 role: "Artificial Intelligence Intern",
-                desc1: "Co-authored a <a href='https://www.sciencedirect.com/science/article/pii/S2352340925003427?via%3Dihub' target='_blank' class='text-blue-400 hover:underline'>paper on the first Iberian Bird dataset</a> for object detection.",
+                company: "NTT DATA Europe & Latam",
+                date: "Sep 2024 – May 2025",
+                tooltip: "A global IT services provider and consulting firm, offering a wide range of solutions from advisory services to cloud and cybersecurity.",
+                desc1: "Co-authored a <a href='https://www.sciencedirect.com/science/article/pii/S2352340925003427?via%3Dihub' target='_blank' class='text-blue-600 hover:underline'>paper on the first Iberian Bird dataset</a> for object detection.",
                 desc2: "Participated in LLM fine-tuning, backend integration, and prompt engineering for Nestlé.",
                 desc3: "Benchmarked multimodal LLMs (GPT-4o, Gemini 2.5) for worker safety monitoring.",
-                tags: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Python</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">LangChain</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Azure</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">OpenCV</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">YOLO</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">MLflow</span>'
+                tags: ["Python", "LangChain", "Azure", "OpenCV", "YOLO", "MLflow"]
             },
             gonvarri: {
-                role: "Data Science Intern",
+                role: "Data Engineering Intern",
+                company: "Gonvarri Industries",
+                date: "Jul 2023 – Aug 2023",
+                tooltip: "A leader in the transformation of flat steel and aluminum, providing metal solutions for the automotive, road safety, and solar energy sectors.",
                 desc1: "Collaborated with R&D teams to understand industrial processes and initiatives.",
-                desc2: "Performed time series analysis and data visualization to identify operational anomalies.",
-                tags: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Python</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">R</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Forecast</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">ggplot2</span>'
+                desc2: "Performed time series analysis and data visualization in R to identify operational anomalies.",
+                tags: ["Python", "R", "Forecast", "ggplot2"]
             }
         },
         education: {
-            mainTitle: "Education & Achievements",
             eduTitle: "Education",
             uoc: {
                 degree: "MSc in Cybersecurity and Privacy (Technology Specialization)",
@@ -47,14 +56,14 @@ const translations = {
                 date: "In progress",
                 grade: "<strong>ECTS:</strong> 60",
                 desc: "Integrating a security-first approach into engineering workflows alongside professional activity.",
-                competencies: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Software and Systems Security</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Security Architectures and Protocols</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Offensive Security and Pentesting</span>'
+                competencies: ["Software and Systems Security", "Security Architectures and Protocols", "Offensive Security and Pentesting"]
             },
             uni: {
                 degree: "Bachelor of Science in Data Science and Engineering",
                 university: "University of Oviedo, Gijón, Spain",
                 date: "June 2025",
                 grade: "<strong>ECTS:</strong> 240 <br> <strong>Grade:</strong> <strong>7.2/10.0</strong> (2:1 equivalent)",
-                competencies: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Artificial Intelligence</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Object-Oriented Programming</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Algorithmics</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Statistics</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Data Analysis</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Databases</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Machine Learning</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Deep Learning</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Data Engineering</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Distributed Systems</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Cryptography</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">IoT</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Project Management</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">NLP</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Cybersecurity</span>',
+                competencies: ["Artificial Intelligence", "Object-Oriented Programming", "Algorithmics", "Statistics", "Data Analysis", "Databases", "Machine Learning", "Deep Learning", "Data Engineering", "Distributed Systems", "Cryptography", "IoT", "Project Management", "NLP", "Cybersecurity"],
                 abroad: "Erasmus+ Semester: University of Porto. Master-level coursework in English",
                 thesis: "<strong>Final Thesis (10.0/10.0, Honors):</strong> Classification of endangered flying birds through fine-tuned YOLO model, achieving 0.80 F1 score."
             },
@@ -69,14 +78,16 @@ const translations = {
                 title: "Achievements & More",
                 winner: {
                     title: "Project Winner",
-                    desc: "\"Application of Generative AI in Industrial Environments\" for Delta (<a href='https://iturcemigrupo.com/' target='_blank' class='text-blue-400 hover:underline'>Iturcermi Group</a>).",
+                    desc: "\"Application of Generative AI in Industrial Environments\" for Delta (<a href='https://iturcemigrupo.com/' target='_blank' class='text-blue-600 hover:underline'>Iturcermi Group</a>).",
                     link: "View LinkedIn Post"
                 },
                 certs: {
-                    title: "Certifications & Courses"
+                    title: "Certifications",
+                    list: "<li><a href='https://learn.microsoft.com/en-us/users/rubnpartepombo-6581/credentials/76c33d177be7a96f' target='_blank' class='text-blue-600 hover:underline'><strong>Microsoft Certified: Azure Fundamentals (AZ-900)</strong></a></li><li><strong>University of Oviedo Micro-credential:</strong> 'Secure Development in DevSecOps Environments' (6 ECTS) · Dec 2025.</li><li><a href='https://credentials.databricks.com/17118849-18d4-4d2c-a27f-9470ea8ff98c#acc.q0hlufGI' target='_blank' class='text-blue-600 hover:underline'>Generative AI Fundamentals (Databricks)</a></li><li><a href='https://www.scrumstudy.com/certification/verify?type=SFC&number=1012974' target='_blank' class='text-blue-600 hover:underline'>Scrum Fundamentals Certified</a></li>"
                 },
                 hackathons: {
-                    title: "Hackathons Attendance"
+                    title: "Hackathons Attendance",
+                    list: "<li><a href='imgs/hackathon_porto.jpeg' class='image-modal-trigger text-blue-600 hover:underline'>HackACity Porto 2023</a></li><li><a href='imgs/hackathon_merkle.jpeg' class='image-modal-trigger text-blue-600 hover:underline'>Merkle Datathon 2023</a></li>"
                 }
             }
         },
@@ -84,25 +95,56 @@ const translations = {
             title: "Technical Skills",
             languages: "Programming Languages",
             tech: "Technologies",
-            libs: "Libraries & Frameworks"
+            libs: "Libraries & Frameworks",
+            tooltips: {
+                python: "Python",
+                r: "R",
+                sql: "SQL",
+                spark: "Apache Spark",
+                kafka: "Apache Kafka",
+                airflow: "Apache Airflow",
+                docker: "Docker",
+                git: "Git",
+                azure: "Azure",
+                powerbi: "Power BI",
+                streamlit: "Streamlit",
+                linux: "Linux",
+                bash: "Shell Scripting",
+                gitlab: "GitLab",
+                pandas: "Pandas",
+                numpy: "NumPy",
+                scikitlearn: "Scikit-Learn",
+                pytorch: "PyTorch",
+                spacy: "spaCy",
+                huggingface: "Transformers",
+                tensorflow: "TensorFlow",
+                keras: "Keras",
+                langchain: "LangChain"
+            }
         },
         projects: {
             title: "Side Projects",
+            viewCode: "View Code",
+            liveDemo: "Live Demo",
             iberbirds: {
                 title: "IberBirds: Iberian Birds Classifier",
-                desc: "Developed a computer vision application to identify 10 species of Iberian birds of prey and storks using a fine-tuned YOLO model. Deployed as a full-stack Dockerized app with React and FastAPI on Hugging Face Spaces."
+                desc: "Developed a computer vision application to identify 10 species of Iberian birds of prey and storks using a fine-tuned YOLO model. Deployed as a full-stack Dockerized app with React and FastAPI on Hugging Face Spaces.",
+                tags: ["Python", "React", "FastAPI", "Docker", "YOLO", "Hugging Face"]
             },
             pipeline: {
                 title: "Real Time User Data Pipeline",
-                desc: "Built a real-time data pipeline for user sign-up data from an external API, covering ingestion, processing, storage, and automated visualization. Designed an interactive dashboard to present key insights from processed user data."
+                desc: "Built a real-time data pipeline for user sign-up data from an external API, covering ingestion, processing, storage, and automated visualization. Designed an interactive dashboard to present key insights from processed user data.",
+                tags: ["Python", "Docker", "Kafka", "Airflow", "Spark"]
             },
             nlp: {
                 title: "NLP Analysis of Spanish Recipes",
-                desc: "Analyzed ingredient relationships in Spanish cuisine using NLP and graph theory to uncover culinary patterns. Built a graph network to visualize ingredient communities and identify key components using centrality metrics."
+                desc: "Analyzed ingredient relationships in Spanish cuisine using NLP and graph theory to uncover culinary patterns. Built a graph network to visualize ingredient communities and identify key components using centrality metrics.",
+                tags: ["Python", "SpaCy", "NetworkX", "Graph Theory"]
             },
             quantum: {
                 title: "Quantum Algorithms Predict Bankruptcy",
-                desc: "Solved a binary classification problem using quantum algorithms (QSVC, QNNs), earning a 10/10 grade. Explored embedding and dimensionality reduction methods, evaluating with Pennylane and IBM's quantum computers."
+                desc: "Solved a binary classification problem using quantum algorithms (QSVC, QNNs), earning a 10/10 grade. Explored embedding and dimensionality reduction methods, evaluating with Pennylane and IBM's quantum computers.",
+                tags: ["Pennylane", "Qiskit", "IBM Quantum"]
             }
         },
         contact: {
@@ -115,14 +157,15 @@ const translations = {
                 subjectPlaceholder: "Project Inquiry",
                 message: "Message",
                 messagePlaceholder: "How can I help you?",
-                btn: "Send Message"
+                btn: "Send Message",
+                success: "Message sent successfully!",
+                error: "Failed to send message. Please try again later.",
+                rateLimit: "Please wait {min} more minute(s) before sending another message."
             }
-        },
-        footer: {
-            rights: "&copy; 2025 Ruben Parte Pombo. All rights reserved."
         }
     },
     es: {
+        title: "Ruben Parte Pombo - Ingeniero de Datos",
         nav: {
             about: "Sobre Mí",
             education: "Educación",
@@ -144,25 +187,33 @@ const translations = {
             title: "Experiencia Profesional",
             arcelor: {
                 role: "Ingeniero de I+D Junior",
+                company: "ArcelorMittal Global R&D",
+                date: "Ago 2025 – Presente",
+                tooltip: "Empresa siderúrgica y minera líder mundial, que suministra productos de acero de calidad a diversos sectores, incluidos el automotriz, la construcción y el embalaje.",
                 desc: "Aplicación de ciencia de datos y técnicas analíticas para optimizar procesos de colada continua dentro del equipo de I+D de Mecatrónica.",
-                tags: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Python</span>'
+                tags: ["Python"]
             },
             ntt: {
                 role: "Becario de Inteligencia Artificial",
-                desc1: "Coautor de un <a href='https://www.sciencedirect.com/science/article/pii/S2352340925003427?via%3Dihub' target='_blank' class='text-blue-400 hover:underline'>artículo sobre el primer dataset de aves ibéricas</a> para detección de objetos.",
+                company: "NTT DATA Europe & Latam",
+                date: "Sep 2024 – May 2025",
+                tooltip: "Proveedor global de servicios de TI y consultoría, que ofrece una amplia gama de soluciones, desde servicios de asesoramiento hasta nube y ciberseguridad.",
+                desc1: "Coautor de un <a href='https://www.sciencedirect.com/science/article/pii/S2352340925003427?via%3Dihub' target='_blank' class='text-blue-600 hover:underline'>artículo sobre el primer dataset de aves ibéricas</a> para detección de objetos.",
                 desc2: "Participación en fine-tuning de LLMs, integración backend e ingeniería de prompts para Nestlé.",
                 desc3: "Benchmarking de LLMs multimodales (GPT-4o, Gemini 2.5) para la monitorización de seguridad de los trabajadores.",
-                tags: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Python</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">LangChain</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Azure</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">OpenCV</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">YOLO</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">MLflow</span>'
+                tags: ["Python", "LangChain", "Azure", "OpenCV", "YOLO", "MLflow"]
             },
             gonvarri: {
-                role: "Becario de Ciencia de Datos",
+                role: "Becario de Ingeniería de Datos",
+                company: "Gonvarri Industries",
+                date: "Jul 2023 – Ago 2023",
+                tooltip: "Líder en la transformación de acero plano y aluminio, proporcionando soluciones metálicas para los sectores de automoción, seguridad vial y energía solar.",
                 desc1: "Colaboración con equipos de I+D para entender procesos e iniciativas industriales.",
                 desc2: "Análisis de series temporales y visualización de datos para identificar anomalías operativas.",
-                tags: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Python</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">R</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Forecast</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">ggplot2</span>'
+                tags: ["Python", "R", "Forecast", "ggplot2"]
             }
         },
         education: {
-            mainTitle: "Formación y Logros",
             eduTitle: "Educación",
             uoc: {
                 degree: "Máster Universitario en Ciberseguridad y Privacidad (Especialización Tecnológica)",
@@ -170,14 +221,14 @@ const translations = {
                 date: "En curso",
                 grade: "<strong>ECTS:</strong> 60",
                 desc: "Integrando un enfoque de seguridad (security-first) en flujos de ingeniería compaginado con actividad profesional.",
-                competencies: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Seguridad de Software y Sistemas</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Arquitecturas y Protocolos de Seguridad</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Seguridad Ofensiva y Pentesting</span>'
+                competencies: ["Seguridad de Software y Sistemas", "Arquitecturas y Protocolos de Seguridad", "Seguridad Ofensiva y Pentesting"]
             },
             uni: {
                 degree: "Grado en Ciencia e Ingeniería de Datos",
                 university: "Universidad de Oviedo, Gijón, España",
                 date: "Junio 2025",
                 grade: "<strong>ECTS:</strong> 240 <br> <strong>Nota:</strong> <strong>7.2/10.0</strong>",
-                competencies: '<span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Inteligencia Artificial</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">POO</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Algoritmia</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Estadística</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Análisis de Datos</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Bases de Datos</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Machine Learning</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Deep Learning</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Ingeniería de Datos</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Sistemas Distribuidos</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Criptografía</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">IoT</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Gestión de Proyectos</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">NLP</span> <span class="px-3 py-1 bg-slate-900/50 border border-slate-700 rounded text-slate-300 text-sm">Ciberseguridad</span>',
+                competencies: ["Inteligencia Artificial", "POO", "Algoritmia", "Estadística", "Análisis de Datos", "Bases de Datos", "Machine Learning", "Deep Learning", "Ingeniería de Datos", "Sistemas Distribuidos", "Criptografía", "IoT", "Gestión de Proyectos", "NLP", "Ciberseguridad"],
                 abroad: "Semestre Erasmus+: Universidade do Porto. Asignaturas de nivel Máster en inglés",
                 thesis: "<strong>TFG (10.0/10.0, Matrícula de Honor):</strong> Clasificación de aves en peligro mediante modelo YOLO fine-tuned, logrando un F1-score de 0.80."
             },
@@ -192,14 +243,16 @@ const translations = {
                 title: "Logros y Más",
                 winner: {
                     title: "Ganador de Proyecto",
-                    desc: "\"Aplicación de IA Generativa en Entornos Industriales\" para Delta (<a href='https://iturcemigrupo.com/' target='_blank' class='text-blue-400 hover:underline'>Grupo Iturcermi</a>).",
+                    desc: "\"Aplicación de IA Generativa en Entornos Industriales\" para Delta (<a href='https://iturcemigrupo.com/' target='_blank' class='text-blue-600 hover:underline'>Grupo Iturcermi</a>).",
                     link: "Ver publicación en LinkedIn"
                 },
                 certs: {
-                    title: "Certificaciones y Cursos"
+                    title: "Certificaciones",
+                    list: "<li><a href='https://learn.microsoft.com/en-us/users/rubnpartepombo-6581/credentials/76c33d177be7a96f' target='_blank' class='text-blue-600 hover:underline'><strong>Microsoft Certified: Azure Fundamentals (AZ-900)</strong></a></li><li><strong>Microcredencial Universidad de Oviedo:</strong> 'Desarrollo Seguro en Entornos DevSecOps' (6 ECTS) · Dic 2025.</li><li><a href='https://credentials.databricks.com/17118849-18d4-4d2c-a27f-9470ea8ff98c#acc.q0hlufGI' target='_blank' class='text-blue-600 hover:underline'>Fundamentos de IA Generativa (Databricks)</a></li><li><a href='https://www.scrumstudy.com/certification/verify?type=SFC&number=1012974' target='_blank' class='text-blue-600 hover:underline'>Certificado en Fundamentos de Scrum</a></li>"
                 },
                 hackathons: {
-                    title: "Asistencia a Hackathons"
+                    title: "Asistencia a Hackathons",
+                    list: "<li><a href='imgs/hackathon_porto.jpeg' class='image-modal-trigger text-blue-600 hover:underline'>HackACity Porto 2023</a></li><li><a href='imgs/hackathon_merkle.jpeg' class='image-modal-trigger text-blue-600 hover:underline'>Merkle Datathon 2023</a></li>"
                 }
             }
         },
@@ -207,25 +260,56 @@ const translations = {
             title: "Habilidades Técnicas",
             languages: "Lenguajes de Programación",
             tech: "Tecnologías",
-            libs: "Librerías y Frameworks"
+            libs: "Librerías y Frameworks",
+            tooltips: {
+                python: "Python",
+                r: "R",
+                sql: "SQL",
+                spark: "Apache Spark",
+                kafka: "Apache Kafka",
+                airflow: "Apache Airflow",
+                docker: "Docker",
+                git: "Git",
+                azure: "Azure",
+                powerbi: "Power BI",
+                streamlit: "Streamlit",
+                linux: "Linux",
+                bash: "Scripting en Shell",
+                gitlab: "GitLab",
+                pandas: "Pandas",
+                numpy: "NumPy",
+                scikitlearn: "Scikit-Learn",
+                pytorch: "PyTorch",
+                spacy: "spaCy",
+                huggingface: "Transformers",
+                tensorflow: "TensorFlow",
+                keras: "Keras",
+                langchain: "LangChain"
+            }
         },
         projects: {
             title: "Proyectos Personales",
+            viewCode: "Ver Código",
+            liveDemo: "Demo en Vivo",
             iberbirds: {
                 title: "IberBirds: Clasificador de Aves Ibéricas",
-                desc: "Desarrollo de una aplicación de visión por computador para identificar 10 especies de aves rapaces y cigüeñas ibéricas usando un modelo YOLO fine-tuned. Desplegada como app full-stack Dockerizada con React y FastAPI en Hugging Face Spaces."
+                desc: "Desarrollo de una aplicación de visión por computador para identificar 10 especies de aves rapaces y cigüeñas ibéricas usando un modelo YOLO fine-tuned. Desplegada como app full-stack Dockerizada con React y FastAPI en Hugging Face Spaces.",
+                tags: ["Python", "React", "FastAPI", "Docker", "YOLO", "Hugging Face"]
             },
             pipeline: {
                 title: "Pipeline de Datos de Usuarios en Tiempo Real",
-                desc: "Construcción de un pipeline de datos en tiempo real para registros de usuarios desde API externa, cubriendo ingesta, procesamiento, almacenamiento y visualización. Diseño de dashboard interactivo para insights clave."
+                desc: "Construcción de un pipeline de datos en tiempo real para registros de usuarios desde API externa, cubriendo ingesta, procesamiento, almacenamiento y visualización. Diseño de dashboard interactivo para insights clave.",
+                tags: ["Python", "Docker", "Kafka", "Airflow", "Spark"]
             },
             nlp: {
                 title: "Análisis NLP de Recetas Españolas",
-                desc: "Análisis de relaciones entre ingredientes en cocina española usando NLP y teoría de grafos para descubrir patrones. Construcción de red de grafos para visualizar comunidades e identificar componentes clave mediante métricas de centralidad."
+                desc: "Análisis de relaciones entre ingredientes en cocina española usando NLP y teoría de grafos para descubrir patrones. Construcción de red de grafos para visualizar comunidades e identificar componentes clave mediante métricas de centralidad.",
+                tags: ["Python", "SpaCy", "NetworkX", "Graph Theory"]
             },
             quantum: {
                 title: "Algoritmos Cuánticos para Predicción de Quiebra",
-                desc: "Resolución de problema de clasificación binaria usando algoritmos cuánticos (QSVC, QNNs), obteniendo calificación 10/10. Exploración de métodos de embedding y reducción de dimensionalidad con Pennylane e IBM Quantum."
+                desc: "Resolución de problema de clasificación binaria usando algoritmos cuánticos (QSVC, QNNs), obteniendo calificación 10/10. Exploración de métodos de embedding y reducción de dimensionalidad con Pennylane e IBM Quantum.",
+                tags: ["Pennylane", "Qiskit", "IBM Quantum"]
             }
         },
         contact: {
@@ -236,13 +320,13 @@ const translations = {
                 emailPlaceholder: "tu@ejemplo.com",
                 subject: "Asunto",
                 subjectPlaceholder: "Consulta de Proyecto",
-                message: "Mensaje",
+                message: "Message",
                 messagePlaceholder: "¿En qué puedo ayudarte?",
-                btn: "Enviar Mensaje"
+                btn: "Enviar Mensaje",
+                success: "¡Mensaje enviado con éxito!",
+                error: "Error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.",
+                rateLimit: "Por favor, espera {min} minuto(s) más antes de enviar otro mensaje."
             }
-        },
-        footer: {
-            rights: "&copy; 2025 Ruben Parte Pombo. Todos los derechos reservados."
         }
     }
 };
