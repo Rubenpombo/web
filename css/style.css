@@ -192,7 +192,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 2;
 }
 
-/* Large Screen Scaling (27" Monitors / >1440px) */
+/* Large Screen Scaling (27\" Monitors / >1440px) */
 @media (min-width: 1440px) {
     html {
         font-size: 18px; /* Scales everything (1rem = 18px) - approx +12.5% */
