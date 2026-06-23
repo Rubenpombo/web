@@ -8,24 +8,28 @@ particlesJS("particles-js", {
       }
     },
     "color": {
-      "value": "#ffffff"
+      "value": "#3b82f6"
     },
     "shape": {
       "type": "circle"
     },
     "opacity": {
-      "value": 0.5
+      "value": 0.15
     },
     "size": {
-      "value": 2,
+      "value": 3,
       "random": true
     },
     "line_linked": {
-      "enable": false
+      "enable": true,
+      "distance": 150,
+      "color": "#3b82f6",
+      "opacity": 0.1,
+      "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 1.2,
+      "speed": 0.8,
       "direction": "none",
       "out_mode": "out"
     }
