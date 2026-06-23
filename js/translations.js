@@ -53,7 +53,7 @@ const translations = {
             uoc: {
                 degree: "MSc in Cybersecurity and Privacy (Technology Specialization)",
                 university: "UOC (Universitat Oberta de Catalunya), Barcelona, Spain (Online)",
-                date: "In progress",
+                date: "Expected June 2027",
                 grade: "<strong>ECTS:</strong> 60",
                 desc: "Integrating a security-first approach into engineering workflows alongside professional activity.",
                 competencies: ["Software and Systems Security", "Security Architectures and Protocols", "Offensive Security and Pentesting"]
@@ -218,7 +218,7 @@ const translations = {
             uoc: {
                 degree: "Máster Universitario en Ciberseguridad y Privacidad (Especialización Tecnológica)",
                 university: "UOC (Universitat Oberta de Catalunya), Barcelona, España (Online)",
-                date: "En curso",
+                date: "Junio 2027 (Previsto)",
                 grade: "<strong>ECTS:</strong> 60",
                 desc: "Integrando un enfoque de seguridad (security-first) en flujos de ingeniería compaginado con actividad profesional.",
                 competencies: ["Seguridad de Software y Sistemas", "Arquitecturas y Protocolos de Seguridad", "Seguridad Ofensiva y Pentesting"]

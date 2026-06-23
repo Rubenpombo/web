@@ -231,9 +231,11 @@
                 <div class="w-full mb-16 max-w-7xl mx-auto">
                     <h2 class="text-4xl font-bold text-center mb-16 text-stone-900" data-i18n="education.eduTitle">Education</h2>
                      <!-- START CUSTOM CONTENT: EDUCATION -->
-                    <div class="flex flex-col gap-8">
+                    <div class="relative flex flex-col gap-8">
+                        <!-- Vertical Timeline Line -->
+                        <div class="absolute left-1/2 -translate-x-1/2 top-4 bottom-4 w-[1px] bg-stone-300 z-0"></div>
                         <!-- UOC Master -->
-                        <div class="spotlight-card bg-stone-50 border border-stone-900/10 p-10 lg:p-12 rounded-2xl shadow-none w-full relative transition-all duration-300">
+                        <div class="spotlight-card relative z-10 bg-stone-50 border border-stone-900/10 p-10 lg:p-12 rounded-2xl shadow-none w-full transition-all duration-300">
                             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-3 border-b border-stone-200">
                                 <div class="flex items-center gap-6">
                                     <div class="shrink-0 flex items-center justify-center w-24 h-24">
@@ -244,7 +246,7 @@
                                         <p class="text-slate-500 text-base mt-1" data-i18n="education.uoc.university">UOC (Universitat Oberta de Catalunya), Barcelona, Spain (Online)</p>
                                     </div>
                                 </div>
-                                <span class="text-sm font-semibold text-stone-500 shrink-0 self-start sm:self-center" data-i18n="education.uoc.date">In progress</span>
+                                <span class="text-sm font-semibold text-stone-500 shrink-0 self-start sm:self-center" data-i18n="education.uoc.date">Expected June 2027</span>
                             </div>
                             <div class="mt-6 md:pl-[120px] space-y-4">
                                 <p class="text-slate-700 text-base" data-i18n="education.uoc.grade"><strong>ECTS:</strong> 60</p>
@@ -257,7 +259,7 @@
                         </div>
 
                         <!-- University of Oviedo -->
-                        <div class="spotlight-card bg-stone-50 border border-stone-900/10 p-10 lg:p-12 rounded-2xl shadow-none w-full relative transition-all duration-300">
+                        <div class="spotlight-card relative z-10 bg-stone-50 border border-stone-900/10 p-10 lg:p-12 rounded-2xl shadow-none w-full transition-all duration-300">
                             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-3 border-b border-stone-200">
                                 <div class="flex items-center gap-6">
                                     <div class="shrink-0 flex items-center justify-center w-[88px] h-[88px]">
@@ -287,7 +289,7 @@
                         </div>
 
                         <!-- High School -->
-                        <div class="spotlight-card bg-stone-50 border border-stone-900/10 p-8 lg:p-10 rounded-2xl shadow-none w-full relative transition-all duration-300">
+                        <div class="spotlight-card relative z-10 bg-stone-50 border border-stone-900/10 p-8 lg:p-10 rounded-2xl shadow-none w-full transition-all duration-300">
                             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-3 border-b border-stone-200">
                                 <div class="flex items-center gap-6">
                                     <div class="shrink-0 flex items-center justify-center w-16 h-16">
