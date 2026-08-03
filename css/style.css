@@ -14,76 +14,15 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     z-index: 1;
 }
-.scroll-target {
-    /* Initial state: Hidden via clip-path and blurred */
-    filter: blur(10px);
-    transform: translateY(20px);
-    clip-path: inset(0 0 100% 0);
-    /* Ensure the element is effectively hidden but takes up space */
-}
 
-.scroll-target.visible {
-    animation: blurSlideIn 1s cubic-bezier(0.16, 1, 0.3, 1) both;
-}
-
-@keyframes blurSlideIn {
-    0% {
-        filter: blur(10px);
-        transform: translateY(20px);
-        clip-path: inset(0 0 100% 0);
-    }
-    100% {
-        filter: blur(0);
-        transform: translateY(0);
-        clip-path: inset(0 0 0 0);
-    }
-}
-.skill-icon-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s ease-in-out;
-    /* Ensure flex items don't shrink in marquee */
-    flex-shrink: 0;
-    width: 100px; /* Fixed width for consistent spacing */
-}
-.skill-icon-container:hover {
-    transform: translateY(-5px);
-}
-.skill-tooltip {
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 8px;
-    background-color: #1c1917; /* stone-900 */
-    color: #fafaf9; /* stone-50 */
-    padding: 4px 8px;
-    border-radius: 6px;
-    font-size: 0.875rem;
-    white-space: nowrap;
-    opacity: 0;
-    transition: opacity 0.2s;
-    pointer-events: none; /* Make sure tooltip doesn't steal mouse events */
-}
-.skill-icon-container:hover .skill-tooltip {
-    opacity: 1;
-}
-.company-logo-container {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 0.5rem;
-}
 .company-tooltip {
     position: absolute;
     bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 10px;
-    background-color: #1c1917; /* stone-900 */
-    color: #fafaf9; /* stone-50 */
+    background-color: #1c1917;
+    color: #fafaf9;
     padding: 8px 12px;
     border-radius: 6px;
     font-size: 0.875rem;
@@ -95,106 +34,25 @@ h1, h2, h3, h4, h5, h6 {
     pointer-events: none;
     z-index: 10;
 }
-.company-logo-container:hover .company-tooltip {
+
+.group:hover .company-tooltip {
     opacity: 1;
 }
 
-/* New Hero Animations */
-.slide-in-left {
-    animation: slideInLeft 1s ease-out forwards;
-    opacity: 0;
+.event-date {
+    font-size: 0.8125rem;
+    font-weight: 400;
+    color: #a8a29e;
+    letter-spacing: 0.02em;
 }
 
-@keyframes slideInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.fade-in-right {
-    animation: fadeInRight 1s ease-out forwards;
-    opacity: 0;
-    animation-delay: 0.3s; /* Slight delay for the visual */
-}
-
-@keyframes fadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-/* Tech Marquee Animation */
-.marquee-container {
-    /* Alpha mask for gradient fade on edges */
-    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-}
-
-.marquee-content {
-    width: max-content;
-    animation: scroll 30s linear infinite;
-}
-
-/* Pause on hover */
-.marquee-container:hover .marquee-content {
-    animation-play-state: paused;
-}
-
-@keyframes scroll {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-}
-
-/* Ensure tooltips are visible above mask/container boundaries when hovered */
-.skill-icon-container {
-    z-index: 1; /* Base z-index */
-}
-
-/* Spotlight Card Effect */
-.spotlight-card {
-    position: relative;
-    overflow: hidden;
-}
-
-.spotlight-card::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    z-index: 1;
-    background: radial-gradient(
-        420px circle at var(--mouse-x) var(--mouse-y),
-        rgba(0, 0, 0, 0.03),
-        transparent 40%
-    );
-    opacity: 0;
-    transition: opacity 0.3s;
-    pointer-events: none; /* Allows clicks to pass through to links */
-}
-
-.spotlight-card:hover::after {
-    opacity: 1;
-}
-
-/* Ensure content sits above the spotlight */
-.spotlight-card > * {
-    position: relative;
-    z-index: 2;
-}
-
-/* Large Screen Scaling (27\" Monitors / >1440px) */
-@media (min-width: 1440px) {
-    html {
-        font-size: 18px; /* Scales everything (1rem = 18px) - approx +12.5% */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
     }
 }

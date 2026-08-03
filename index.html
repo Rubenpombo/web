@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
     <script src="https://unpkg.com/lucide@0.577.0"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,21 +17,15 @@
 
     <div id="particles-js"></div>
 
-    <!-- Header -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-200 transition-all duration-300">
-        <!-- Reading Progress Bar -->
-        <div id="scroll-progress" class="absolute top-0 left-0 h-[3px] bg-stone-950 transition-all duration-100 ease-out" style="width: 0%"></div>
-        
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#hero" class="text-2xl font-bold text-stone-900 hover:text-stone-700 transition-colors">Ruben Parte Pombo</a>
+            <a href="index.html" class="text-2xl font-bold text-stone-900 hover:text-stone-700 transition-colors">Ruben Parte Pombo</a>
             <div class="hidden md:flex items-center space-x-8">
-                <a href="#about" class="text-lg text-slate-600 hover:text-stone-950 transition-colors" data-i18n="nav.about">About</a>
-                <a href="#experience" class="text-lg text-slate-600 hover:text-stone-950 transition-colors" data-i18n="nav.experience">Experience</a>
-                <a href="#education" class="text-lg text-slate-600 hover:text-stone-950 transition-colors" data-i18n="nav.education">Education</a>
-                <a href="#projects" class="text-lg text-slate-600 hover:text-stone-950 transition-colors" data-i18n="nav.projects">Projects</a>
+                <a href="background.html" class="text-lg text-slate-600 hover:text-stone-950 transition-colors" data-i18n="nav.background">Background</a>
+                <a href="projects.html" class="text-lg text-slate-600 hover:text-stone-950 transition-colors" data-i18n="nav.projects">Projects</a>
+                <a href="events.html" class="text-lg text-slate-600 hover:text-stone-950 transition-colors" data-i18n="nav.events">Events</a>
                 <a href="#contact" class="text-lg bg-stone-950 hover:bg-stone-800 text-white font-bold py-2 px-6 rounded-xl transition-all shadow-md shadow-stone-200" data-i18n="nav.contact">Contact</a>
-                
-                <!-- Language Selector (Desktop) -->
+
                 <div class="relative">
                     <button id="lang-toggle" class="flex items-center space-x-2 text-slate-500 hover:text-stone-900 transition-colors focus:outline-none py-2 px-3 rounded-lg hover:bg-stone-100">
                         <i data-lucide="globe" class="w-5 h-5"></i>
@@ -55,438 +48,117 @@
                 <i data-lucide="menu" class="w-6 h-6"></i>
             </button>
         </nav>
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md border-b border-stone-200">
-            <a href="#about" class="block text-center py-3 px-6 text-lg text-slate-600 hover:bg-stone-50 transition-colors" data-i18n="nav.about">About</a>
-            <a href="#experience" class="block text-center py-3 px-6 text-lg text-slate-600 hover:bg-stone-50 transition-colors" data-i18n="nav.experience">Experience</a>
-            <a href="#education" class="block text-center py-3 px-6 text-lg text-slate-600 hover:bg-stone-50 transition-colors" data-i18n="nav.education">Education</a>
-            <a href="#projects" class="block text-center py-3 px-6 text-lg text-slate-600 hover:bg-stone-50 transition-colors" data-i18n="nav.projects">Projects</a>
+            <a href="background.html" class="block text-center py-3 px-6 text-lg text-slate-600 hover:bg-stone-50 transition-colors" data-i18n="nav.background">Background</a>
+            <a href="projects.html" class="block text-center py-3 px-6 text-lg text-slate-600 hover:bg-stone-50 transition-colors" data-i18n="nav.projects">Projects</a>
+            <a href="events.html" class="block text-center py-3 px-6 text-lg text-slate-600 hover:bg-stone-50 transition-colors" data-i18n="nav.events">Events</a>
             <a href="#contact" class="block text-center py-3 px-6 text-lg text-slate-600 hover:bg-stone-50 transition-colors" data-i18n="nav.contact">Contact</a>
-            
-            <!-- Language Selector (Mobile) -->
             <div class="flex justify-center py-6 border-t border-stone-100 space-x-4">
-                <button class="lang-option-mobile px-6 py-2 rounded-full bg-stone-50 text-slate-600 border border-stone-200 hover:border-stone-950 hover:text-stone-900 transition-all text-sm font-medium tracking-wide" data-lang="en">
-                    EN
-                </button>
-                <button class="lang-option-mobile px-6 py-2 rounded-full bg-stone-50 text-slate-600 border border-stone-200 hover:border-stone-950 hover:text-stone-900 transition-all text-sm font-medium tracking-wide" data-lang="es">
-                    ES
-                </button>
+                <button class="lang-option-mobile px-6 py-2 rounded-full bg-stone-50 text-slate-600 border border-stone-200 hover:border-stone-950 hover:text-stone-900 transition-all text-sm font-medium tracking-wide" data-lang="en">EN</button>
+                <button class="lang-option-mobile px-6 py-2 rounded-full bg-stone-50 text-slate-600 border border-stone-200 hover:border-stone-950 hover:text-stone-900 transition-all text-sm font-medium tracking-wide" data-lang="es">ES</button>
             </div>
         </div>
     </header>
 
     <main class="container mx-auto px-6 pt-24 relative z-10">
-        <!-- Hero Section -->
-        <section id="hero" class="min-h-screen flex items-center pt-20 pb-10 relative overflow-hidden">
-            <div class="max-w-7xl mx-auto px-6 w-full grid md:grid-cols-2 gap-24 items-center relative z-10">
-                <!-- Left Column: Text -->
-                <div class="text-left order-2 md:order-1 slide-in-left">
-                    <p class="text-stone-600 font-semibold text-lg mb-2 tracking-wide" data-i18n="hero.eyebrow">Hi, I'm Ruben Pombo</p>
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-stone-900 leading-tight mb-6" data-i18n="hero.title">
+        <!-- Hero -->
+        <section id="hero" class="pt-16 pb-12 md:pt-20 md:pb-16">
+            <div class="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+                <div class="text-left order-2 md:order-1">
+                    <p class="text-stone-600 font-semibold text-lg mb-2 tracking-wide" data-i18n="hero.eyebrow">Data Engineer · Asturias</p>
+                    <h1 class="text-4xl md:text-5xl font-bold text-stone-900 leading-tight mb-5" data-i18n="hero.title">
                         Data Engineer & R&D Specialist
                     </h1>
-                    <p class="text-xl text-slate-600 mb-8 max-w-lg leading-relaxed" data-i18n="hero.subtitle">
-                        Applying technical knowledge with enthusiasm and dedication.
-                    </p>
-                    
+                    <p class="text-xl text-slate-600 mb-8 max-w-lg leading-relaxed" data-i18n="about.intro"></p>
+
                     <div class="flex flex-col gap-4 items-start">
-                        <a href="#projects" class="bg-stone-950 hover:bg-stone-800 text-white font-bold text-lg py-3 px-8 rounded-xl transition-all duration-300 shadow-lg shadow-stone-200 hover:shadow-stone-300 transform hover:-translate-y-1" data-i18n="hero.cta">
-                            Check my Work
+                        <a href="projects.html" class="bg-stone-950 hover:bg-stone-800 text-white font-bold text-lg py-3 px-8 rounded-xl transition-colors shadow-md shadow-stone-200" data-i18n="hero.cta">
+                            View projects
                         </a>
                         <div class="flex items-center gap-4">
-                             <a href="https://www.linkedin.com/in/ruben-pp/" target="_blank" class="text-slate-500 hover:text-stone-950 transition-colors transform hover:scale-110">
-                                <i data-lucide="linkedin" class="w-8 h-8"></i>
+                            <a href="https://www.linkedin.com/in/ruben-pp/" target="_blank" class="text-slate-500 hover:text-stone-950 transition-colors">
+                                <i data-lucide="linkedin" class="w-7 h-7"></i>
                             </a>
-                            <a href="https://github.com/Rubenpombo" target="_blank" class="text-slate-500 hover:text-stone-950 transition-colors transform hover:scale-110">
-                                <i data-lucide="github" class="w-8 h-8"></i>
+                            <a href="https://github.com/Rubenpombo" target="_blank" class="text-slate-500 hover:text-stone-950 transition-colors">
+                                <i data-lucide="github" class="w-7 h-7"></i>
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Right Column: Visual -->
-                <div class="flex justify-center md:justify-end order-1 md:order-2 fade-in-right">
-                    <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
-                        <!-- Soft Glow Background -->
-                        <div class="absolute inset-0 bg-stone-200 rounded-full blur-3xl transform scale-110"></div>
-                         <!-- Image -->
-                        <img src="imgs/profile.png" alt="Ruben Pombo" class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-2xl">
+                <div class="flex justify-center md:justify-end order-1 md:order-2">
+                    <div class="relative w-56 h-56 md:w-72 md:h-72 lg:w-80 lg:h-80">
+                        <img src="imgs/profile.png" alt="Ruben Pombo" class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-xl">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="py-24 lg:py-32">
-            <div class="max-w-6xl mx-auto px-6 z-10">
-                <h2 class="text-4xl font-bold mb-16 text-center text-stone-900" data-i18n="about.title">About Me</h2>
-                <div class="text-xl text-slate-700 leading-relaxed text-center">
-                     <!-- START CUSTOM CONTENT: ABOUT -->
-                    <p class="scroll-target" data-i18n="about.text">
-                        I’m Ruben Pombo, a Data Science and Engineering graduate currently working as a Junior R&D Engineer in the industrial field. I enjoy tackling abstract and complex problems that require careful analysis and deep thinking before taking action. <br><br>My technical foundation has been shaped by my university studies, professional experience, and personal projects. This journey has allowed me to work across various areas, including statistics, data analysis, machine learning, and big data infrastructure. <br><br>Driven by a commitment to continuous learning, I am currently specializing in Cybersecurity and DevSecOps to build more resilient, scalable, and secure data infrastructures. My goal is to bridge the gap between Machine Learning and Security-first engineering. <br><br>On the side, I enjoy experimenting with novel tools like AI agents and MCP protocols to further enhance my efficiency and evolve as a programmer.
-                    </p>
-                     <!-- END CUSTOM CONTENT: ABOUT -->
-                </div>
+        <!-- About -->
+        <section id="about" class="py-10 md:py-14 border-t border-stone-200">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-2xl font-bold text-stone-900 mb-6" data-i18n="about.title">About Me</h2>
+                <div class="text-lg text-slate-700 leading-relaxed" data-i18n="about.text"></div>
             </div>
         </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="py-24 lg:py-32">
-            <h2 class="text-4xl font-bold text-center mb-16 text-stone-900" data-i18n="experience.title">Professional Experience</h2>
-            <div class="relative max-w-7xl mx-auto flex flex-col gap-8 px-6">
-                <!-- Vertical Timeline Line -->
-                <div class="absolute left-1/2 -translate-x-1/2 top-4 bottom-4 w-[1px] bg-stone-300 z-0"></div>
-                
-                <!-- START CUSTOM CONTENT: EXPERIENCE -->
-                
-                <!-- ArcelorMittal -->
-                <div class="relative z-10 w-full border border-stone-900/10 rounded-2xl p-10 lg:p-12 bg-stone-50 transition-all duration-300">
-                    <!-- Header -->
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2 border-b border-stone-200">
-                        <div class="flex items-center gap-6">
-                            <div class="relative group shrink-0">
-                                <img src="imgs/arcelor.png" alt="ArcelorMittal Logo" class="h-[58px] w-auto object-contain">
-                                <div class="company-tooltip" data-i18n="experience.arcelor.tooltip"></div>
-                            </div>
+        <!-- Current role -->
+        <section class="py-14 md:py-20 border-t border-stone-200">
+            <div class="max-w-4xl mx-auto">
+                <p class="text-xs font-semibold uppercase tracking-widest text-stone-500 mb-6" data-i18n="home.now">Currently</p>
+                <a href="background.html#experience" class="block border border-stone-900/10 rounded-2xl p-8 lg:p-10 bg-stone-50 hover:border-stone-900/25 transition-colors">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-3 border-b border-stone-200">
+                        <div class="flex items-center gap-5">
+                            <img src="imgs/arcelor.png" alt="ArcelorMittal Logo" class="h-12 w-auto object-contain shrink-0">
                             <div>
-                                <h4 class="font-bold text-xl text-stone-900 pr-4" data-i18n="experience.arcelor.role"></h4>
+                                <h2 class="font-bold text-xl text-stone-900" data-i18n="experience.arcelor.role">Junior R&D Engineer</h2>
                                 <p class="text-slate-500 text-base mt-1" data-i18n="experience.arcelor.company">ArcelorMittal Global R&D</p>
                             </div>
                         </div>
-                        <span class="text-sm font-semibold text-stone-500 shrink-0 self-start sm:self-center" data-i18n="experience.arcelor.date">Aug 2025 – Present</span>
+                        <span class="text-sm font-semibold text-stone-500 shrink-0" data-i18n="experience.arcelor.date">Aug 2025 – Present</span>
                     </div>
-                    <!-- Description Bullets -->
-                    <div class="mt-6 md:pl-24 text-slate-700 text-lg leading-relaxed">
-                        <ul class="list-disc list-outside space-y-2">
-                            <li data-i18n="experience.arcelor.desc"></li>
-                        </ul>
-                    </div>
-                    <!-- Tech Tags -->
-                    <div class="mt-4 md:pl-24 flex flex-wrap gap-2" data-i18n="experience.arcelor.tags"></div>
-                </div>
-
-                <!-- NTT DATA -->
-                <div class="relative z-10 w-full border border-stone-900/10 rounded-2xl p-10 lg:p-12 bg-stone-50 transition-all duration-300">
-                    <!-- Header -->
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2 border-b border-stone-200">
-                        <div class="flex items-center gap-6">
-                            <div class="relative group shrink-0">
-                                <img src="imgs/nttdata.png" alt="NTT DATA Logo" class="h-[19.8px] w-auto object-contain">
-                                <div class="company-tooltip" data-i18n="experience.ntt.tooltip"></div>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-xl text-stone-900 pr-4" data-i18n="experience.ntt.role"></h4>
-                                <p class="text-slate-500 text-base mt-1" data-i18n="experience.ntt.company">NTT DATA Europe & Latam</p>
-                            </div>
-                        </div>
-                        <span class="text-sm font-semibold text-stone-500 shrink-0 self-start sm:self-center" data-i18n="experience.ntt.date">Sep 2024 – May 2025</span>
-                    </div>
-                    <!-- Description Bullets -->
-                    <div class="mt-6 md:pl-24 text-slate-700 text-lg leading-relaxed">
-                        <ul class="list-disc list-outside space-y-2">
-                            <li data-i18n="experience.ntt.desc1"></li>
-                            <li data-i18n="experience.ntt.desc2"></li>
-                            <li data-i18n="experience.ntt.desc3"></li>
-                        </ul>
-                    </div>
-                    <!-- Tech Tags -->
-                    <div class="mt-4 md:pl-24 flex flex-wrap gap-2" data-i18n="experience.ntt.tags"></div>
-                </div>
-
-                <!-- Gonvarri -->
-                <div class="relative z-10 w-full border border-stone-900/10 rounded-2xl p-10 lg:p-12 bg-stone-50 transition-all duration-300">
-                    <!-- Header -->
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2 border-b border-stone-200">
-                        <div class="flex items-center gap-6">
-                            <div class="relative group shrink-0">
-                                <img src="imgs/gonvarri.png" alt="Gonvarri Industries Logo" class="h-[58px] w-auto object-contain">
-                                <div class="company-tooltip" data-i18n="experience.gonvarri.tooltip"></div>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-xl text-stone-900 pr-4" data-i18n="experience.gonvarri.role"></h4>
-                                <p class="text-slate-500 text-base mt-1" data-i18n="experience.gonvarri.company">Gonvarri Industries</p>
-                            </div>
-                        </div>
-                        <span class="text-sm font-semibold text-stone-500 shrink-0 self-start sm:self-center" data-i18n="experience.gonvarri.date">Jul 2023 – Aug 2023</span>
-                    </div>
-                    <!-- Description Bullets -->
-                    <div class="mt-6 md:pl-24 text-slate-700 text-lg leading-relaxed">
-                        <ul class="list-disc list-outside space-y-2">
-                            <li data-i18n="experience.gonvarri.desc1"></li>
-                            <li data-i18n="experience.gonvarri.desc2"></li>
-                        </ul>
-                    </div>
-                    <!-- Tech Tags -->
-                    <div class="mt-4 md:pl-24 flex flex-wrap gap-2" data-i18n="experience.gonvarri.tags"></div>
-                </div>
-
-                <!-- END CUSTOM CONTENT: EXPERIENCE -->
+                    <p class="mt-5 text-slate-700 text-lg leading-relaxed" data-i18n="experience.arcelor.desc"></p>
+                    <span class="inline-block mt-5 text-stone-950 font-semibold" data-i18n="home.roleCta">Full background →</span>
+                </a>
             </div>
         </section>
 
-        <!-- Education & Achievements Section -->
-        <section id="education" class="py-24 lg:py-32">
-            <div class="max-w-[90rem] mx-auto">
-                <!-- Education (Full Width but constrained) -->
-                <div class="w-full mb-16 max-w-7xl mx-auto">
-                    <h2 class="text-4xl font-bold text-center mb-16 text-stone-900" data-i18n="education.eduTitle">Education</h2>
-                     <!-- START CUSTOM CONTENT: EDUCATION -->
-                    <div class="relative flex flex-col gap-8">
-                        <!-- Vertical Timeline Line -->
-                        <div class="absolute left-1/2 -translate-x-1/2 top-4 bottom-4 w-[1px] bg-stone-300 z-0"></div>
-                        <!-- UOC Master -->
-                        <div class="spotlight-card relative z-10 bg-stone-50 border border-stone-900/10 p-10 lg:p-12 rounded-2xl shadow-none w-full transition-all duration-300">
-                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-3 border-b border-stone-200">
-                                <div class="flex items-center gap-6">
-                                    <div class="shrink-0 flex items-center justify-center w-24 h-24">
-                                        <img src="imgs/uoc.png" alt="UOC Logo" class="w-full h-full object-contain">
-                                    </div>
-                                    <div>
-                                        <h4 class="font-bold text-xl text-stone-900 pr-4" data-i18n="education.uoc.degree">MSc in Cybersecurity and Privacy (Technology Specialization)</h4>
-                                        <p class="text-slate-500 text-base mt-1" data-i18n="education.uoc.university">UOC (Universitat Oberta de Catalunya), Barcelona, Spain (Online)</p>
-                                    </div>
-                                </div>
-                                <span class="text-sm font-semibold text-stone-500 shrink-0 self-start sm:self-center" data-i18n="education.uoc.date">Expected June 2027</span>
-                            </div>
-                            <div class="mt-6 md:pl-[120px] space-y-4">
-                                <p class="text-slate-700 text-base" data-i18n="education.uoc.grade"><strong>ECTS:</strong> 60</p>
-                                <p class="text-slate-700 text-base leading-relaxed" data-i18n="education.uoc.desc">Integrating a security-first approach into engineering workflows alongside professional activity.</p>
-                                <!-- Competencies Tags at bottom -->
-                                <div class="flex flex-wrap gap-2 mt-2" data-i18n="education.uoc.competencies">
-                                    <!-- Injected from JS -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- University of Oviedo -->
-                        <div class="spotlight-card relative z-10 bg-stone-50 border border-stone-900/10 p-10 lg:p-12 rounded-2xl shadow-none w-full transition-all duration-300">
-                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-3 border-b border-stone-200">
-                                <div class="flex items-center gap-6">
-                                    <div class="shrink-0 flex items-center justify-center w-[88px] h-[88px]">
-                                        <img src="imgs/uniovi.png" alt="University of Oviedo Logo" class="w-full h-full object-contain">
-                                    </div>
-                                    <div>
-                                        <h4 class="font-bold text-xl text-stone-900 pr-4" data-i18n="education.uni.degree">Bachelor of Science in Data Science and Engineering</h4>
-                                        <p class="text-slate-500 text-base mt-1" data-i18n="education.uni.university">University of Oviedo, Gijón, Spain</p>
-                                    </div>
-                                </div>
-                                <span class="text-sm font-semibold text-stone-500 shrink-0 self-start sm:self-center" data-i18n="education.uni.date">June 2025</span>
-                            </div>
-                            <div class="mt-6 md:pl-[120px] space-y-4">
-                                <p class="text-slate-700 text-base" data-i18n="education.uni.grade"><strong>ECTS:</strong> 240 <br> <strong>Grade:</strong> <strong>7.2/10.0</strong> (2:1 equivalent)</p>
-                                
-                                <!-- Details in a list without extra separators -->
-                                <ul class="list-disc list-outside ml-5 text-slate-700 text-base space-y-2 leading-relaxed">
-                                    <li data-i18n="education.uni.abroad">Completed semester abroad at Faculty of Sciences, University of Porto (Portugal), taking Master’s level courses delivered in English</li>
-                                    <li data-i18n="education.uni.thesis"><strong>Final Thesis (10.0, honors.):</strong> Classification of endangered flying birds through fine-tuned YOLO object detection model, achieving F1 score of 0.80.</li>
-                                </ul>
-
-                                <!-- Competencies Tags at bottom -->
-                                <div class="flex flex-wrap gap-2 mt-4" data-i18n="education.uni.competencies">
-                                    <!-- Injected from JS -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- High School -->
-                        <div class="spotlight-card relative z-10 bg-stone-50 border border-stone-900/10 p-8 lg:p-10 rounded-2xl shadow-none w-full transition-all duration-300">
-                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-3 border-b border-stone-200">
-                                <div class="flex items-center gap-6">
-                                    <div class="shrink-0 flex items-center justify-center w-16 h-16">
-                                        <img src="imgs/sanfer.png" alt="Colegio San Fernando Logo" class="w-full h-full object-contain">
-                                    </div>
-                                    <div>
-                                        <h4 class="font-bold text-lg text-stone-900 pr-4" data-i18n="education.school.name">Technological High School</h4>
-                                        <p class="text-slate-500 text-sm mt-1" data-i18n="education.school.center">Colegio San Fernando, Avilés, Spain</p>
-                                    </div>
-                                </div>
-                                <span class="text-sm font-semibold text-stone-500 shrink-0 self-start sm:self-center" data-i18n="education.school.date">June 2021</span>
-                            </div>
-                            <div class="mt-6 md:pl-[120px] space-y-4">
-                                <p class="text-slate-700 text-base" data-i18n="education.school.grade"><strong>Grade:</strong> <strong>9.0/10.0</strong></p>
-                                
-                                <ul class="list-disc list-outside ml-5 text-slate-700 text-base space-y-1">
-                                    <li data-i18n="education.school.ranking">Among the top 100 Spanish colleges</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                     <!-- END CUSTOM CONTENT: EDUCATION -->
-                </div>
-                
-                <!-- Achievements Grid (Bottom) -->
-                <div class="pt-24 lg:pt-32 border-t border-stone-200">
-                     <h2 class="text-4xl font-bold text-center mb-16 text-stone-900" data-i18n="education.achievements.title">Achievements & More</h2>
-                     <!-- START CUSTOM CONTENT: ACHIEVEMENTS -->
-                     <div class="grid md:grid-cols-4 gap-12">
-                        <!-- Winner -->
-                        <div class="md:col-span-1 spotlight-card bg-white border border-stone-200 p-8 lg:p-10 rounded-xl shadow-sm flex flex-col h-full" style="background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.85)), url('imgs/premio.jpeg'); background-size: cover; background-position: center;">
-                            <div class="flex items-center space-x-3 mb-4">
-                                <i data-lucide="award" class="w-8 h-8 text-stone-900 shrink-0"></i>
-                                <h4 class="font-bold text-xl" data-i18n="education.achievements.winner.title">Project Winner</h4>
-                            </div>
-                            <div class="flex-grow">
-                                <p class="text-slate-700 text-base leading-relaxed" data-i18n="education.achievements.winner.desc">"Application of Generative AI in Industrial Environments" for Delta (<a href="https://iturcemigrupo.com/" target="_blank" class="text-stone-950 font-medium underline hover:text-stone-700">Iturcermi Group</a>).</p>
-                            </div>
-                            <a href="https://www.linkedin.com/posts/ruben-pp_ganadores-del-proyecto-acad%C3%A9mico-aplicaci%C3%B3n-activity-7335225244451770368-pQ3a" target="_blank" class="text-stone-900 font-semibold hover:underline text-sm mt-4 block" data-i18n="education.achievements.winner.link">View LinkedIn Post</a>
-                        </div>
-                        
-                        <!-- Certifications -->
-                        <div class="md:col-span-2 spotlight-card bg-white border border-stone-200 p-8 lg:p-10 rounded-xl shadow-sm h-full">
-                            <h4 class="font-bold text-xl mb-4 text-stone-900" data-i18n="education.achievements.certs.title">Certifications</h4>
-                            <ul class="list-disc list-inside text-slate-700 space-y-3 text-base leading-relaxed" data-i18n="education.achievements.certs.list">
-                                <!-- Injected from JS -->
-                            </ul>
-                        </div>
-                        
-                        <!-- Hackathons -->
-                        <div class="md:col-span-1 spotlight-card bg-white border border-stone-200 p-8 lg:p-10 rounded-xl shadow-sm h-full">
-                            <h4 class="font-bold text-xl mb-4 text-stone-900" data-i18n="education.achievements.hackathons.title">Hackathons Attendance</h4>
-                            <ul class="list-disc list-inside text-slate-700 space-y-3 text-base leading-relaxed" data-i18n="education.achievements.hackathons.list">
-                                <!-- Injected from JS -->
-                            </ul>
-                        </div>
-                    </div>
-                      <!-- END CUSTOM CONTENT: ACHIEVEMENTS -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Technical Skills Section -->
-        <section id="skills" class="py-24 lg:py-32">
-            <h2 class="text-4xl font-bold text-center mb-16 text-stone-900" data-i18n="skills.title">Technical Skills</h2>
-            <div class="max-w-7xl mx-auto">
-                <!-- Programming Languages -->
-                <div class="mb-12">
-                    <h3 class="text-2xl font-bold text-center mb-8 text-stone-900" data-i18n="skills.languages">Programming Languages</h3>
-                    <div class="flex justify-center gap-8">
-                        <div class="skill-icon-container"><img src="https://cdn.simpleicons.org/python" alt="Python" class="w-14 h-14 hover:scale-110 transition-transform duration-300"><span class="skill-tooltip" data-i18n="skills.tooltips.python" data-i18n-attr="title"></span></div>
-                        <div class="skill-icon-container"><img src="https://cdn.simpleicons.org/r" alt="R" class="w-14 h-14 hover:scale-110 transition-transform duration-300"><span class="skill-tooltip" data-i18n="skills.tooltips.r" data-i18n-attr="title"></span></div>
-                    </div>
+        <!-- Project teasers -->
+        <section class="py-14 md:py-20 border-t border-stone-200">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-wrap items-baseline justify-between gap-3 mb-10">
+                    <h2 class="text-2xl font-bold text-stone-900" data-i18n="home.selectedWork">Selected work</h2>
+                    <a href="projects.html" class="text-stone-950 font-semibold hover:underline" data-i18n="home.viewAllProjects">All projects →</a>
                 </div>
 
-                <!-- Technologies -->
-                <div class="mb-12">
-                    <h3 class="text-2xl font-bold text-center mb-8 text-stone-900" data-i18n="skills.tech">Technologies</h3>
-                    <!-- Marquee Container -->
-                    <div class="marquee-container relative overflow-hidden group py-8">
-                        <!-- Marquee Content (Moving Track) -->
-                        <div class="marquee-content flex gap-8 w-max">
-                            <div class="skill-icon-container"><img src="https://cdn.simpleicons.org/postgresql" alt="SQL" class="w-14 h-14 hover:scale-110 transition-transform duration-300"><span class="skill-tooltip" data-i18n="skills.tooltips.sql" data-i18n-attr="title"></span></div>
-                            <div class="skill-icon-container"><img src="https://cdn.simpleicons.org/apachespark" alt="Apache Spark" class="w-14 h-14 hover:scale-110 transition-transform duration-300"><span class="skill-tooltip" data-i18n="skills.tooltips.spark" data-i18n-attr="title"></span></div>
-                            <div class="skill-icon-container"><img src="https://cdn.simpleicons.org/apachekafka" alt="Apache Kafka" class="w-14 h-14 hover:scale-110 transition-transform duration-300"><span class="skill-tooltip" data-i18n="skills.tooltips.kafka" data-i18n-attr="title"></span></div>
-                            <div class="skill-icon-container"><img src="https://cdn.simpleicons.org/apacheairflow" alt="Airflow" class="w-14 h-14 hover:scale-110 transition-transform duration-300"><span class="skill-tooltip" data-i18n="skills.tooltips.airflow" data-i18n-attr="title"></span></div>
-                            <div class="skill-icon-container"><img src="https://cdn.simpleicons.org/docker" alt="Docker" class="w-14 h-14 hover:scale-110 transition-transform duration-300"><span class="skill-tooltip" data-i18n="skills.tooltips.docker" data-i18n-attr="title"></span></div>
-                            <div class="skill-icon-container"><img src="https://cdn.simpleicons.org/git" alt="Git" class="w-14 h-14 hover:scale-110 transition-transform duration-300"><span class="skill-tooltip" data-i18n="skills.tooltips.git" data-i18n-attr="title"></span></div>
-                            <div class="skill-icon-container"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg" alt="Azure" class="w-14 h-14 p-1 object-contain hover:scale-110 transition-transform duration-300"><span class="skill-tooltip" data-i18n="skills.tooltips.azure" data-i18n-attr="title"></span></div>
-                            <div class="skill-icon-container"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI" class="w-14 h-14 p-1 object-contain hover:scale-110 transition-transform duration-300"><span class="skill-tooltip" data-i18n="skills.tooltips.powerbi" data-i18n-attr="title"></span></div>
-                            <div class="skill-icon-container"><img src="https://cdn.simpleicons.org/streamlit" alt="Streamlit" class="w-14 h-14 hover:scale-110 transition-transform duration-300"><span class="skill-tooltip" data-i18n="skills.tooltips.streamlit" data-i18n-attr="title"></span></div>
-                            <div class="skill-icon-container"><img src="https://cdn.simpleicons.org/linux" alt="Linux" class="w-14 h-14 hover:scale-110 transition-transform duration-300"><span class="skill-tooltip" data-i18n="skills.tooltips.linux" data-i18n-attr="title"></span></div>
-                            <div class="skill-icon-container"><img src="https://cdn.simpleicons.org/gnubash" alt="Shell Scripting" class="w-14 h-14 hover:scale-110 transition-transform duration-300"><span class="skill-tooltip" data-i18n="skills.tooltips.bash" data-i18n-attr="title"></span></div>
-                            <div class="skill-icon-container"><img src="https://cdn.simpleicons.org/gitlab" alt="GitLab" class="w-14 h-14 hover:scale-110 transition-transform duration-300"><span class="skill-tooltip" data-i18n="skills.tooltips.gitlab" data-i18n-attr="title"></span></div>
+                <div class="flex flex-col gap-10">
+                    <article class="project-list-item flex flex-col sm:flex-row gap-6 sm:gap-8 items-start">
+                        <img src="imgs/projects/iberbirds.png" alt="IberBirds app preview" class="project-screenshot w-full sm:w-44 h-32 sm:h-28 object-cover rounded-lg border border-stone-200 shrink-0 bg-white">
+                        <div class="min-w-0 flex-1">
+                            <h3 class="text-xl font-bold text-stone-950 mb-2" data-i18n="projects.iberbirds.title">IberBirds: Iberian Birds Classifier</h3>
+                            <p class="text-slate-700 text-base leading-relaxed" data-i18n="projects.iberbirds.desc"></p>
                         </div>
-                    </div>
+                    </article>
+
+                    <article class="project-list-item flex flex-col sm:flex-row gap-6 sm:gap-8 items-start">
+                        <img src="imgs/projects/pipeline.png" alt="Real Time User Data Pipeline preview" class="project-screenshot w-full sm:w-44 h-32 sm:h-28 object-cover rounded-lg border border-stone-200 shrink-0 bg-white">
+                        <div class="min-w-0 flex-1">
+                            <h3 class="text-xl font-bold text-stone-950 mb-2" data-i18n="projects.pipeline.title">Real Time User Data Pipeline</h3>
+                            <p class="text-slate-700 text-base leading-relaxed" data-i18n="projects.pipeline.desc"></p>
+                        </div>
+                    </article>
                 </div>
-
-                <!-- Libraries & Frameworks -->
-                <div>
-                    <h3 class="text-2xl font-bold text-center mb-10 text-stone-900" data-i18n="skills.libs">Libraries & Frameworks</h3>
-                    <!-- Grid Container (Replaces Marquee) -->
-                    <div class="flex flex-wrap justify-center gap-6 md:gap-8 px-4">
-                        <div class="skill-icon-container bg-white hover:bg-stone-50 border border-stone-200 hover:border-stone-950 transition-all duration-300"><img src="https://cdn.simpleicons.org/pandas" alt="Pandas" class="w-12 h-12 md:w-14 md:h-14"><span class="skill-tooltip" data-i18n="skills.tooltips.pandas" data-i18n-attr="title"></span></div>
-                        <div class="skill-icon-container bg-white hover:bg-stone-50 border border-stone-200 hover:border-stone-950 transition-all duration-300"><img src="https://cdn.simpleicons.org/numpy" alt="NumPy" class="w-12 h-12 md:w-14 md:h-14"><span class="skill-tooltip" data-i18n="skills.tooltips.numpy" data-i18n-attr="title"></span></div>
-                        <div class="skill-icon-container bg-white hover:bg-stone-50 border border-stone-200 hover:border-stone-950 transition-all duration-300"><img src="https://cdn.simpleicons.org/scikitlearn" alt="Scikit-Learn" class="w-12 h-12 md:w-14 md:h-14"><span class="skill-tooltip" data-i18n="skills.tooltips.scikitlearn" data-i18n-attr="title"></span></div>
-                        <div class="skill-icon-container bg-white hover:bg-stone-50 border border-stone-200 hover:border-stone-950 transition-all duration-300"><img src="https://cdn.simpleicons.org/pytorch" alt="PyTorch" class="w-12 h-12 md:w-14 md:h-14"><span class="skill-tooltip" data-i18n="skills.tooltips.pytorch" data-i18n-attr="title"></span></div>
-                        <div class="skill-icon-container bg-white hover:bg-stone-50 border border-stone-200 hover:border-stone-950 transition-all duration-300"><img src="https://cdn.simpleicons.org/spacy" alt="spaCy" class="w-12 h-12 md:w-14 md:h-14"><span class="skill-tooltip" data-i18n="skills.tooltips.spacy" data-i18n-attr="title"></span></div>
-                        <div class="skill-icon-container bg-white hover:bg-stone-50 border border-stone-200 hover:border-stone-950 transition-all duration-300"><img src="https://cdn.simpleicons.org/huggingface" alt="Transformers" class="w-12 h-12 md:w-14 md:h-14"><span class="skill-tooltip" data-i18n="skills.tooltips.huggingface" data-i18n-attr="title"></span></div>
-                        <div class="skill-icon-container bg-white hover:bg-stone-50 border border-stone-200 hover:border-stone-950 transition-all duration-300"><img src="https://cdn.simpleicons.org/tensorflow" alt="TensorFlow" class="w-12 h-12 md:w-14 md:h-14"><span class="skill-tooltip" data-i18n="skills.tooltips.tensorflow" data-i18n-attr="title"></span></div>
-                        <div class="skill-icon-container bg-white hover:bg-stone-50 border border-stone-200 hover:border-stone-950 transition-all duration-300"><img src="https://cdn.simpleicons.org/keras" alt="Keras" class="w-12 h-12 md:w-14 md:h-14"><span class="skill-tooltip" data-i18n="skills.tooltips.keras" data-i18n-attr="title"></span></div>
-                        <div class="skill-icon-container bg-white hover:bg-stone-50 border border-stone-200 hover:border-stone-950 transition-all duration-300"><img src="https://cdn.simpleicons.org/langchain" alt="LangChain" class="w-12 h-12 md:w-14 md:h-14"><span class="skill-tooltip" data-i18n="skills.tooltips.langchain" data-i18n-attr="title"></span></div>
-                        <div class="skill-icon-container bg-white hover:bg-stone-50 border border-stone-200 hover:border-stone-950 transition-all duration-300"><img src="https://cdn.simpleicons.org/apachespark" alt="PySpark" class="w-12 h-12 md:w-14 md:h-14"><span class="skill-tooltip" data-i18n="skills.tooltips.spark" data-i18n-attr="title"></span></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Side Projects Section -->
-        <section id="projects" class="py-24 lg:py-32">
-            <h2 class="text-4xl font-bold text-center mb-16 text-stone-900" data-i18n="projects.title">Side Projects</h2>
-            <div class="relative max-w-4xl mx-auto px-12">
-                <!-- Carousel Container -->
-                <div class="overflow-hidden rounded-xl shadow-xl bg-white border border-stone-200">
-                     <!-- Carousel Track -->
-                    <div id="carousel-track" class="flex transition-transform duration-500 ease-in-out">
-                        
-                        <!-- Project: IberBirds -->
-                        <div class="w-full flex-shrink-0 p-8 lg:p-12">
-                            <h3 class="text-2xl font-bold mb-4 text-stone-900" data-i18n="projects.iberbirds.title"></h3>
-                            <p class="text-slate-700 text-lg mb-6 leading-relaxed" data-i18n="projects.iberbirds.desc"></p>
-                            <div class="flex flex-wrap gap-2 mb-8" data-i18n="projects.iberbirds.tags">
-                                <!-- Tags injected via JS -->
-                            </div>
-                            <div class="flex gap-4">
-                                <a href="https://github.com/Rubenpombo/birds_app" target="_blank" class="inline-flex items-center text-white font-bold py-2 px-6 rounded-lg bg-stone-950 hover:bg-stone-800 transition-colors shadow-md shadow-stone-200"><i data-lucide="github" class="w-5 h-5 mr-2"></i><span data-i18n="projects.viewCode"></span></a>
-                                <a href="https://rubenppombo-birds-app.hf.space" target="_blank" class="inline-flex items-center text-stone-900 font-bold py-2 px-6 rounded-lg bg-white border border-stone-300 hover:bg-stone-50 transition-colors shadow-sm"><i data-lucide="external-link" class="w-5 h-5 mr-2"></i><span data-i18n="projects.liveDemo"></span></a>
-                            </div>
-                        </div>
-
-                        <!-- Project 1: Pipeline -->
-                        <div class="w-full flex-shrink-0 p-8 lg:p-12">
-                            <h3 class="text-2xl font-bold mb-4 text-stone-900" data-i18n="projects.pipeline.title"></h3>
-                            <p class="text-slate-700 text-lg mb-6 leading-relaxed" data-i18n="projects.pipeline.desc"></p>
-                            <div class="flex flex-wrap gap-2 mb-8" data-i18n="projects.pipeline.tags">
-                                <!-- Tags injected via JS -->
-                            </div>
-                            <a href="https://github.com/Rubenpombo/end-to-end-data-pipeline" target="_blank" class="inline-flex items-center text-white font-bold py-2 px-6 rounded-lg bg-stone-950 hover:bg-stone-800 transition-colors shadow-md shadow-stone-200"><i data-lucide="github" class="w-5 h-5 mr-2"></i><span data-i18n="projects.viewCode"></span></a>
-                        </div>
-
-                         <!-- Project 2: NLP Recipes -->
-                        <div class="w-full flex-shrink-0 p-8 lg:p-12">
-                            <h3 class="text-2xl font-bold mb-4 text-stone-900" data-i18n="projects.nlp.title"></h3>
-                            <p class="text-slate-700 text-lg mb-6 leading-relaxed" data-i18n="projects.nlp.desc"></p>
-                            <div class="flex flex-wrap gap-2 mb-8" data-i18n="projects.nlp.tags">
-                                <!-- Tags injected via JS -->
-                            </div>
-                            <a href="https://github.com/Rubenpombo/NLP-in-recipes" target="_blank" class="inline-flex items-center text-white font-bold py-2 px-6 rounded-lg bg-stone-950 hover:bg-stone-800 transition-colors shadow-md shadow-stone-200"><i data-lucide="github" class="w-5 h-5 mr-2"></i><span data-i18n="projects.viewCode"></span></a>
-                        </div>
-
-                        <!-- Project 3: Quantum -->
-                        <div class="w-full flex-shrink-0 p-8 lg:p-12">
-                            <h3 class="text-2xl font-bold mb-4 text-stone-900" data-i18n="projects.quantum.title"></h3>
-                            <p class="text-slate-700 text-lg mb-6 leading-relaxed" data-i18n="projects.quantum.desc"></p>
-                            <div class="flex flex-wrap gap-2 mb-8" data-i18n="projects.quantum.tags">
-                                <!-- Tags injected via JS -->
-                            </div>
-                             <a href="https://github.com/Rubenpombo/QuantumBankruptcy" target="_blank" class="inline-flex items-center text-white font-bold py-2 px-6 rounded-lg bg-stone-950 hover:bg-stone-800 transition-colors shadow-md shadow-stone-200"><i data-lucide="github" class="w-5 h-5 mr-2"></i><span data-i18n="projects.viewCode"></span></a>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Navigation Arrows -->
-                <button id="prev-project" class="absolute top-1/2 -left-4 md:-left-12 -translate-y-1/2 bg-white hover:bg-stone-50 text-stone-900 p-3 rounded-full border border-stone-200 shadow-lg transition-all focus:outline-none z-10 group">
-                    <i data-lucide="chevron-left" class="w-6 h-6 group-hover:scale-110 transition-transform"></i>
-                </button>
-                <button id="next-project" class="absolute top-1/2 -right-4 md:-right-12 -translate-y-1/2 bg-white hover:bg-stone-50 text-stone-900 p-3 rounded-full border border-stone-200 shadow-lg transition-all focus:outline-none z-10 group">
-                    <i data-lucide="chevron-right" class="w-6 h-6 group-hover:scale-110 transition-transform"></i>
-                </button>
-
-                <!-- Carousel Indicators -->
-                <div id="carousel-indicators" class="flex justify-center gap-2 mt-8"></div>
             </div>
         </section>
     </main>
 
-    <!-- Contact/Footer -->
-    <footer id="contact" class="py-16 lg:py-24 bg-stone-50 border-t border-stone-200 relative z-10">
+    <footer id="contact" class="py-16 lg:py-20 bg-stone-50 border-t border-stone-200 relative z-10">
         <div class="container mx-auto px-6 text-center">
-             <h2 class="text-3xl font-bold mb-4 text-stone-900" data-i18n="contact.title">Get In Touch</h2>
-             <p class="text-slate-600 max-w-xl mx-auto mb-8" data-i18n="contact.subtitle">
+            <h2 class="text-3xl font-bold mb-4 text-stone-900" data-i18n="contact.title">Get In Touch</h2>
+            <p class="text-slate-600 max-w-xl mx-auto mb-8" data-i18n="contact.subtitle">
                 Reach out on LinkedIn or send a message below, I'll reply by email.
-             </p>
-            <!-- START CUSTOM CONTENT: CONTACT -->
-             <form id="contact-form" class="max-w-lg mx-auto text-left mb-12 space-y-4">
-                <!-- Honeypot Field -->
+            </p>
+            <form id="contact-form" class="max-w-lg mx-auto text-left mb-12 space-y-4">
                 <div class="hidden" aria-hidden="true">
                     <label for="website_url">Leave this field empty</label>
                     <input type="text" name="website_url" id="website_url" tabindex="-1" autocomplete="off">
@@ -503,43 +175,30 @@
                     <label for="message" class="block text-slate-700 mb-2 font-medium" data-i18n="contact.form.message">Message</label>
                     <textarea id="message" name="message" rows="5" required class="w-full bg-white border border-stone-200 rounded-lg px-4 py-3 text-stone-900 focus:outline-none focus:border-stone-950 focus:ring-1 focus:ring-stone-950 transition-colors resize-none" placeholder="How can I help you?" data-i18n="contact.form.messagePlaceholder"></textarea>
                 </div>
-                <button type="submit" class="w-full bg-stone-950 hover:bg-stone-800 text-white font-bold text-lg py-3 px-8 rounded-xl transition-all duration-300 shadow-lg shadow-stone-200 hover:shadow-stone-300 transform hover:-translate-y-1" data-i18n="contact.form.btn">
+                <button type="submit" class="w-full bg-stone-950 hover:bg-stone-800 text-white font-bold text-lg py-3 px-8 rounded-xl transition-colors shadow-md shadow-stone-200" data-i18n="contact.form.btn">
                     Send Message
                 </button>
                 <div id="form-message" class="hidden text-center p-3 rounded-lg font-medium transition-all duration-300"></div>
-             </form>
-             <div class="flex justify-center space-x-6">
-                 <a href="https://www.linkedin.com/in/ruben-pp" class="text-slate-500 hover:text-stone-950 transition-colors">
-                     <i data-lucide="linkedin" class="w-8 h-8"></i>
-                 </a>
-                 <a href="https://github.com/Rubenpombo" target="_blank" class="text-slate-500 hover:text-stone-950 transition-colors">
-                     <i data-lucide="github" class="w-8 h-8"></i>
-                 </a>
-             </div>
-             <!-- END CUSTOM CONTENT: CONTACT -->
+            </form>
+            <div class="flex justify-center space-x-6">
+                <a href="https://www.linkedin.com/in/ruben-pp" class="text-slate-500 hover:text-stone-950 transition-colors">
+                    <i data-lucide="linkedin" class="w-8 h-8"></i>
+                </a>
+                <a href="https://github.com/Rubenpombo" target="_blank" class="text-slate-500 hover:text-stone-950 transition-colors">
+                    <i data-lucide="github" class="w-8 h-8"></i>
+                </a>
+            </div>
         </div>
     </footer>
+
+    <button id="back-to-top" class="fixed bottom-8 right-8 z-40 bg-white border border-stone-200 text-stone-600 p-3 rounded-full shadow-lg opacity-0 translate-y-10 pointer-events-none transition-all duration-300 hover:bg-stone-50 hover:text-stone-950 hover:border-stone-950 focus:outline-none">
+        <i data-lucide="chevron-up" class="w-6 h-6"></i>
+    </button>
 
     <script src="js/particles.min.js"></script>
     <script src="js/particles-config.js"></script>
     <script src="js/translations.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        lucide.createIcons();
-    </script>
-    <!-- Image Modal -->
-    <div id="image-modal" class="fixed inset-0 z-[100] hidden bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
-        <div class="relative max-w-4xl w-full max-h-[90vh] flex flex-col items-center">
-            <button id="modal-close" class="absolute -top-12 right-0 text-white hover:text-slate-400 transition-colors focus:outline-none">
-                <i data-lucide="x" class="w-8 h-8"></i>
-            </button>
-            <img id="modal-image" src="" alt="Preview" class="max-w-full max-h-[80vh] rounded-lg shadow-2xl object-contain">
-            <p id="modal-caption" class="text-slate-400 mt-4 text-lg font-medium text-center"></p>
-        </div>
-    </div>
-    <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 z-40 bg-white border border-stone-200 text-stone-600 p-3 rounded-full shadow-lg opacity-0 translate-y-10 pointer-events-none transition-all duration-300 hover:bg-stone-50 hover:text-stone-950 hover:border-stone-950 focus:outline-none">
-        <i data-lucide="chevron-up" class="w-6 h-6"></i>
-    </button>
+    <script>lucide.createIcons();</script>
 </body>
 </html>

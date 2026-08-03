@@ -2,30 +2,67 @@ const translations = {
     en: {
         title: "Ruben Parte Pombo - Data Engineer",
         nav: {
-            about: "About",
-            education: "Education",
-            experience: "Experience",
+            background: "Background",
             projects: "Projects",
+            events: "Events",
             contact: "Contact"
         },
         hero: {
-            eyebrow: "Hi, I'm Ruben Pombo",
+            eyebrow: "Data Engineer · Asturias",
             title: "Data Engineer & R&D Specialist",
-            subtitle: "Applying technical knowledge <br> with enthusiasm and dedication.",
-            cta: "Check my Work"
+            cta: "View projects"
+        },
+        home: {
+            now: "Currently",
+            roleCta: "Full background →",
+            selectedWork: "Selected work",
+            viewAllProjects: "All projects →"
         },
         about: {
             title: "About Me",
-            text: "I’m Ruben Pombo, a Data Science and Engineering graduate currently working as a Junior R&D Engineer in the industrial field. I enjoy tackling abstract and complex problems that require careful analysis and deep thinking before taking action. <br><br>My technical foundation has been shaped by my university studies, professional experience, and personal projects. This journey has allowed me to work across various areas, including statistics, data analysis, machine learning, and big data infrastructure. <br><br>Driven by a commitment to continuous learning, I am currently specializing in Cybersecurity and DevSecOps to build more resilient, scalable, and secure data infrastructures. My goal is to bridge the gap between Machine Learning and Security-first engineering. <br><br>On the side, I enjoy experimenting with novel tools like AI agents and MCP protocols to further enhance my efficiency and evolve as a programmer."
+            intro: "Hi! I'm Ruben, a data engineer who graduated in Data Science and Engineering and is now doing an MSc in Cybersecurity.",
+            text: "I've worked on Gen-AI integrations, industrial ML and MLOps, and I tend to gravitate toward problems at the boundary of different disciplines—that's where things get interesting for me.<br><br>I learn best from people with more experience than me, so I look for environments where that's possible."
+        },
+        background: {
+            title: "Background",
+            pageTitle: "Background — Ruben Parte Pombo",
+            backHome: "← Back to home"
+        },
+        events: {
+            title: "Events & Hackathons",
+            pageTitle: "Events — Ruben Parte Pombo",
+            backHome: "← Back to home",
+            karumi: {
+                title: "Karumi FDE AI Hackathon",
+                date: "26/06/2026",
+                desc: "Forward-deployed engineering hackathon hosted by Karumi (YC F25). We shipped a custom agent on their stack that could drop into live calls and help run product demos without breaking the flow of the conversation."
+            },
+            refugio: {
+                title: "REFUGIO Madrid",
+                date: "27/06/2026",
+                desc: "A Madrid gathering that pulled in some of the sharpest builders in the Spanish ecosystem. Our team focused on search and optimization, clawed back to second place in the closing minutes, and I left with great talks in my ears and new people to build with."
+            },
+            porto: {
+                title: "HackACity Porto 2023",
+                date: "24/11/2023",
+                desc: "A weekend hackathon in Porto focused on smart-city challenges. Our team explored data-driven ideas for urban mobility and pitched a prototype before the final jury."
+            },
+            merkle: {
+                title: "Merkle Datathon 2023",
+                date: "April 2023",
+                desc: "A datathon built around urban planning datasets from Gijón. We explored city open data, tested ideas against the challenge brief, and pitched our analysis to the jury."
+            }
         },
         experience: {
             title: "Professional Experience",
+            pageTitle: "Experience — Ruben Parte Pombo",
+            backHome: "← Back to home",
             arcelor: {
                 role: "Junior R&D Engineer",
                 company: "ArcelorMittal Global R&D",
                 date: "Aug 2025 – Present",
                 tooltip: "A world-leading steel and mining company, supplying quality steel products to various sectors including automotive, construction, and packaging.",
-                desc: "Applying data science and analytical techniques to optimize continuous casting processes.",
+                desc: "Using data science and analytics to optimize continuous casting — turning process signals into decisions that hold up on the plant floor.",
                 tags: ["Python"]
             },
             ntt: {
@@ -84,46 +121,22 @@ const translations = {
                 certs: {
                     title: "Certifications",
                     list: "<li><a href='https://learn.microsoft.com/en-us/users/rubnpartepombo-6581/credentials/76c33d177be7a96f' target='_blank' class='text-stone-900 font-semibold underline hover:text-stone-600'>Microsoft Certified: Azure Fundamentals (AZ-900)</a></li><li><strong>University of Oviedo Micro-credential:</strong> 'Secure Development in DevSecOps Environments' (6 ECTS) · Dec 2025.</li><li><a href='https://credentials.databricks.com/17118849-18d4-4d2c-a27f-9470ea8ff98c#acc.q0hlufGI' target='_blank' class='text-stone-900 font-semibold underline hover:text-stone-600'>Generative AI Fundamentals (Databricks)</a></li><li><a href='https://www.scrumstudy.com/certification/verify?type=SFC&number=1012974' target='_blank' class='text-stone-900 font-semibold underline hover:text-stone-600'>Scrum Fundamentals Certified</a></li>"
-                },
-                hackathons: {
-                    title: "Hackathons Attendance",
-                    list: "<li><a href='imgs/hackathon_porto.jpeg' class='image-modal-trigger text-stone-900 font-semibold underline hover:text-stone-600'>HackACity Porto 2023</a></li><li><a href='imgs/hackathon_merkle.jpeg' class='image-modal-trigger text-stone-900 font-semibold underline hover:text-stone-600'>Merkle Datathon 2023</a></li>"
                 }
             }
         },
         skills: {
             title: "Technical Skills",
-            languages: "Programming Languages",
-            tech: "Technologies",
-            libs: "Libraries & Frameworks",
-            tooltips: {
-                python: "Python",
-                r: "R",
-                sql: "SQL",
-                spark: "Apache Spark",
-                kafka: "Apache Kafka",
-                airflow: "Apache Airflow",
-                docker: "Docker",
-                git: "Git",
-                azure: "Azure",
-                powerbi: "Power BI",
-                streamlit: "Streamlit",
-                linux: "Linux",
-                bash: "Shell Scripting",
-                gitlab: "GitLab",
-                pandas: "Pandas",
-                numpy: "NumPy",
-                scikitlearn: "Scikit-Learn",
-                pytorch: "PyTorch",
-                spacy: "spaCy",
-                huggingface: "Transformers",
-                tensorflow: "TensorFlow",
-                keras: "Keras",
-                langchain: "LangChain"
-            }
+            languages: "Languages",
+            data: "Data & infra",
+            ml: "ML & AI",
+            languagesTags: ["Python", "R", "SQL", "Bash"],
+            dataTags: ["Spark", "Kafka", "Airflow", "Docker", "Azure", "PostgreSQL", "Git", "Linux"],
+            mlTags: ["PyTorch", "scikit-learn", "spaCy", "LangChain", "Transformers", "YOLO", "Pandas", "NumPy"]
         },
         projects: {
             title: "Side Projects",
+            backHome: "← Back to home",
+            pageTitle: "Side Projects — Ruben Parte Pombo",
             viewCode: "View Code",
             liveDemo: "Live Demo",
             iberbirds: {
@@ -167,30 +180,67 @@ const translations = {
     es: {
         title: "Ruben Parte Pombo - Ingeniero de Datos",
         nav: {
-            about: "Sobre Mí",
-            education: "Educación",
-            experience: "Experiencia",
+            background: "Formación",
             projects: "Proyectos",
+            events: "Eventos",
             contact: "Contacto"
         },
         hero: {
-            eyebrow: "Hola, soy Ruben Pombo",
+            eyebrow: "Ingeniero de Datos · Asturias",
             title: "Ingeniero de Datos y Especialista en I+D",
-            subtitle: "Aplicando conocimientos técnicos <br> con entusiasmo y dedicación.",
-            cta: "Ver mis Trabajos"
+            cta: "Ver proyectos"
+        },
+        home: {
+            now: "Actualmente",
+            roleCta: "Ver formación completa →",
+            selectedWork: "Trabajo seleccionado",
+            viewAllProjects: "Todos los proyectos →"
         },
         about: {
             title: "Sobre Mí",
-            text: "Soy Rubén Pombo, graduado en Ciencia e Ingeniería de Datos y actualmente trabajo como Ingeniero de I+D Junior en el sector industrial. Me apasiona resolver problemas abstractos y complejos que requieren un análisis meticuloso y una reflexión profunda antes de actuar. <br><br>Mi base técnica se ha forjado a través de mis estudios universitarios, mi experiencia profesional y mi proyectos personales. Este recorrido me ha permitido trabajar en diversas áreas, como la estadística, el análisis de datos, el aprendizaje automático y la infraestructura de Big Data. <br><br>Impulsado por un compromiso con el aprendizaje continuo, actualmente me estoy especializando en Ciberseguridad y DevSecOps para construir infraestructuras de datos más resilientes, escalables y seguras. Mi objetivo es cerrar la brecha entre el Machine Learning y la ingeniería orientada a la seguridad (security-first). <br><br>Por otro lado, disfruto experimentando con herramientas novedosas como agentes de IA y protocolos MCP para mejorar mi eficiencia y evolucionar como programador."
+            intro: "¡Hola! Soy Rubén, ingeniero de datos, graduado en Ciencia e Ingeniería de Datos y cursando un máster en Ciberseguridad.",
+            text: "He trabajado en integraciones de IA generativa, ML industrial y MLOps, y suelo ir hacia problemas en el límite entre disciplinas—ahí es donde más me interesa.<br><br>Aprendo mejor de gente con más experiencia que yo, así que busco entornos donde eso sea posible."
+        },
+        background: {
+            title: "Formación",
+            pageTitle: "Formación — Ruben Parte Pombo",
+            backHome: "← Volver al inicio"
+        },
+        events: {
+            title: "Eventos y Hackathons",
+            pageTitle: "Eventos — Ruben Parte Pombo",
+            backHome: "← Volver al inicio",
+            karumi: {
+                title: "Karumi FDE AI Hackathon",
+                date: "26/06/2026",
+                desc: "Hackathon de forward-deployed engineering organizado por Karumi (YC F25). Construimos un agente a medida sobre su plataforma capaz de entrar en llamadas en directo y apoyar demostraciones de producto sin cortar el ritmo de la conversación."
+            },
+            refugio: {
+                title: "REFUGIO Madrid",
+                date: "27/06/2026",
+                desc: "Encuentro en Madrid con perfiles muy sólidos del ecosistema tech español. El reto técnico giró en torno a búsqueda y optimización; remontamos hasta el segundo puesto en el tramo final. Fuera del código, disfruté de charlas que llevaba tiempo queriendo escuchar y de conocer a gente con ganas de construir."
+            },
+            porto: {
+                title: "HackACity Porto 2023",
+                date: "24/11/2023",
+                desc: "Hackathon de un fin de semana en Oporto orientado a retos de ciudad inteligente. El equipo trabajó ideas basadas en datos para movilidad urbana y presentó un prototipo ante el jurado."
+            },
+            merkle: {
+                title: "Merkle Datathon 2023",
+                date: "Abril 2023",
+                desc: "Datathon basado en datos urbanísticos de Gijón. Trabajamos con información abierta de la ciudad, contrastamos enfoques con el reto planteado y presentamos el análisis ante el jurado."
+            }
         },
         experience: {
             title: "Experiencia Profesional",
+            pageTitle: "Experiencia — Ruben Parte Pombo",
+            backHome: "← Volver al inicio",
             arcelor: {
                 role: "Ingeniero de I+D Junior",
                 company: "ArcelorMittal Global R&D",
                 date: "Ago 2025 – Presente",
                 tooltip: "Empresa siderúrgica y minera líder mundial, que suministra productos de acero de calidad a diversos sectores, incluidos el automotriz, la construcción y el embalaje.",
-                desc: "Aplicación de ciencia de datos y técnicas analíticas para optimizar procesos de colada continua.",
+                desc: "Ciencia de datos y analítica para optimizar la colada continua: convertir señales de proceso en decisiones que se sostienen en planta.",
                 tags: ["Python"]
             },
             ntt: {
@@ -249,46 +299,22 @@ const translations = {
                 certs: {
                     title: "Certificaciones",
                     list: "<li><a href='https://learn.microsoft.com/en-us/users/rubnpartepombo-6581/credentials/76c33d177be7a96f' target='_blank' class='text-stone-900 font-semibold underline hover:text-stone-600'>Microsoft Certified: Azure Fundamentals (AZ-900)</a></li><li><strong>Microcredencial Universidad de Oviedo:</strong> 'Desarrollo Seguro en Entornos DevSecOps' (6 ECTS) · Dic 2025.</li><li><a href='https://credentials.databricks.com/17118849-18d4-4d2c-a27f-9470ea8ff98c#acc.q0hlufGI' target='_blank' class='text-stone-900 font-semibold underline hover:text-stone-600'>Fundamentos de IA Generativa (Databricks)</a></li><li><a href='https://www.scrumstudy.com/certification/verify?type=SFC&number=1012974' target='_blank' class='text-stone-900 font-semibold underline hover:text-stone-600'>Certificado en Fundamentos de Scrum</a></li>"
-                },
-                hackathons: {
-                    title: "Asistencia a Hackathons",
-                    list: "<li><a href='imgs/hackathon_porto.jpeg' class='image-modal-trigger text-stone-900 font-semibold underline hover:text-stone-600'>HackACity Porto 2023</a></li><li><a href='imgs/hackathon_merkle.jpeg' class='image-modal-trigger text-stone-900 font-semibold underline hover:text-stone-600'>Merkle Datathon 2023</a></li>"
                 }
             }
         },
         skills: {
             title: "Habilidades Técnicas",
-            languages: "Lenguajes de Programación",
-            tech: "Tecnologías",
-            libs: "Librerías y Frameworks",
-            tooltips: {
-                python: "Python",
-                r: "R",
-                sql: "SQL",
-                spark: "Apache Spark",
-                kafka: "Apache Kafka",
-                airflow: "Apache Airflow",
-                docker: "Docker",
-                git: "Git",
-                azure: "Azure",
-                powerbi: "Power BI",
-                streamlit: "Streamlit",
-                linux: "Linux",
-                bash: "Scripting en Shell",
-                gitlab: "GitLab",
-                pandas: "Pandas",
-                numpy: "NumPy",
-                scikitlearn: "Scikit-Learn",
-                pytorch: "PyTorch",
-                spacy: "spaCy",
-                huggingface: "Transformers",
-                tensorflow: "TensorFlow",
-                keras: "Keras",
-                langchain: "LangChain"
-            }
+            languages: "Lenguajes",
+            data: "Datos e infra",
+            ml: "ML e IA",
+            languagesTags: ["Python", "R", "SQL", "Bash"],
+            dataTags: ["Spark", "Kafka", "Airflow", "Docker", "Azure", "PostgreSQL", "Git", "Linux"],
+            mlTags: ["PyTorch", "scikit-learn", "spaCy", "LangChain", "Transformers", "YOLO", "Pandas", "NumPy"]
         },
         projects: {
             title: "Proyectos Personales",
+            backHome: "← Volver al inicio",
+            pageTitle: "Proyectos Personales — Ruben Parte Pombo",
             viewCode: "Ver Código",
             liveDemo: "Demo en Vivo",
             iberbirds: {
