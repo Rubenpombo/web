@@ -62,7 +62,7 @@ const translations = {
                 company: "ArcelorMittal Global R&D",
                 date: "Aug 2025 – Present",
                 tooltip: "A world-leading steel and mining company, supplying quality steel products to various sectors including automotive, construction, and packaging.",
-                desc: "Using data science and analytics to optimize continuous casting — turning process signals into decisions that hold up on the plant floor.",
+                desc: "ML design, deployment, and data analysis for industrial anomaly detection.",
                 tags: ["Python"]
             },
             ntt: {
@@ -240,7 +240,7 @@ const translations = {
                 company: "ArcelorMittal Global R&D",
                 date: "Ago 2025 – Presente",
                 tooltip: "Empresa siderúrgica y minera líder mundial, que suministra productos de acero de calidad a diversos sectores, incluidos el automotriz, la construcción y el embalaje.",
-                desc: "Ciencia de datos y analítica para optimizar la colada continua: convertir señales de proceso en decisiones que se sostienen en planta.",
+                desc: "Diseño e implantación de ML y análisis de datos para detección de anomalías industriales.",
                 tags: ["Python"]
             },
             ntt: {
