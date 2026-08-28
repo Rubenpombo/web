@@ -256,18 +256,51 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('preferredLanguage') || 'en';
     updateContent(savedLang);
 
-    // --- BACK TO TOP ---
+    // --- SCROLL PROGRESS & BACK TO TOP ---
+    let progressBar = document.getElementById('scroll-progress');
+    if (!progressBar) {
+        const header = document.querySelector('header');
+        if (header) {
+            progressBar = document.createElement('div');
+            progressBar.id = 'scroll-progress';
+            progressBar.setAttribute('aria-hidden', 'true');
+            header.appendChild(progressBar);
+        }
+    }
+
     const backToTopBtn = document.getElementById('back-to-top');
 
-    window.addEventListener('scroll', () => {
+    const updateScrollState = () => {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = maxScroll > 0 ? (scrollTop / maxScroll) * 100 : 0;
+
+        if (progressBar) {
+            progressBar.style.width = `${Math.min(100, Math.max(0, progress))}%`;
+        }
+
         if (backToTopBtn) {
-            if (window.scrollY > 500) {
+            if (scrollTop > 500) {
                 backToTopBtn.classList.remove('opacity-0', 'translate-y-10', 'pointer-events-none');
             } else {
                 backToTopBtn.classList.add('opacity-0', 'translate-y-10', 'pointer-events-none');
             }
         }
-    });
+    };
+
+    let isScrolling = false;
+    window.addEventListener('scroll', () => {
+        if (!isScrolling) {
+            window.requestAnimationFrame(() => {
+                updateScrollState();
+                isScrolling = false;
+            });
+            isScrolling = true;
+        }
+    }, { passive: true });
+
+    window.addEventListener('resize', updateScrollState, { passive: true });
+    updateScrollState();
 
     if (backToTopBtn) {
         backToTopBtn.addEventListener('click', () => {

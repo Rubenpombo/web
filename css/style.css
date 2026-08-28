@@ -69,6 +69,18 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.02em;
 }
 
+#scroll-progress {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #1c1917;
+    pointer-events: none;
+    z-index: 50;
+    transition: width 75ms ease-out;
+}
+
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
