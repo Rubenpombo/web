@@ -63,7 +63,9 @@ const translations = {
                 date: "Aug 2025 – Present",
                 tooltip: "A world-leading steel and mining company, supplying quality steel products to various sectors including automotive, construction, and packaging.",
                 desc: "ML design, deployment, and data analysis for industrial anomaly detection.",
-                tags: ["Python"]
+                desc1: "ML design, deployment, and data analysis for industrial anomaly detection.",
+                desc2: "Dashboard development and on-plant trials for a LiDAR volume estimation PoC.",
+                tags: ["Python", "LiDAR", "IoT"]
             },
             ntt: {
                 role: "Artificial Intelligence Intern",
@@ -241,7 +243,9 @@ const translations = {
                 date: "Ago 2025 – Presente",
                 tooltip: "Empresa siderúrgica y minera líder mundial, que suministra productos de acero de calidad a diversos sectores, incluidos el automotriz, la construcción y el embalaje.",
                 desc: "Diseño e implantación de ML y análisis de datos para detección de anomalías industriales.",
-                tags: ["Python"]
+                desc1: "Diseño e implantación de ML y análisis de datos para detección de anomalías industriales.",
+                desc2: "Desarrollo de cuadros de mando y pruebas en planta para una PoC de estimación de volumen con LiDAR.",
+                tags: ["Python", "LiDAR", "IoT"]
             },
             ntt: {
                 role: "Becario de Inteligencia Artificial",
