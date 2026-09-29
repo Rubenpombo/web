@@ -20,8 +20,8 @@ const translations = {
         },
         about: {
             title: "About Me",
-            intro: "Hi! I'm Ruben, a data engineer who graduated in Data Science and Engineering and is now doing an MSc in Cybersecurity.",
-            text: "I've worked on Gen-AI integrations, industrial ML and MLOps, and I tend to gravitate toward problems at the boundary of different disciplines—that's where things get interesting for me.<br><br>I learn best from people with more experience than me, so I look for environments where that's possible."
+            intro: "Hi, I'm Ruben, a data engineer. Degree in Data Science and Engineering; MSc in Cybersecurity in progress.",
+            text: "I've worked on Gen-AI integrations, industrial ML, and MLOps. I usually end up on problems where two disciplines meet.<br><br>I learn best from people with more experience than me, so I look for teams where that's part of the day-to-day."
         },
         background: {
             title: "Background",
@@ -32,15 +32,20 @@ const translations = {
             title: "Events & Hackathons",
             pageTitle: "Events — Ruben Parte Pombo",
             backHome: "← Back to home",
-            karumi: {
-                title: "Karumi FDE AI Hackathon",
-                date: "26/06/2026",
-                desc: "Forward-deployed engineering hackathon hosted by Karumi (YC F25). We shipped a custom agent on their stack that could drop into live calls and help run product demos without breaking the flow of the conversation."
+            hackspain: {
+                title: "HackSpain 2026",
+                date: "18–20/09/2026",
+                desc: "We worked on Embat's track at HackSpain and built a platform that scores each company in a portfolio on financial health, projects the outlook, and suggests what to do about it."
             },
             refugio: {
                 title: "REFUGIO Madrid",
                 date: "27/06/2026",
                 desc: "A Madrid gathering that pulled in some of the sharpest builders in the Spanish ecosystem. Our team focused on search and optimization, clawed back to second place in the closing minutes, and I left with great talks in my ears and new people to build with."
+            },
+            karumi: {
+                title: "Karumi FDE AI Hackathon",
+                date: "26/06/2026",
+                desc: "Forward-deployed engineering hackathon hosted by Karumi (YC F25). We shipped a custom agent on their stack that could drop into live calls and help run product demos without breaking the flow of the conversation."
             },
             porto: {
                 title: "HackACity Porto 2023",
@@ -141,6 +146,11 @@ const translations = {
             pageTitle: "Side Projects — Ruben Parte Pombo",
             viewCode: "View Code",
             liveDemo: "Live Demo",
+            visitSite: "Website",
+            hackasturias: {
+                title: "HackAsturIAs",
+                desc: "Co-founded and organize an AI hackathon in Asturias."
+            },
             iberbirds: {
                 title: "IberBirds: Iberian Birds Classifier",
                 desc: "Developed a computer vision application to identify 10 species of Iberian birds of prey and storks using a fine-tuned YOLO model. Deployed as a full-stack Dockerized app with React and FastAPI on Hugging Face Spaces.",
@@ -200,8 +210,8 @@ const translations = {
         },
         about: {
             title: "Sobre Mí",
-            intro: "¡Hola! Soy Rubén, ingeniero de datos, graduado en Ciencia e Ingeniería de Datos y cursando un máster en Ciberseguridad.",
-            text: "He trabajado en integraciones de IA generativa, ML industrial y MLOps, y suelo ir hacia problemas en el límite entre disciplinas—ahí es donde más me interesa.<br><br>Aprendo mejor de gente con más experiencia que yo, así que busco entornos donde eso sea posible."
+            intro: "¡Hola! Soy Rubén, ingeniero de datos. Graduado en Ciencia e Ingeniería de Datos; ahora curso el máster en Ciberseguridad.",
+            text: "He trabajado en integraciones de IA generativa, ML industrial y MLOps. Suelo acabar en problemas donde se cruzan dos disciplinas.<br><br>Aprendo mejor de gente con más experiencia que yo y busco equipos donde eso sea lo habitual."
         },
         background: {
             title: "Formación",
@@ -212,15 +222,20 @@ const translations = {
             title: "Eventos y Hackathons",
             pageTitle: "Eventos — Ruben Parte Pombo",
             backHome: "← Volver al inicio",
-            karumi: {
-                title: "Karumi FDE AI Hackathon",
-                date: "26/06/2026",
-                desc: "Hackathon de forward-deployed engineering organizado por Karumi (YC F25). Construimos un agente a medida sobre su plataforma capaz de entrar en llamadas en directo y apoyar demostraciones de producto sin cortar el ritmo de la conversación."
+            hackspain: {
+                title: "HackSpain 2026",
+                date: "18–20/09/2026",
+                desc: "Trabajamos en el track de Embat en HackSpain y construimos una plataforma que puntúa la salud financiera de cada empresa en una cartera, anticipa cómo evoluciona y recomienda qué hacer."
             },
             refugio: {
                 title: "REFUGIO Madrid",
                 date: "27/06/2026",
                 desc: "Encuentro en Madrid con perfiles muy sólidos del ecosistema tech español. El reto técnico giró en torno a búsqueda y optimización; remontamos hasta el segundo puesto en el tramo final. Fuera del código, disfruté de charlas que llevaba tiempo queriendo escuchar y de conocer a gente con ganas de construir."
+            },
+            karumi: {
+                title: "Karumi FDE AI Hackathon",
+                date: "26/06/2026",
+                desc: "Hackathon de forward-deployed engineering organizado por Karumi (YC F25). Construimos un agente a medida sobre su plataforma capaz de entrar en llamadas en directo y apoyar demostraciones de producto sin cortar el ritmo de la conversación."
             },
             porto: {
                 title: "HackACity Porto 2023",
@@ -321,6 +336,11 @@ const translations = {
             pageTitle: "Proyectos Personales — Ruben Parte Pombo",
             viewCode: "Ver Código",
             liveDemo: "Demo en Vivo",
+            visitSite: "Web",
+            hackasturias: {
+                title: "HackAsturIAs",
+                desc: "Cofundé y organizo un hackathon de IA en Asturias."
+            },
             iberbirds: {
                 title: "IberBirds: Clasificador de Aves Ibéricas",
                 desc: "Desarrollo de una aplicación de visión por computador para identificar 10 especies de aves rapaces y cigüeñas ibéricas usando un modelo YOLO fine-tuned. Desplegada como app full-stack Dockerizada con React y FastAPI en Hugging Face Spaces.",
