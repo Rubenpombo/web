@@ -1,6 +1,6 @@
 const translations = {
     en: {
-        title: "Ruben Parte Pombo - Data Engineer",
+        title: "Ruben Parte Pombo - ML & Data Engineer · Industrial AI",
         nav: {
             background: "Background",
             projects: "Projects",
@@ -8,8 +8,8 @@ const translations = {
             contact: "Contact"
         },
         hero: {
-            eyebrow: "Data Engineer · Asturias",
-            title: "Data Engineer & R&D Specialist",
+            eyebrow: "ML Engineer · Asturias",
+            title: "ML & Data Engineer · Industrial AI",
             cta: "View projects"
         },
         home: {
@@ -63,11 +63,10 @@ const translations = {
             pageTitle: "Experience — Ruben Parte Pombo",
             backHome: "← Back to home",
             arcelor: {
-                role: "Junior R&D Engineer",
+                role: "Machine Learning Engineer",
                 company: "ArcelorMittal Global R&D",
                 date: "Aug 2025 – Present",
                 tooltip: "A world-leading steel and mining company, supplying quality steel products to various sectors including automotive, construction, and packaging.",
-                desc: "ML design, deployment, and data analysis for industrial anomaly detection.",
                 desc1: "ML design, deployment, and data analysis for industrial anomaly detection.",
                 desc2: "Dashboard development and on-plant trials for a LiDAR volume estimation PoC.",
                 tags: ["Python", "LiDAR", "IoT"]
@@ -78,12 +77,12 @@ const translations = {
                 date: "Sep 2024 – May 2025",
                 tooltip: "A global IT services provider and consulting firm, offering a wide range of solutions from advisory services to cloud and cybersecurity.",
                 desc1: "Co-authored a <a href='https://www.sciencedirect.com/science/article/pii/S2352340925003427?via%3Dihub' target='_blank' class='text-stone-900 font-semibold underline hover:text-stone-600'>paper on the first Iberian Bird dataset</a> for object detection.",
-                desc2: "Participated in LLM fine-tuning, backend integration, and prompt engineering for Nestlé.",
-                desc3: "Benchmarked multimodal LLMs (GPT-4o, Gemini 2.5) for worker safety monitoring.",
-                tags: ["Python", "LangChain", "Azure", "OpenCV", "YOLO", "MLflow"]
+                desc2: "Owned prompt engineering and backend integration (OpenAI API) and built a two-layer evaluation pipeline for a Nestlé product ideation system.",
+                desc3: "Benchmarked multimodal LLMs (GPT-4o, GPT-4o mini, Gemini 2.5) for worker safety monitoring.",
+                tags: ["Python", "Azure", "OpenCV", "YOLO", "MLflow"]
             },
             gonvarri: {
-                role: "Data Engineering Intern",
+                role: "Data Science Intern",
                 company: "Gonvarri Industries",
                 date: "Jul 2023 – Aug 2023",
                 tooltip: "A leader in the transformation of flat steel and aluminum, providing metal solutions for the automotive, road safety, and solar energy sectors.",
@@ -122,7 +121,7 @@ const translations = {
                 title: "Achievements & More",
                 winner: {
                     title: "Project Winner",
-                    desc: "\"Application of Generative AI in Industrial Environments\" for Delta (<a href='https://iturcemigrupo.com/' target='_blank' class='text-stone-900 font-semibold underline hover:text-stone-600'>Iturcermi Group</a>).",
+                    desc: "\"Application of Generative AI in Industrial Environments\" for Delta (<a href='https://iturcemigrupo.com/' target='_blank' class='text-stone-900 font-semibold underline hover:text-stone-600'>Iturcemi Group</a>).",
                     link: "View LinkedIn Post"
                 },
                 certs: {
@@ -138,7 +137,7 @@ const translations = {
             ml: "ML & AI",
             languagesTags: ["Python", "R", "SQL", "Bash"],
             dataTags: ["Spark", "Kafka", "Airflow", "Docker", "Azure", "PostgreSQL", "Git", "Linux"],
-            mlTags: ["PyTorch", "scikit-learn", "spaCy", "LangChain", "Transformers", "YOLO", "Pandas", "NumPy"]
+            mlTags: ["PyTorch", "scikit-learn", "spaCy", "Transformers", "YOLO", "Pandas", "NumPy"]
         },
         projects: {
             title: "Side Projects",
@@ -180,7 +179,7 @@ const translations = {
                 emailPlaceholder: "you@example.com",
                 subject: "Subject",
                 subjectPlaceholder: "Project Inquiry",
-                message: "Message",
+                message: "Mensaje",
                 messagePlaceholder: "How can I help you?",
                 btn: "Send Message",
                 success: "Message sent successfully!",
@@ -190,7 +189,7 @@ const translations = {
         }
     },
     es: {
-        title: "Ruben Parte Pombo - Ingeniero de Datos",
+        title: "Ruben Parte Pombo - ML & Data Engineer · Industrial AI",
         nav: {
             background: "Formación",
             projects: "Proyectos",
@@ -198,8 +197,8 @@ const translations = {
             contact: "Contacto"
         },
         hero: {
-            eyebrow: "Ingeniero de Datos · Asturias",
-            title: "Ingeniero de Datos y Especialista en I+D",
+            eyebrow: "ML Engineer · Asturias",
+            title: "ML & Data Engineer · Industrial AI",
             cta: "Ver proyectos"
         },
         home: {
@@ -253,11 +252,10 @@ const translations = {
             pageTitle: "Experiencia — Ruben Parte Pombo",
             backHome: "← Volver al inicio",
             arcelor: {
-                role: "Ingeniero de I+D Junior",
+                role: "Ingeniero de Machine Learning",
                 company: "ArcelorMittal Global R&D",
                 date: "Ago 2025 – Presente",
                 tooltip: "Empresa siderúrgica y minera líder mundial, que suministra productos de acero de calidad a diversos sectores, incluidos el automotriz, la construcción y el embalaje.",
-                desc: "Diseño e implantación de ML y análisis de datos para detección de anomalías industriales.",
                 desc1: "Diseño e implantación de ML y análisis de datos para detección de anomalías industriales.",
                 desc2: "Desarrollo de cuadros de mando y pruebas en planta para una PoC de estimación de volumen con LiDAR.",
                 tags: ["Python", "LiDAR", "IoT"]
@@ -268,12 +266,12 @@ const translations = {
                 date: "Sep 2024 – May 2025",
                 tooltip: "Proveedor global de servicios de TI y consultoría, que ofrece una amplia gama de soluciones, desde servicios de asesoramiento hasta nube y ciberseguridad.",
                 desc1: "Coautor de un <a href='https://www.sciencedirect.com/science/article/pii/S2352340925003427?via%3Dihub' target='_blank' class='text-stone-900 font-semibold underline hover:text-stone-600'>artículo sobre el primer dataset de aves ibéricas</a> para detección de objetos.",
-                desc2: "Participación en fine-tuning de LLMs, integración backend e ingeniería de prompts para Nestlé.",
-                desc3: "Benchmarking de LLMs multimodales (GPT-4o, Gemini 2.5) para la monitorización de seguridad de los trabajadores.",
-                tags: ["Python", "LangChain", "Azure", "OpenCV", "YOLO", "MLflow"]
+                desc2: "Responsable de la ingeniería de prompts y la integración backend (API de OpenAI), y de un pipeline de evaluación en dos capas para un sistema de ideación de productos de Nestlé.",
+                desc3: "Benchmarking de LLMs multimodales (GPT-4o, GPT-4o mini, Gemini 2.5) para la monitorización de seguridad de los trabajadores.",
+                tags: ["Python", "Azure", "OpenCV", "YOLO", "MLflow"]
             },
             gonvarri: {
-                role: "Becario de Ingeniería de Datos",
+                role: "Becario de Ciencia de Datos",
                 company: "Gonvarri Industries",
                 date: "Jul 2023 – Ago 2023",
                 tooltip: "Líder en la transformación de acero plano y aluminio, proporcionando soluciones metálicas para los sectores de automoción, seguridad vial y energía solar.",
@@ -312,7 +310,7 @@ const translations = {
                 title: "Logros y Más",
                 winner: {
                     title: "Ganador de Proyecto",
-                    desc: "\"Aplicación de IA Generativa en Entornos Industriales\" para Delta (<a href='https://iturcemigrupo.com/' target='_blank' class='text-stone-900 font-semibold underline hover:text-stone-600'>Grupo Iturcermi</a>).",
+                    desc: "\"Aplicación de IA Generativa en Entornos Industriales\" para Delta (<a href='https://iturcemigrupo.com/' target='_blank' class='text-stone-900 font-semibold underline hover:text-stone-600'>Grupo Iturcemi</a>).",
                     link: "Ver publicación en LinkedIn"
                 },
                 certs: {
@@ -328,7 +326,7 @@ const translations = {
             ml: "ML e IA",
             languagesTags: ["Python", "R", "SQL", "Bash"],
             dataTags: ["Spark", "Kafka", "Airflow", "Docker", "Azure", "PostgreSQL", "Git", "Linux"],
-            mlTags: ["PyTorch", "scikit-learn", "spaCy", "LangChain", "Transformers", "YOLO", "Pandas", "NumPy"]
+            mlTags: ["PyTorch", "scikit-learn", "spaCy", "Transformers", "YOLO", "Pandas", "NumPy"]
         },
         projects: {
             title: "Proyectos Personales",
@@ -370,7 +368,7 @@ const translations = {
                 emailPlaceholder: "tu@ejemplo.com",
                 subject: "Asunto",
                 subjectPlaceholder: "Consulta de Proyecto",
-                message: "Message",
+                message: "Mensaje",
                 messagePlaceholder: "¿En qué puedo ayudarte?",
                 btn: "Enviar Mensaje",
                 success: "¡Mensaje enviado con éxito!",

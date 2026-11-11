@@ -1,6 +1,6 @@
-# Ruben Pombo - Data Engineer Portfolio
+# Ruben Pombo - ML & Data Engineer Portfolio
 
-This is the personal portfolio website of Ruben Pombo, a Data Engineer with experience in AI, data pipelines, and cloud technologies.
+This is the personal portfolio website of Ruben Pombo, an ML & Data Engineer working on industrial AI, with experience in data pipelines and cloud technologies.
 
 **Live Website:** [https://rubenpombo.github.io/web/](https://rubenpombo.github.io/web/)
 
